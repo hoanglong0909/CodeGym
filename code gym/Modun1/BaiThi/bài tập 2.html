@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Check is Narcissistic</title>
+    </head>
+    <body>
+        <script>
+            let number = +prompt("Input  positive Integer:");
+            while (isNaN(number) || !Number.isInteger(number) || number <= 0) {
+                number = +prompt("Input positive Integer again :");
+            }
+            function isNarcissisticNumber(num) {
+                let m = 1,
+                    count = 0;
+                while (num / m > 1) {
+                    m *= 10;
+                    count++;
+                }
+                let sum = 0,
+                    temp = num;
+                while (temp) {
+                    sum += Math.pow(temp % 10, count);
+                    temp = Math.floor(temp / 10);
+                }
+                return sum === num;
+            }
+            function print(number) {
+                let i = isNarcissisticNumber(number);
+                console.log(i);
+                if (i) {
+                    document.write(`${number} is Narcissistic number <br>`);
+                } else
+                    document.write(`${number} is not Narcissistic number <br>`);
+            }
+            function displayNarcissisticNumber() {
+                let Nas_num = [];
+                for (let i = 100; i <= 10000; i++) {
+                    if (isNarcissisticNumber(i)) {
+                        Nas_num.push(i);
+                    }
+                }
+                document.write(
+                    `Narcissistic Number from 100 to 10000: ${Nas_num}<br>`
+                );
+            }
+
+            function main() {
+                isNarcissisticNumber(number);
+                print(number);
+                displayNarcissisticNumber();
+            }
+            main();
+        </script>
+    </body>
+</html>

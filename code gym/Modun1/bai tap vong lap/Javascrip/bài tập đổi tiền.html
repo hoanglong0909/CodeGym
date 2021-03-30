@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <table style="width: 50%">
+            <form>
+                <tr>
+                    <td>
+                        Amount<br />
+                        <input type="number" />
+                    </td>
+                    <td>
+                        From currensy<br />
+                        <select style="width: 100px" name="From currensy">
+                            <option value="việt nam">Việt Nam</option>
+                        </select>
+                    </td>
+                    <td>
+                        To currensy<br />
+                        <select style="width: 80px" name="To currensy">
+                            <option value="USD">USD</option>
+                        </select>
+                    </td>
+                    <td>
+                        <br />
+                        <input
+                            style="background-color: rgb(210, 180, 238)"
+                            onclick="send()"
+                            type="submit"
+                            value="Convert"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <script src="đổi tiền.js"></script>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

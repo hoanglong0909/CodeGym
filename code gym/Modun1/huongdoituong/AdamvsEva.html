@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Apple(weigth) {
+                this.weigth = weigth;
+
+                this.getweigth = function () {
+                    return this.weigth;
+                };
+                this.getApple = function () {
+                    return this.weigth - 1;
+                };
+            }
+
+            function Human(name, gender, weigth) {
+                this.name = name;
+                this.gender = gender;
+                this.weigth = weigth;
+                this.getname = function () {
+                    return this.name;
+                };
+                this.getgender = function () {
+                    return this.gender;
+                };
+                this.getweigth = function () {
+                    return this.weigth + 1;
+                };
+            }
+            let huma = new Human(long, male, 0);
+            let human1 = huma.weigth;
+            let kg = huma.getweigth();
+            document.write(long + "," + male + "," + kg);
+
+            let Applee = new Apple(10);
+            let weigth = Applee.getweigth();
+            let eat = Applee.getApple();
+            document.write(eat);
+        </script>
+    </body>
+</html>

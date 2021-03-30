@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const isNarcissistic = (number) => {
+                for (let i = 0; i < number; i++) {
+                    let m = 1,
+                        count = 0; //m = 1000, count =3
+                    while (number / m > 1) {
+                        m *= 10;
+                        count++;
+                    }
+                    let sum = 0,
+                        temp = number; //sum = 125, temp = 0
+                    while (temp) {
+                        sum += Math.pow(temp % 10, count);
+                        temp = Math.floor(temp / 10);
+                    }
+                    return sum === number;
+                }
+            };
+
+            document.write(isNarcissistic(153) + "<br>");
+            document.write(isNarcissistic(1634) + "<br>");
+            document.write(isNarcissistic(1433) + "<br>");
+            document.write(isNarcissistic(342) + "<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <style>
+        table,
+        tr,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        td {
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+    <p id="demo"></p>
+    <p>
+        <button type="submit" id="click" onclick="triangleAbove()">
+            Hiển thị tam giác trên
+        </button>
+    </p>
+    <p>
+        <button type="submit" id="click" onclick="lowerTriangle()">
+            Hiển thị tam giác dưới
+        </button>
+    </p>
+    <p>
+        <button type="submit" id="click" onclick="lowerTriangle()">
+            Hiển thị tam giác dưới
+        </button>
+    </p>
+
+    <body>
+        <table>
+            <tbody></tbody>
+        </table>
+        <script>
+            function resetMatrix() {
+                generateTable(arr);
+                return arr;
+            }
+            function lowerTriangle() {
+                let arr = tgd(matrix);
+                generateTable(arr);
+                console.log(arr);
+            }
+
+            function tgd(matrix) {
+                for (let i = 0; i < matrix.length; i++) {
+                    for (let j = 0; j < matrix.length; j++) {
+                        if (i == j) {
+                            for (let a = j + 1; a < matrix.length; a++) {
+                                matrix[i][a] = "";
+                            }
+                        }
+                    }
+                }
+                return matrix;
+            }
+            function triangleAbove() {
+                let arr = tgt(matrix);
+                generateTable(arr);
+                console.log(arr);
+            }
+
+            function tgt(matrix) {
+                for (let i = 0; i < matrix.length; i++) {
+                    for (let j = 0; j < matrix.length; j++) {
+                        if (i == j) {
+                            for (let a = i + 1; a < matrix.length; a++) {
+                                matrix[a][j] = "";
+                            }
+                        }
+                    }
+                }
+                return matrix;
+            }
+            function generateMatrix(size, min, max) {
+                let matrix = [];
+                for (let i = 0; i < size; i++) {
+                    let arr = [];
+                    for (let j = 0; j < size; j++) {
+                        arr[j] = Math.floor(
+                            Math.random() * (max - min + 1) + min
+                        );
+                    }
+                    matrix.push(arr);
+                }
+                return matrix;
+            }
+            function generateTable(matrix) {
+                let table_str = "";
+                for (let i = 0; i < matrix.length; i++) {
+                    table_str += "<tr>";
+                    for (let j = 0; j < matrix[i].length; j++) {
+                        table_str += "<td>" + matrix[i][j] + "</td>";
+                    }
+                    table_str += "</tr>";
+                }
+                let tbody = document.getElementsByTagName("tbody")[0];
+                tbody.innerHTML = table_str;
+            }
+
+            function isEven(number) {
+                return number % 2 == 0;
+            }
+
+            function totalEven(matrix) {
+                let total = 0;
+                for (let i = 0; i < matrix.length; i++) {
+                    for (let j = 0; j < matrix[i].length; j++) {
+                        if (isEven(matrix[i][j])) total += matrix[i][j];
+                    }
+                }
+                return total;
+            }
+
+            function totalMainCross(matrix) {
+                let total = 0;
+                for (let i = 0; i < matrix.length; i++) {
+                    for (let j = 0; j < matrix.length; j++) {
+                        if (i == j) total += matrix[i][j];
+                    }
+                }
+                return total;
+            }
+            function totalsubcross(matrix) {
+                let total = 0;
+                for (let i = 0; i < matrix.length; i++) {
+                    total += matrix[i][matrix.length - i - 1];
+                }
+                return total;
+            }
+            function totalBoder(matrix) {
+                let total = 0;
+                for (let i = 0; i < matrix.length; i++) {
+                    if (i == 0 || i == matrix.length - 1) {
+                        for (let j = 0; j < matrix.length; j++) {
+                            total += matrix[i][j];
+                        }
+                    } else total += matrix[i][0] + matrix[i][matrix.length - 1];
+                }
+                return total;
+            }
+            function main() {
+                let size = +prompt("nhap size");
+                let min = +prompt("nhập min");
+                let max = +prompt("nhập max");
+                let matrix = generateMatrix(size, min, max);
+
+                generateTable(matrix);
+
+                document.write(
+                    "Tổng các số chẵn là " + totalEven(matrix) + "<br>"
+                );
+                document.write(
+                    "Tổng của đường chéo chính " +
+                        totalMainCross(matrix) +
+                        "<br>"
+                );
+                document.write(
+                    "Tổng của đường chéo phụ " + totalsubcross(matrix) + "<br>"
+                );
+                document.write("Tổng đường biên " + totalBoder(matrix));
+                return matrix;
+            }
+            let matrix = main();
+
+            // console.log(matrix);
+        </script>
+    </body>
+</html>

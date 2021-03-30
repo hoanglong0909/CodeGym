@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function So(r) {
+                this.r = r;
+                this.getr = function () {
+                    return this.r;
+                };
+                this.getSo = function () {
+                    return Math.PI * (r * r);
+                };
+                this.getCo = function () {
+                    return 2 * r * Math.PI;
+                };
+            }
+
+            let dtc = new So(prompt("nhap r:"));
+            let r = dtc.getr();
+            let dt = dtc.getSo();
+            document.write("diện tích hình tròn là : " + dt + "<br>");
+
+            let cv = dtc.getCo();
+            document.write("chuvi hình tròn là : " + cv + "<br>");
+        </script>
+    </body>
+</html>

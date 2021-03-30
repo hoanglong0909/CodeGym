@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let arr = [1, 5, 3, 4, 5, , 5, 5, 9, 10];
+            let arr1 = [];
+            let count= 0;
+            let V = parseInt(prompt(" nhap v "));
+            // arr.reduce((slice, el) => {
+            //     if ((el = V)) {
+            //         arr.splice(el-1,0)
+            //         arr[arr.lenght]=0;
+            //         return slice;
+            //     }
+            // }, []);
+            for (let i = 0; i < arr.length; i++) {
+                if (V != arr[i]) {
+                    arr1.push(arr[i]);
+                    
+                    
+                }else{
+                    count +=1;
+                }
+                }
+                for(let i = 1; i<= count;i++){
+                    arr1.push(0);
+                }
+            
+            document.write(arr1);
+        </script>
+    </body
+</html>

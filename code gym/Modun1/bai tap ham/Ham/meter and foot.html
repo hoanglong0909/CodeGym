@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <table>
+        <!-- <p>
+            <input type="number" id="meter" oninput="foot()" />giá trị foot là
+            <span id="foot"></span>
+        </p> -->
+        <p>
+            <input type="number" id="foot" oninput="meter()" />giá trị meter là
+            <span id="meter"></span>
+        </p>
+
+        <script>
+            // function meterToFoot(meter) {
+            //     let foot = 3.279 * meter;
+            //     return foot;
+            // }
+            // function foot() {
+            //     let meter = document.getElementById("meter").value;
+            //     let foot = meterToFoot(meter);
+
+            //     document.getElementById("foot").innerHTML = foot;
+            // }
+            function footToMeter(foot) {
+                let meter = 0.305 * foot;
+                return meter;
+            }
+            function meter() {
+                let foot = document.getElementById("foot").value;
+                let meter = footToMeter(foot);
+
+                document.getElementById("meter").innerHTML = meter;
+            }
+        </script>
+    </table>
+
+    <body></body>
+</html>

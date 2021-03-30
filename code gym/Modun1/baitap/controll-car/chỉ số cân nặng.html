@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <label for="nhapheight"
+            >nhập chiều cao (cm)<input type="number" id="nhapheight" />
+        </label>
+        Nhập Cân nặng (kg)<input type="number" id="nhapweight" value="" />
+        <button id="bmi" onclick="getbmi()" value="">Check Here</button>
+        <p id="result"></p>
+        <script>
+            function getbmi() {
+                let height = parseInt(
+                    document.getElementById("nhapheight").value
+                );
+                // console.log(height);
+                let weight = parseInt(
+                    document.getElementById("nhapweight").value
+                );
+                // console.log(weight);
+                let bmi = (weight * 10000) / (height * height);
+                // console.log(bmi);
+                // document.getElementById("bmi").value = bmi;
+                //  if (bmi < 18) document.write("Underweight");
+                if (bmi < 18)
+                    document.getElementById("result").innerHTML =
+                        "bmi : " + bmi + "<br>Underweight";
+                else if (bmi < 25.0)
+                    document.getElementById("result").innerHTML =
+                        "bmi : " + bmi + "<br>Normal";
+                else if (bmi < 30.0)
+                    document.getElementById("result").innerHTML =
+                        "bmi : " + bmi + "<br>Overwright";
+                else
+                    document.getElementById("result").innerHTML =
+                        "bmi : " + bmi + " <br>Obese";
+            }
+        </script>
+    </body>
+</html>

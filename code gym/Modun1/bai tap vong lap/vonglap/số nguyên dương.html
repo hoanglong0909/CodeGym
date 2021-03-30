@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function useFor() {
+                let a = Number(prompt("nhap a: "));
+                for (; isNaN(a) || a < 0 || !Number.isInteger(a); ) {
+                    alert("không phải là số nguyên dương");
+                    a = Number(prompt("nhap a: "));
+                }
+                alert("là số nguyên dương");
+            }
+            function useWhile() {
+                let a = Number(prompt("nhap a: "));
+                while (isNaN(a) || a < 0 || !Number.isInteger(a)) {
+                    alert("không phải là số nguyên dương");
+                    a = Number(prompt("nhap a: "));
+                }
+                alert("là số nguyên dương");
+            }
+            function userDoWhile() {
+                let a;
+                do {
+                    a = Number(prompt("nhap a: "));
+                    // alert("không phải là số nguyên dương");
+                } while (isNaN(a) || a < 0 || !Number.isInteger(a));
+                {
+                    alert("là số nguyên dương");
+                }
+            }
+            useFor();
+            // useWhile();
+            // userDoWhile();
+        </script>
+    </body>
+</html>

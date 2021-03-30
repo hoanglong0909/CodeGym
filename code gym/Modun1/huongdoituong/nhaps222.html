@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Xây dựng lớp mô tả Temperature</title>
+    </head>
+    <body>
+        <label for="c">Celsius:</label>
+        <input
+            type="text"
+            placeholder="Input Celsius"
+            id="c"
+            value="0"
+            oninput="converTemperature(this.value)"
+            onchange="converTemperature(this.value)"
+        />
+        <br />
+        <br />
+        <label for="f">Fahrenheit:</label>
+        <input type="text" id="f" value="32" />
+        <script src="nháp.js"></script>
+    </body>
+</html>

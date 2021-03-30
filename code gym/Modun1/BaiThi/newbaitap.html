@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let size = +prompt("nhap size");
+            function checkSize(number) {
+                while (
+                    isNaN(number) ||
+                    number <= 0 ||
+                    !Number.isInteger(number)
+                ) {
+                    number = +prompt("nhap size");
+                }
+                return number;
+            }
+            // let size = +prompt("Input size Array:");
+            // function checkSize(number) {
+            //     while (
+            //         isNaN(number) ||
+            //         !Number.isInteger(number) ||
+            //         number <= 0
+            //     ) {
+            //         number = +prompt("Input number Array again (number > 0):");
+            //     }
+            // }
+            let arr = [];
+            function generateArray(size) {
+                for (let i = 0; i < size; i++) {
+                    arr[i] = Math.floor(Math.random() * 81 + 10);
+                }
+                return arr;
+            }
+            // let arr = [];
+            // function generateArray(size) {
+            //     for (let i = 0; i < size; i++) {
+            //         arr[i] = Math.floor(Math.random() * 81 + 10);
+            //     }
+            //     return arr;
+            // }
+            function printArray(arr) {
+                document.write(`Array [${arr.join("-")}] <br>`);
+            }
+            function isPrime(number) {
+                for (let i = 2; i < number; i++) {
+                    if (number % 2 == 0) return false;
+                }
+                return true;
+            }
+            function printPrimes(arr) {
+                let arr2 = [];
+                for (let i = 0; i < arr.length; i++) {
+                    if (isPrime(arr[i])) {
+                        arr2.push(arr[i]);
+                    }
+                }
+                document.write(`Array is Primes: Arr2 [${arr2}] <br>`);
+            }
+            function sumPrimes(arr) {
+                let sum = 0;
+                for (let i = 0; i < arr.length; i++) {
+                    if (isPrime(arr[i])) {
+                        sum += arr[i];
+                    }
+                }
+                document.write(`Total Primes of Array : ${sum} <br>`);
+            }
+            function main() {
+                checkSize(size);
+                generateArray(size);
+                printArray(arr);
+                printPrimes(arr);
+                sumPrimes(arr);
+            }
+            main();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chuyển đổi tiền tệ</title>
+    <style>
+        .columd {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form style="display: flex" action="index.html">
+        <div class="columd">
+            <label for="amount" style="text-align: center"
+                ><strong>Amount</strong></label
+            >
+            <input type="text" name="amount" id="amount" />
+        </div>
+        <div class="columd">
+            <label for="from" style="text-align: center"
+                ><strong>From Currency</strong></label
+            >
+            <select name="from" id="from">
+                <option value="VietNam">VietNam</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="columd">
+            <label for="to" style="text-align: center"
+                ><strong>To Currency</strong></label
+            >
+            <select name="to" id="to">
+                <option value="USD">USD</option>
+                <option value="VietNam">VietNam</option>
+            </select>
+        </div>
+        <input
+            type="submit"
+            value="Convert"
+            onclick="doConvert()"
+            style="
+                background-color: #b8b5ff; /* Green */
+                border-radius: 15px;
+                color: white;
+                padding: 10px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin: 20px 2px;
+                cursor: pointer;
+            "
+        />
+    </form>
+    <script>
+        function doConvert() {
+            var a = document.getElementById("to").value;
+            var b = document.getElementById("from").value;
+            var c = parseFloat(document.getElementById("amount").value);
+            console.log(c);
+            if (a == "VietNam" && b == "USD") {
+                document.write("Result = " + c * 23000 + " VND");
+            } else if (a == "VietNam" && b == " VietNam") {
+                document.write("Result = " + c + " VND");
+            } else if (a == "USD" && b == "USD") {
+                document.write("Result = " + c + " USD");
+            } else document.write("Result = " + c / 23000 + " USD");
+        }
+    </script>
+</body>

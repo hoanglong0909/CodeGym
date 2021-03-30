@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function square(number) {
+                this.number = number;
+                this.getnumber = function () {
+                    return this.number;
+                };
+                this.getsquare = function () {
+                    return this.number * this.number;
+                };
+                this.setsquare = function (number) {};
+                this.number = number;
+            }
+
+            let a = new square(6);
+            let number = a.getnumber();
+            let square1 = a.getsquare();
+            document.write("kết quả là:  " + square1 + "<br>");
+
+            let b = new square(+prompt("nhap b: "));
+            number = b.getnumber();
+            square2 = b.getsquare();
+            document.write("kết quả là:  " + square2 + "<br>");
+        </script>
+    </body>
+</html>

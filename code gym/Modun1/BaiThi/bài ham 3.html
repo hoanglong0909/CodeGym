@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            class Employee {
+                constructor(name, age, adress, salary, totalWorkingHours) {
+                    this.name = name;
+                    this.age = age;
+                    this.adress = adress;
+                    this.salary = salary;
+                }
+                inputWorkingHours(hours) {
+                    return (this.totalWorkingHours = hours);
+                }
+                printInfo() {
+                    document.write(
+                        `Nhân viên: ${this.name}, tuổi: ${this.age}, lương: ${this.salary}, giờ làm việc: ${this.totalWorkingHours} <br>`
+                    );
+                }
+
+                calculatorBonus() {
+                    let bonus;
+                    if (this.totalWorkingHours >= 200) {
+                        bonus = (this.salary * 20) / 100;
+                    } else if (
+                        this.totalWorkingHours >= 100 &&
+                        this.totalWorkingHours < 200
+                    ) {
+                        bonus = (this.salary * 10) / 100;
+                    } else {
+                        bonus = 0;
+                    }
+                    return bonus;
+                }
+
+                calculatorBonus() {
+                    let bonus;
+                    if (this.totalWorkingHours >= 200) {
+                        bonus = (this.salary * 20) / 100;
+                    } else if (
+                        this.totalWorkingHours >= 100 &&
+                        this.totalWorkingHours < 200
+                    ) {
+                        bonus = (this.salary * 10) / 100;
+                    } else {
+                        bonus = 0;
+                    }
+                    return bonus;
+                }
+                calculatorTotalSalary() {
+                    let bonus = this.calculatorBonus();
+                    return bonus + this.salary;
+                }
+            }
+            let man = new Employee("long", 18, "hue", 500000);
+            man.inputWorkingHours(300);
+            document.write(man.calculatorTotalSalary());
+            document.write(
+                `Nhân viên: ${this.name}, tuổi: ${this.age}, lương: ${this.salary}, giờ làm việc: ${this.totalWorkingHours} <br>`
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <p id="demo"></p>
+    <body>
+        <script>
+            let a = prompt("nhap a");
+            let b = prompt("nhap b");
+            x = function sum(a, b) {
+                if (a > b) {
+                    alert(a + " lớn hơn " + b);
+                } else {
+                    return `${a + b}`;
+                }
+            };
+
+            document.getElementById("demo").innerHTML = x(a, b);
+        </script>
+    </body>
+</html>

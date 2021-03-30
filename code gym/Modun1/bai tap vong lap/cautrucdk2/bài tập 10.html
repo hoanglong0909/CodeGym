@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = parseInt(prompt("Nhập klwh a: "));
+            if (a > 0 && a < 50) {
+                let b = a * 1.484;
+                alert("tiền điện tháng này" + b);
+                if (a < 50 && a > 100) {
+                    let c = a * 1.533;
+                    alert("tiền điện tháng này" + c);
+                    if (a > 100 && a < 200) {
+                        let d = a * 1.786;
+                        alert("tiền điện tháng này" + d);
+                    }
+                }
+            } else {
+                let f = a * 2.503;
+                alert("tiền điện tháng này" + f);
+            }
+        </script>
+    </body>
+</html>

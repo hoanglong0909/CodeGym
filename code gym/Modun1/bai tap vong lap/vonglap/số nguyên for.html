@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = Number(prompt("nhap so a: "));
+            for (; isNaN(a) || a < 0 || !Number.isInteger(a); ) {
+                alert("không phải là số nguyên xin mời nhập lại");
+                a = Number(prompt("nhap so a: "));
+            }
+            alert("đúng là số nguyên cmnr");
+        </script>
+    </body>
+</html>

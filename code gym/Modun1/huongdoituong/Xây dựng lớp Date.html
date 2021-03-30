@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let MyDate = function (day, month, year) {
+                this.year = year;
+                this.month = month;
+                this.day = day;
+
+                this.getDay = function () {
+                    return this.day;
+                };
+                this.setDay = function (day) {
+                    this.day = day;
+                };
+
+                this.getMonth = function () {
+                    return this.month;
+                };
+                this.setMonth = function (month) {
+                    this.month = month;
+                };
+
+                this.getYear = function () {
+                    return this.year;
+                };
+                this.setYear = function (year) {
+                    this.year = year;
+                };
+                this.setDate = function (day, month, year) {
+                    this.day = day;
+                    this.month = month;
+                    this.year = year;
+                };
+                this.toString = function () {
+                    return this.day + "-" + this.month + "-" + this.year;
+                };
+            };
+
+            let date = new MyDate(2, 2, 2007);
+            let day = date.getDay(); // 2
+            let month = date.getMonth(); // 2
+            let year = date.getYear(); // 2007
+            document.write(day + "/" + month + "/" + year + "<br>");
+
+            // console.log(toString1);
+            // console.log(date.getDay());
+            // date.setDay(10);
+            // date.setMonth(10);
+            // date.setYear(2019);
+            // day = date.getDay();
+            // month = date.getMonth();
+            // year = date.getYear();
+            document.write(day + "/" + month + "/" + year + "<br>");
+
+            date.setDate(12, 09, 2021);
+            let toString1 = date.toString();
+            document.write(toString1 + "<br>");
+
+            // console.log(toString2);
+            // console.log(date.getDay());
+        </script>
+    </body>
+</html>

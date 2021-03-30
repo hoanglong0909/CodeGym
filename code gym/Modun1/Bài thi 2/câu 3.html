@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Câu 3</title>
+    </head>
+    <body>
+        <canvas
+            id="myCanvas"
+            width="400"
+            height="300"
+            style="border: 5px solid #3cff00"
+        ></canvas>
+        ​
+        <script>
+            class Circle {
+                constructor(x, y, radius, color) {
+                    this.x = x;
+                    this.y = y;
+                    this.radius = radius;
+                    this.color = color;
+                }
+
+                render(canvas) {
+                    let ctx = canvas.getContext("2d");
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                    ctx.fillStyle = `${"#FF3300"}`;
+                    ctx.fill();
+                }
+            }
+            let circle = new Circle(40, 50, 30, "#FF3300");
+            let canvas = document.getElementById("myCanvas");
+            circle.render(canvas);
+        </script>
+    </body>
+</html>

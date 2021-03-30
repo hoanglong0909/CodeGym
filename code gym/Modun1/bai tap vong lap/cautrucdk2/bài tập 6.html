@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = parseInt(prompt("nhập a: "));
+            let b = parseInt(prompt("nhập b: "));
+            let c = parseInt(prompt("nhập c: "));
+            let X = b * b - 4 * a * c;
+            let Y = -b / (2 * a);
+            let Z = (-b + Math.sqrt(X)) / (2 * a);
+            let C = (-b - Math.sqrt(X)) / (2 * a);
+            // let Z = ((-b + sqrt(X)) / 2) * a;
+            // let C = ((-b - sqrt(X)) / 2) * a;
+            if (X < 0) {
+                alert("phương trình vô nghiệm");
+            } else if ((X = 0)) {
+                alert("pt có nghiệm kép X= " + y);
+            } else {
+                alert("pt có 2 nghiệm pb X1= " + Z + "X2= " + C);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = [12, 3, 12, 43, 4, 2, 3, 31, 4, 2];
+            let result = a.reduce((max, el) => {
+                if (el > max) {
+                    max = el;
+                }
+                return max;
+            }, 0);
+            let result2 = a.reduce((ave, el) => {
+                ave = ave + el / a.length;
+                return ave;
+            }, 0);
+            document.write("giá trị tb là" + result2 + "<br>");
+            document.write(
+                ` giá tị lớn nhất là ${result} với vị trí ${a.indexOf(result)}`
+            );
+        </script>
+    </body>
+</html>

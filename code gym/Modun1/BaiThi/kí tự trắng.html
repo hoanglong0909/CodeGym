@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let str1 = "   LẬP      trình   viên";
+            let str2 = "   lập TRÌNH      Viên";
+            function capitalize(str) {
+                let newString = str.replace(/[ ][ ]*/g, " ");
+                var separateWord = newString.toLowerCase().split(" ");
+                for (var i = 0; i < separateWord.length; i++) {
+                    separateWord[i] =
+                        separateWord[i].charAt(0).toUpperCase() +
+                        separateWord[i].substring(1);
+                }
+                return separateWord.join(" ");
+            }
+            document.write(capitalize(str1));
+            console.log(capitalize(str2));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>
+            <input type="text" oninput="nhietdo()" id="input" />
+            <span id="result"> do F là :</span>
+        </p>
+
+        <script>
+            function Temperature(doc) {
+                this.doc = doc;
+                this.getC = function () {
+                    return this.doc;
+                };
+                this.setdoc = function (doc) {
+                    this.doc = doc;
+                };
+
+                this.getF = function () {
+                    return (9 / 5) * this.doc + 32;
+                };
+                this.getK = function () {
+                    return 273.15 + this.doc;
+                };
+                this.setTemperature = function (doc) {
+                    this.doc = doc;
+                };
+            }
+            let C = new Temperature(25);
+            let doc = C.getC(); // 2
+            let F = C.getF();
+            document.write("nhiệt độ F là: " + F);
+            let B = new Temperature(25);
+            doc = B.getC;
+            let K = B.getK();
+            document.write("nhiệt độ K là: " + K);
+
+            function nhietdo() {
+                let input = document.getElementById("input").value;
+                input = doc.setdoc();
+                let result = getF(input);
+                document.getElementById("result").innerHTML = result;
+            }
+
+            // function nhietdo() {
+            //     let input = document.getElementById("input").value;
+            //     input = doc.setdoc();
+            //     let result = getF(input);
+            //     document.getElementById("result").innerHTML = result;
+            // }
+            // function calculate() {
+            //     let input = document.getElementById("input").value;
+
+            //     let result = square(input);
+            //     document.getElementById("result").innerHTML = result;
+            // }
+        </script>
+    </body>
+</html>

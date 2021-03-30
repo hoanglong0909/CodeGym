@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            *,
+            *::after,
+            *::before {
+                margin: 0px;
+                padding: 0px;
+            }
+            table,
+            tr,
+            td {
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+
+            td {
+                width: 20px;
+                height: 20px;
+                padding: 10px;
+                cursor: pointer;
+                text-align: center;
+            }
+            .cell_x {
+                background-color: orange;
+            }
+            .cell_o {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tbody></tbody>
+        </table>
+        <script>
+            function generateMatrix(row, col) {
+                let caro = [];
+                for (let i = 0; i < row; i++) {
+                    let arr = [];
+                    for (let j = 0; j < col; j++) {
+                        arr[j] = 0;
+                    }
+                    caro.push(arr);
+                }
+                return caro;
+            }
+            function generateCaro(matrix) {
+                let caro_str = "";
+                for (let i = 0; i < matrix.length; i++) {
+                    caro_str += "<tr>";
+                    for (let j = 0; j < matrix[i].length; j++) {
+                        caro_str += `<td class="${
+                            matrix[i][j] == 1
+                                ? "cell_x"
+                                : matrix[i][j] == 10
+                                ? "cell_o"
+                                : ""
+                        }"  onclick="cell(${i},${j})">${
+                            matrix[i][j] == 1
+                                ? "X"
+                                : matrix[i][j] == 10
+                                ? "O"
+                                : "&nbsp;"
+                        }</td>`;
+                    }
+                    caro_str += "</tr>";
+                }
+                let tbody = document.getElementsByTagName("tbody")[0];
+                tbody.innerHTML = caro_str;
+            }
+
+            function inputInterger(msg) {
+                let number = 0;
+                do {
+                    number = Number(prompt(msg));
+                } while (
+                    isNaN(number) ||
+                    !Number.isInteger(number) ||
+                    number <= 0
+                );
+                return number;
+            }
+            function cell(row, col) {
+                if (matrix[row][col] == 0) {
+                    if (player == 1) {
+                        matrix[row][col] = 1;
+                        generateCaro(matrix);
+                        player = 2;
+                    } else {
+                        matrix[row][col] = 10;
+                        generateCaro(matrix);
+                        player = 1;
+                    }
+                } else {
+                    alert("invalid");
+                }
+            }
+
+            function main() {
+                let row = inputInterger("input row:");
+                let col = inputInterger("input col:");
+                matrix = generateMatrix(row, col);
+                generateCaro(matrix);
+            }
+            let matrix;
+            let player = 1;
+            main();
+        </script>
+    </body>
+</html>

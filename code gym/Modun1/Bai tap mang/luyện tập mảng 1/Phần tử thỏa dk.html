@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let a = [12, 3, 12, 43, 4, 2, 3, 31, 4, 2];
+            // let result = a.filter((el) => el > 10);
+            // document.write(result);
+            let result = a.reduce((max, el) => {
+                if (el > 10) {
+                    // push el vào max
+                    max.push(el);
+                }
+                return max;
+            }, []);
+            document.write(result);
+        </script>
+    </body>
+</html>

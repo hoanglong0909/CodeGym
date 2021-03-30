@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <style>
+            table {
+                width: 320px;
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+            tr,
+            td {
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+            td {
+                width: 40px;
+                height: 40px;
+            }
+
+            .odd {
+                background-color: orange;
+            }
+            .even {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+        style -> css
+        events -> js
+     -->
+        <!-- 
+         style
+         script
+      -->
+        <h3
+            onmouseover="this.innerText = new Date()"
+            onmouseout="this.innerText = 'Show currently date time'"
+        >
+            Show currently date time
+        </h3>
+
+        <button
+            onmouseover="this.innerText = new Date()"
+            onmouseout="this.innerText = 'Show currently date time'"
+        >
+            Show currently date time
+        </button>
+        <br />
+        Data
+        <input
+            type="password"
+            oninput="document.getElementById('copy').value = this.value;"
+        />
+        <br />
+        Copy <input type="text" id="copy" />
+        <br />
+        <!-- <input type="color" onchange="changeBgColor(this)"> -->
+        <input
+            type="color"
+            onchange="document.getElementsByTagName('body')[0].style = `background-color:${this.value}`"
+        />
+        <br />
+        <label for="">Password</label> <input id="pw" type="password" />
+        <button onclick="showPW()"><i id="icon" class="fas fa-eye"></i></button>
+        <br />
+        <button onclick="addElement()">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div id="content"></div>
+        <button onclick="drawChesse()">Draw chesse</button>
+        <div id="chesse">
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            function changeBgColor(el) {
+                // window.alert(el.value);
+                // document.getElementsByTagName("body")[0].style = "background-color:" + el.value;
+                document.getElementsByTagName(
+                    "body"
+                )[0].style = `background-color:${el.value}`;
+            }
+            function showPW() {
+                let pw = document.getElementById("pw");
+                let icon = document.getElementById("icon");
+                if (pw.type == "password") {
+                    pw.type = "text";
+                    icon.classList.remove("fa-eye");
+                    icon.classList.add("fa-eye-slash");
+                } else {
+                    pw.type = "password";
+                    icon.classList.remove("fa-eye-slash");
+                    icon.classList.add("fa-eye");
+                }
+            }
+            var count = 0;
+            function addElement() {
+                let content = document.getElementById("content");
+                // content.innerText = "<input type='text'>";
+                count++;
+                content.innerHTML += `<div id='div_${count}'><input type='text' value= ${count}><button onclick='remove(${count})'><i class='fas fa-trash'></i></button></div>`;
+                // content.innerHTML = 'hello world';
+            }
+
+            function remove(id) {
+                let div = document.getElementById(`div_${id}`);
+                div.remove();
+            }
+
+            let table = document.getElementById("chesse").children[0]
+                .children[0];
+            let trs = table.children;
+            for (let tr = 0; tr < trs.length; tr++) {
+                for (let td = 0; td < trs[tr].children.length; td++) {
+                    if (tr % 2 == 0) {
+                        if (td % 2 == 0) {
+                            trs[tr].children[td].classList.add("odd");
+                        } else {
+                            trs[tr].children[td].classList.add("even");
+                        }
+                    } else {
+                        if (td % 2 == 0) {
+                            trs[tr].children[td].classList.add("even");
+                        } else {
+                            trs[tr].children[td].classList.add("odd");
+                        }
+                    }
+                }
+
+                // console.log(trs[tr].children);
+            }
+        </script>
+    </body>
+</html>
+© 2021 GitHub, Inc.

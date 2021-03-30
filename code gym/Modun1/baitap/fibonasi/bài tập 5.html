@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dãy fibonacci</title>
+    </head>
+    <body>
+        <script>
+            let a = 1;
+            let b = 0;
+            let temp;
+            let total = 0;  
+            let n = +prompt("Nhập số lượng số trong dãy Fibonnacci");
+            while (n > 0) {
+                temp = a;
+                total = total + temp;
+                a = a + b;
+                b = temp;
+                n--;
+            }
+            alert("Tổng của các chữ số đó là: " + total);
+        </script>
+    </body>
+</html>

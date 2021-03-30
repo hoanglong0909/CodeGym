@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let size = +prompt("nhap size: ");
+            function checkSize(number) {
+                while (
+                    isNaN(number) ||
+                    number <= 0 ||
+                    !Number.isInteger(number)
+                ) {
+                    number = +prompt("xin mời nhập lại");
+                }
+            }
+
+            let arr = [];
+
+            function generateArray(size) {
+                for (let i = 0; i < size; i++) {
+                    arr[i] = Math.floor(Math.random() * 81 + 10);
+                }
+                return arr;
+            }
+            function printArray(arr) {
+                document.write(`Array:[${arr.join("-")}] `);
+            }
+            function isFibonasi(number) {
+                let F = 0,
+                    F0 = 0,
+                    F1 = 0;
+                let fibonacci = "";
+                for (let i = 0; i < number; i++) {
+                    if (i == 0) {
+                        F = 1;
+                        F1 = 1;
+                        fibonacci += F + " ";
+                    } else {
+                        F = F0 + F1;
+                        F0 = F1;
+                        F1 = F;
+                        fibonacci += F + " ";
+                    }
+                }
+                return fibonacci;
+            }
+            let arr1 = [];
+            function prinrFibonasi(arr) {
+                for (let i = 0; i < arr.length; i++) {
+                    if (isFibonasi(arr[i])) arr1.push(arr[i]);
+                }
+                document.write("Array Fibonasi:  " + arr1);
+            }
+            let sum = 0;
+            function sumFibonasi(arr) {
+                for (let i = 0; i < arr.length; i++) {
+                    if (isFibonasi(arr[i])) {
+                        sum += arr[i];
+                    }
+                }
+                document.write("sum : " + sum);
+            }
+
+            function main() {
+                checkSize(size);
+                generateArray(size);
+                printArray(arr);
+                prinrFibonasi(arr);
+                sumFibonasi(arr);
+            }
+            main();
+        </script>
+    </body>
+</html>
