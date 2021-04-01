@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Reversee {
+public class Reverse {
     public static void main(String[] args) {
         int size;
         int[] array;
