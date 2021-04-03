@@ -16,7 +16,6 @@ public class maxvalue {
         array = new int[size];
         System.out.printf("  mang mới là ");
         for(int j = 0;j<array.length;j++){
-
             array[j] = (int)Math.round(Math.random()*101);
             System.out.print(array[j] +"\t");
         }
