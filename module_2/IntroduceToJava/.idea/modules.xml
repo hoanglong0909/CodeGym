@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BMI/BMI.iml" filepath="$PROJECT_DIR$/BMI/BMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Currency/Currency.iml" filepath="$PROJECT_DIR$/Currency/Currency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Date-Year/Date-Year.iml" filepath="$PROJECT_DIR$/Date-Year/Date-Year.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Giai-pt-bac-1/Giai-pt-bac-1.iml" filepath="$PROJECT_DIR$/Giai-pt-bac-1/Giai-pt-bac-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello-world/Hello-world.iml" filepath="$PROJECT_DIR$/Hello-world/Hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntersetMoney/IntersetMoney.iml" filepath="$PROJECT_DIR$/IntersetMoney/IntersetMoney.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IntroduceToJava.iml" filepath="$PROJECT_DIR$/.idea/IntroduceToJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IsPrime/IsPrime.iml" filepath="$PROJECT_DIR$/IsPrime/IsPrime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leap-Year/Leap-Year.iml" filepath="$PROJECT_DIR$/Leap-Year/Leap-Year.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mylove-old/Mylove-old.iml" filepath="$PROJECT_DIR$/Mylove-old/Mylove-old.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Number -to-letter/Number -to-letter.iml" filepath="$PROJECT_DIR$/Number -to-letter/Number -to-letter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SumA_B/SumA_B.iml" filepath="$PROJECT_DIR$/SumA_B/SumA_B.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Use-Operations/Use-Operations.iml" filepath="$PROJECT_DIR$/Use-Operations/Use-Operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/khai-bao-bien-3/khai-bao-bien-3.iml" filepath="$PROJECT_DIR$/khai-bao-bien-3/khai-bao-bien-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-time/system-time.iml" filepath="$PROJECT_DIR$/system-time/system-time.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c936955-e4d2-47b0-906e-a33bcb8e7cf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../PHUONG-THUC/DeleteValue/src/moreArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BMI/BMI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Currency/Currency.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Date-Year/Date-Year.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giai-pt-bac-1/Giai-pt-bac-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hello-world/Hello-world.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntersetMoney/IntersetMoney.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsPrime/IsPrime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leap-Year/Leap-Year.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mylove-old/Mylove-old.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Number -to-letter/Number -to-letter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SumA_B/SumA_B.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Use-Operations/Use-Operations.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/khai-bao-bien-3/khai-bao-bien-3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system-time/system-time.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHUONG-THUC/Search/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHUONG-THUC/Search/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHUONG-THUC/Search/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHUONG-THUC/Search/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PHUONG-THUC/Search/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1qjKRHUx3OASjrgptyM4Ftnin1Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHUONG-THUC/DeleteValue" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c936955-e4d2-47b0-906e-a33bcb8e7cf8" name="Default Changelist" comment="" />
+      <created>1617587549324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617587549324</updated>
+      <workItem from="1617587550432" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
