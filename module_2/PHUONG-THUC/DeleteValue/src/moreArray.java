@@ -10,10 +10,9 @@ public class moreArray {
         System.out.println("nhập size");
         size1 = scanner.nextInt();
         int[] array = createArray(size1);
-
-
         System.out.println("nhập value : ");
         int value = scanner.nextInt();
+
         int check = insertAray(value,array);
         if(check == -1){
             System.out.println("không có trong mảng");
