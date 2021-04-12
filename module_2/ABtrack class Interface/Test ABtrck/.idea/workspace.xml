@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb74504a-7a36-4725-883b-7cc9bb418a3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/ABtrack class Interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/ABStractTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ABStractTest/src/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClassShape/TestABtrack_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/InterFace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/Rectangula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/TestShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InterFace/src/com/Long/TestInterface/VolumeShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestPractice/src/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TinhLuong/TinhLuong.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classAnimal-InterFace/classAnimal-InterFace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../classAnimal-InterFace/src/ClassAnimalnterfaceEdible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Shape/Shape.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Shape/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Shape/src/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Shape/src/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Shape/src/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Shape/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Student/Student.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Student/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Student/src/TestStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/Tess1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Tess1/src/tesst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Test/Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Test/src/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Test/src/TestCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Test123/Test123.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inheritance/Test123/src/Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1qrzKYphjQPQJNjEoVdVEAAgllK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="16" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TinhLuong" />
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Long.demoABtrack.Test" />
+      <module name="TinhLuong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.demoABtrack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestABtrack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Long.demoABtrack.TestABtrack" />
+      <module name="TinhLuong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.demoABtrack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestABtrack" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb74504a-7a36-4725-883b-7cc9bb418a3d" name="Default Changelist" comment="" />
+      <created>1617852434503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617852434503</updated>
+      <workItem from="1617852435707" duration="13032000" />
+      <workItem from="1617870467491" duration="11000" />
+      <workItem from="1617936623215" duration="72000" />
+      <workItem from="1617952789107" duration="9000" />
+      <workItem from="1617954891683" duration="1777000" />
+      <workItem from="1617960939583" duration="49000" />
+      <workItem from="1618107935638" duration="63000" />
+      <workItem from="1618109299948" duration="10000" />
+      <workItem from="1618109402393" duration="9000" />
+      <workItem from="1618109423832" duration="18000" />
+      <workItem from="1618109583227" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
