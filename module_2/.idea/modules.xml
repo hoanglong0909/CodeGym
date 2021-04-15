@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/ABStractTest/ABStractTest.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/ABStractTest/ABStractTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Access-modifier-static-method-static property/Access-modifier-static-method-static property.iml" filepath="$PROJECT_DIR$/Access-modifier-static-method-static property/Access-modifier-static-method-static property.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Array-List/Array-List.iml" filepath="$PROJECT_DIR$/Arraylist/Array-List/Array-List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Arraylist/Arraylist.iml" filepath="$PROJECT_DIR$/Arraylist/Arraylist/Arraylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/BMI/BMI.iml" filepath="$PROJECT_DIR$/IntroduceToJava/BMI/BMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Bai tap AP/Bai tap AP.iml" filepath="$PROJECT_DIR$/Arraylist/Bai tap AP/Bai tap AP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Casestudy/Casestudy.iml" filepath="$PROJECT_DIR$/Arraylist/Casestudy/Casestudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/ClassCricle/ClassCricle.iml" filepath="$PROJECT_DIR$/Inheritance/ClassCricle/ClassCricle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/ClassShape/ClassShape.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/ClassShape/ClassShape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Currency/Currency.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Currency/Currency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Date-Year/Date-Year.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Date-Year/Date-Year.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Delete/Delete.iml" filepath="$PROJECT_DIR$/Arraylist/Delete/Delete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PHUONG-THUC/DeleteValue/DeleteValue.iml" filepath="$PROJECT_DIR$/PHUONG-THUC/DeleteValue/DeleteValue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/Divisible/Divisible.iml" filepath="$PROJECT_DIR$/VongLapJva/Divisible/Divisible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Giai-pt-bac-1/Giai-pt-bac-1.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Giai-pt-bac-1/Giai-pt-bac-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Hello-world/Hello-world.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Hello-world/Hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/HomeWork/HomeWork.iml" filepath="$PROJECT_DIR$/Arraylist/HomeWork/HomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/InterFace/InterFace.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/InterFace/InterFace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/IntersetMoney/IntersetMoney.iml" filepath="$PROJECT_DIR$/IntroduceToJava/IntersetMoney/IntersetMoney.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/IsPrime/IsPrime.iml" filepath="$PROJECT_DIR$/IntroduceToJava/IsPrime/IsPrime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/IsPrime100/IsPrime100.iml" filepath="$PROJECT_DIR$/VongLapJva/IsPrime100/IsPrime100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/Isprime/Isprime.iml" filepath="$PROJECT_DIR$/VongLapJva/Isprime/Isprime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Leap-Year/Leap-Year.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Leap-Year/Leap-Year.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/Arraylist/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Mylove-old/Mylove-old.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Mylove-old/Mylove-old.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/NewArrayList/NewArrayList.iml" filepath="$PROJECT_DIR$/Arraylist/NewArrayList/NewArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Number -to-letter/Number -to-letter.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Number -to-letter/Number -to-letter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Poin2D/Poin2D.iml" filepath="$PROJECT_DIR$/Inheritance/Poin2D/Poin2D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/PoinMoveablePoint/PoinMoveablePoint.iml" filepath="$PROJECT_DIR$/Inheritance/PoinMoveablePoint/PoinMoveablePoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/Practice/Practice.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/Practice/Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Practice/Practice1.iml" filepath="$PROJECT_DIR$/Arraylist/Practice/Practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/PracticeArraylist/PracticeArraylist.iml" filepath="$PROJECT_DIR$/Arraylist/PracticeArraylist/PracticeArraylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Remo/Remo.iml" filepath="$PROJECT_DIR$/Inheritance/Remo/Remo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/ResizeAble/ResizeAble.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/ResizeAble/ResizeAble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PHUONG-THUC/Search/Search.iml" filepath="$PROJECT_DIR$/PHUONG-THUC/Search/Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Shape/Shape.iml" filepath="$PROJECT_DIR$/Inheritance/Shape/Shape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Student/Student.iml" filepath="$PROJECT_DIR$/Inheritance/Student/Student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/SumA_B/SumA_B.iml" filepath="$PROJECT_DIR$/IntroduceToJava/SumA_B/SumA_B.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Tess1/Tess1.iml" filepath="$PROJECT_DIR$/Inheritance/Tess1/Tess1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Test/Test.iml" filepath="$PROJECT_DIR$/Inheritance/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Test123/Test123.iml" filepath="$PROJECT_DIR$/Inheritance/Test123/Test123.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/TestPractice/TestPractice.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/TestPractice/TestPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/TestPractice_1/TestPractice_1.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/TestPractice_1/TestPractice_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/TestPractice_2/TestPractice_2.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/TestPractice_2/TestPractice_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arraylist/Test_Linked_list/Test_Linked_list.iml" filepath="$PROJECT_DIR$/Arraylist/Test_Linked_list/Test_Linked_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/TinhLuong/TinhLuong.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/TinhLuong/TinhLuong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/UocChungLn/UocChungLn.iml" filepath="$PROJECT_DIR$/VongLapJva/UocChungLn/UocChungLn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/Use-Operations/Use-Operations.iml" filepath="$PROJECT_DIR$/IntroduceToJava/Use-Operations/Use-Operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ABtrack class Interface/classAnimal-InterFace/classAnimal-InterFace.iml" filepath="$PROJECT_DIR$/ABtrack class Interface/classAnimal-InterFace/classAnimal-InterFace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/khai-bao-bien-3/khai-bao-bien-3.iml" filepath="$PROJECT_DIR$/IntroduceToJava/khai-bao-bien-3/khai-bao-bien-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/module_2.iml" filepath="$PROJECT_DIR$/.idea/module_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/songuyento/songuyento.iml" filepath="$PROJECT_DIR$/VongLapJva/songuyento/songuyento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/stype show/stype show.iml" filepath="$PROJECT_DIR$/VongLapJva/stype show/stype show.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntroduceToJava/system-time/system-time.iml" filepath="$PROJECT_DIR$/IntroduceToJava/system-time/system-time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/tesst/tesst.iml" filepath="$PROJECT_DIR$/Inheritance/tesst/tesst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VongLapJva/thietkeMenu/thietkeMenu.iml" filepath="$PROJECT_DIR$/VongLapJva/thietkeMenu/thietkeMenu.iml" />
+    </modules>
+  </component>
+</project>

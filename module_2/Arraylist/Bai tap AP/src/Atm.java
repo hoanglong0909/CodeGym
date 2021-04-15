@@ -1,14 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-public class ATM {
+public class Atm {
     private String name;
     private int accountBalance;
     // History:
-
     private ArrayList<String> history = new ArrayList<String>();
 
-
-    public ATM(String name, int accountBalance) {
+    public Atm(String name, int accountBalance) {
         this.name = name;
         this.accountBalance = accountBalance;
     }
@@ -45,10 +43,9 @@ public class ATM {
         System.out.println("Vui long nhap so tien:");
         int recharge = sc.nextInt();
         System.out.println("Giao dich thanh cong. Ban vua nap " + recharge + " thanh cong.");
-        int total = accountBalance + recharge;
-        setAccountBalance(total);
+        setAccountBalance(accountBalance + recharge);
         history.add("Nap tien: " + recharge );
-        System.out.println("So du tai khoan khach hang la: " + total + " vnd ");
+        System.out.println("So du tai khoan khach hang la: " + accountBalance + " vnd ");
         System.out.println(" ");
         System.out.println("Bam nut theo menu de tiep tuc giao dich");
         System.out.println("===========================================");
@@ -60,9 +57,9 @@ public class ATM {
         System.out.println("Giao dich Rut tien:");
         System.out.println("Vui long nhap so tien:");
         int withdrawal = sc.nextInt();
-        System.out.println("Giao dich thanh cong. Ban vua rut " + withdrawal +" thanh cong.");
         int total = getAccountBalance() - withdrawal;
         if(getAccountBalance() > withdrawal) {
+            System.out.println("Giao dich thanh cong. Ban vua rut " + withdrawal +" thanh cong.");
             System.out.println("So du tai khoan khach hang la: " + total + " vnd ");
             setAccountBalance(total);
             history.add("Rut tien " + withdrawal );
@@ -84,24 +81,16 @@ public class ATM {
             System.out.print(" Hiện Tại Hệ Thống Chưa Nhận Giao Dịch \n");
         }
         if (history.size() > 3) {
-            for (int i = history.size() - 1; i > history.size() - 4; i--) {
-                System.out.println(i + 1 + ". " + history.get(i));
+            int j = 1;
+            for (int i = history.size()-3  ; i < history.size(); i++) {
+                System.out.println((j++) + ". " + history.get(i));
             }
         } else {
-            for (int i = history.size() - 1; i >= 0; i--) {
-                System.out.println(2 - i + ". " + history.get(i));
+            for (int i = 0 ; i < history.size(); i++) {
+                System.out.println(i+ 1 + ". " + history.get(i));
             }
         }
     }
-//    public void importH(){
-//        if(history.size() == 0){
-//            System.out.println("Hien tai chua co giao dich");
-//        }
-//        for (int i = 0; i <3 ; i++) {
-//            System.out.println((i+1) + "." + history.get(i) );
-//
-//        }
-//    }
     public void login(){
         while (true) {
             System.out.println("Ngan hang ABC kinh chao quy khach " + name);
