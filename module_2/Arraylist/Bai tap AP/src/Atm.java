@@ -10,6 +10,7 @@ public class Atm {
         this.name = name;
         this.accountBalance = accountBalance;
     }
+
     public String getName() {
         return name;
     }
