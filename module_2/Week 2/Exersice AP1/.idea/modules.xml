@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exersice AP.iml" filepath="$PROJECT_DIR$/.idea/Exersice AP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyLinkedList/MyLinkedList.iml" filepath="$PROJECT_DIR$/MyLinkedList/MyLinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueueArray/QueueArray.iml" filepath="$PROJECT_DIR$/QueueArray/QueueArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueueLinkedList/QueueLinkedList.iml" filepath="$PROJECT_DIR$/QueueLinkedList/QueueLinkedList.iml" />
+    </modules>
+  </component>
+</project>
