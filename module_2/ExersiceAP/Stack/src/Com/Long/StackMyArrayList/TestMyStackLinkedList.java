@@ -12,7 +12,9 @@ public class TestMyStackLinkedList {
         System.out.println("***********************************");
 
         System.out.println("Stack pop: " + stack.pop());
+        stack.display();
         System.out.println("***********************************");
+
         System.out.println("Stack peek: " + stack.peek(2));
         stack.display();
     }

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../MyLinkedList/MyLinkedList.iml" filepath="$PROJECT_DIR$/../MyLinkedList/MyLinkedList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Queue/Queue.iml" filepath="$PROJECT_DIR$/../Queue/Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stack.iml" filepath="$PROJECT_DIR$/Stack.iml" />
     </modules>
   </component>

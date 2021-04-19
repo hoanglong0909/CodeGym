@@ -1,10 +1,10 @@
 package Com.Long.QueueMyLinkedList;
-import Com.Long.;
+import Com.Long.MyLinkedList.MyLinkedList;
 public class QueueMyLinkedList<E> {
-    private QueueMyLinkedList<E> queue;
+    private MyLinkedList<E> queue;
 
     public QueueMyLinkedList() {
-        queue = new LinkedList<>();
+        queue = new MyLinkedList<>();
     }
 
     public void enqueue(E element){

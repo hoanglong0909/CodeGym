@@ -1,12 +1,13 @@
 package Com.Long.MyLinkedList;
 
     public class MyLinkedList<E> {
-        private Node<E> head=null;
-        private Node<E> tail=null;
+        private Node<E> head = null;
+        private Node<E> tail = null;
         private int size;
 
+
         public void addFirst(E e) {
-            Node temp;
+            Node<E> temp;
             if (this.tail == null) {
                 this.tail = this.head = new Node<>(e);
             }
@@ -20,7 +21,7 @@ package Com.Long.MyLinkedList;
         }
 
         public void addLast(E element) {
-            Node temp = new Node<>(element);
+            Node<E> temp = new Node<>(element);
             if (this.tail == null) {
                 this.head = this.tail = temp;
             }
@@ -37,12 +38,12 @@ package Com.Long.MyLinkedList;
             } else if (index >= size) {
                 addLast(element);
             } else {
-                Node current = this.head;
+                Node<E> current = this.head;
                 for (int i = 1; i < index; i++){
                     current = current.next;
                 }
-                Node temp = current.next;
-                current.next = new Node(element);
+                Node<E> temp = current.next;
+                current.next = new Node<E>(element);
                 temp.next = temp;
                 size++;
             }
@@ -52,7 +53,7 @@ package Com.Long.MyLinkedList;
             if (size == 0){
                 return null;
             } else {
-                Node temp = this.head;
+                Node<E> temp = this.head;
                 this.head = temp.next;
                 size--;
                 if (this.head == null) {
@@ -66,16 +67,16 @@ package Com.Long.MyLinkedList;
             if (size == 0){
                 return null;
             } else if (size == 1) {
-                Node temp = head;
+                Node<E> temp = head;
                 head = tail = null;
                 size = 0;
                 return (E) temp.element;
             } else {
-                Node current = head;
+                Node<E> current = head;
                 for (int i = 0; i < size - 2; i++) {
                     current = current.next;
                 }
-                Node temp = tail;
+                Node<E> temp = tail;
                 tail = current;
                 tail.next = null;
                 size--;

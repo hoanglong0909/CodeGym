@@ -9,8 +9,8 @@ public class TestMyLinkedList {
         ll.add(3,"long");
         ll.display();
         System.out.println("**************************************");
-        ll.addFirst("huy");
-        ll.addLast("binh");
+        ll.addFirst("Coc");
+        ll.addLast("xoai");
         ll.display();
         System.out.println("**************************************");
         ll.removeFirst();
