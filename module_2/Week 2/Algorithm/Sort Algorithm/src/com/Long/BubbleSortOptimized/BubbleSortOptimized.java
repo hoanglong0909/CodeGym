@@ -3,7 +3,6 @@ package com.Long.BubbleSortOptimized;
 public class BubbleSortOptimized {
 
     static void bubbleSort(int[] arr , int n){
-
         int i , j , temp;
         boolean swapped;
 

@@ -3,11 +3,8 @@ package com.Long.InsertSort;
 public class InsertSort {
     void sort(int arr[]){
         int n = arr.length;
-
-
         for (int i = 1; i < n ; i++) {
             int key = arr[i];
-            System.out.println("vị trí i: " + i + " họder " + key);
             int j = i -1 ;
             while (j >= 0 && arr[j]> key){
                 arr[j + 1] = arr[j];

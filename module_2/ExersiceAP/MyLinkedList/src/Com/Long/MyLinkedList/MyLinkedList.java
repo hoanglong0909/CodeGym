@@ -17,7 +17,6 @@ package Com.Long.MyLinkedList;
                 this.head.next = temp;
                 size++;
             }
-
         }
 
         public void addLast(E element) {
