@@ -6,10 +6,10 @@ public class Customer {
     public String phoneNumber;
     public String email;
     public String gender;
-    public String order;
+    public int order;
 
 
-    public Customer(String name, String address, String phoneNumber, String email, String gender, String order) {
+    public Customer(String name, String address, String phoneNumber, String email, String gender, int order) {
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
@@ -58,20 +58,20 @@ public class Customer {
         this.gender = gender;
     }
 
-    public String getOrder() {
+    public int getOrder() {
         return order;
     }
 
-    public void setOrder(String order) {
+    public void setOrder(int order) {
         this.order = order;
     }
 
     @Override
     public String toString() {
         return "Khách hàng: " + name +", "+ "Địa chỉ: " + address +", "+ "Số điện thoại: " +phoneNumber +", "+ "E mail: "+ email +", "+"Giớ tính: "+ gender + ", "+"Số đơn hàng: " +order + "\n" ;
-//            return name + address + email + phoneNumber + gender + order +"\n";
+
     }
     public String toStringCSV(){
-        return "Khach hang: " + this.name + ", Dia chi: <" + this.address + ">, Email<" + this.email + ">, Sdt: <" + this.phoneNumber + ">, Gioi tinh: <" + this.gender + ">\n";
+        return "Khach hang: " + this.name + ", Dia chi: <" + this.address + ">, Email<" + this.email + ">, Sdt: <" + this.phoneNumber + ">, Gioi tinh: <" + this.gender + ", "+"Số đơn hàng: " +order + "\n";
     }
 }

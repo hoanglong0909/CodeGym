@@ -18,7 +18,6 @@ public class MainStudent {
 
         Scanner sc =new Scanner(System.in);
 
-
        int choose;
        do {
            creatMenu();

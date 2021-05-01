@@ -28,6 +28,8 @@ public class CustomerDB {
         bos.close();
         fos.close();
     }
+
+
     public void readFile() throws IOException {
         File file = new File("Customer.csv");
         if (!file.exists()) {
@@ -39,17 +41,15 @@ public class CustomerDB {
         String line;
         while ((line = bis.readLine())!= null){
             String[] arr = line.split(",");
-            Customer ct = new Customer(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5]);
+            Customer ct = new Customer(arr[0],arr[1],arr[2],arr[3],arr[4],Integer.parseInt(String.valueOf(arr[5])));
             add(ct);
         }
+
     }
     public void add(Customer customer){
+        customer.setPhoneNumber(customer.phoneNumber);
         customerMap.put(customer.getPhoneNumber(), customer);
     }
 
 
-//    public static boolean remove(String phone){
-//        boolean result = customerMap.remove(phone)==null ? false : true ;
-//        return result;
-//    }
 }

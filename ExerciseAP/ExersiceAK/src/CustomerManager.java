@@ -18,7 +18,7 @@ public class CustomerManager {
     }
 
     public void add(Customer ct) {
-        if (this.hashMap.containsKey(ct.getPhone()) && ((Customer)this.hashMap.get(ct.getPhone())).getEmail().equals(ct.getEmail())) {
+        if (this.hashMap.containsKey(ct.getPhone())) {
             System.out.println("Khach hang da ton tai, He thong vua update thong tin\n");
         } else {
             this.hashMap.put(ct.getPhone(), ct);
@@ -71,7 +71,6 @@ public class CustomerManager {
         } else {
             System.out.println("Khong tim thay ");
         }
-
     }
 
 //    public void sort() {
