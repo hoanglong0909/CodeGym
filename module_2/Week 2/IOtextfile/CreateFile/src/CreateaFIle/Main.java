@@ -8,9 +8,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-
         File file = new File("long.txt");
-
         if(file.exists()){
             System.out.println("file exists");
         }else {
@@ -24,6 +22,7 @@ public class Main {
 
         // ghi du lieu vào file;
 
+        
         FileOutputStream fos = null ;
         Scanner sc = new Scanner(System.in) ;
         try {

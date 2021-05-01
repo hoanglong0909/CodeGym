@@ -4,6 +4,7 @@ public class Test {
         System.out.println("Thread main start ");
         ThreadOne threadOne = new ThreadOne();
         threadOne.setName("A");
+
         threadOne.start();
         System.out.println("thực hiện join 1 vào main ");
         threadOne.join();

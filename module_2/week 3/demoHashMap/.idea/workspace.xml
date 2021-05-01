@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea1c4b81-ea8a-4fdc-86da-8b994d7bf9c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagement/src/com/Management/Data/CustomerDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagement/src/com/Management/Model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagement/src/com/Management/presentation/MainCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagement/src/com/Management/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagementt/src/com/customer/dal/CustomerDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagementt/src/com/customer/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagementt/src/com/customer/presentation/MainCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagementt/src/com/customer/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeStudent/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Map/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Map/src/StudentDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Map/src/StudentHasmap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/My_Map/map/src/HashMap/HashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/My_Map/map/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/My_Map/map/src/map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Thread/Isprime/src/LazyPrimeFactorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Thread/Isprime/src/OptimizedPrimeFactorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Thread/Isprime/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Thread/Prioritize/src/Th1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Thread/Prioritize/src/Th2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 2/Thread/Prioritize/src/ptioritize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoHashMap1/Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoHashMap1/src/com/student/Data/StudentDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoHashMap1/src/com/student/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoHashMap1/src/com/student/presentation/MainStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoHashMap1/src/com/student/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/Exersice AP1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/IOtextfile/CreateFile/src/CreateaFIle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/IOtextfile/CreateFile/src/CreateaFIle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeAQ/out/production/PracticeAQ/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeAQ/out/production/PracticeAQ/ProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeAQ/src/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeAQ/src/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeAQ/src/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/IOtextfile/PracticeAQ/src/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/Thread/Exersice_1/out/production/Exersice_1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/Thread/Exersice_1/out/production/Exersice_1/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/Thread/Exersice_1/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/Thread/Exersice_1/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/Thread/Oven_Odd/out/production/Oven_Odd/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/Thread/Oven_Odd/out/production/Oven_Odd/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 2/Thread/Oven_Odd/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 2/Thread/Oven_Odd/src/Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1rrnXRZI0hDHtzx2iEakvzinDCh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ExerciseAP/CustomerManagementt" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea1c4b81-ea8a-4fdc-86da-8b994d7bf9c7" name="Default Changelist" comment="" />
+      <created>1619743117273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619743117273</updated>
+      <workItem from="1619743118402" duration="445000" />
+      <workItem from="1619748106270" duration="922000" />
+      <workItem from="1619797398877" duration="30000" />
+      <workItem from="1619839226722" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

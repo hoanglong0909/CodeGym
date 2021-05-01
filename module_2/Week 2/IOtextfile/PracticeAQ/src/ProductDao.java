@@ -33,7 +33,7 @@ public class ProductDao{
         try {
             fis = new FileInputStream(new File(PRODUCT_FILE_NAME));
             int code;
-            while ((code=fis.read())!=-1){
+            while ((code=fis.read())!= -1 ){
                 System.out.print((char)code);
             }
 

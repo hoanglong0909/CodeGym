@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47a5769b-5c7c-40ed-ac78-8fc2cbbfb977" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Map/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Map/src/StudentDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Map/src/StudentHasmap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map/src/HashMap/HashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map/src/map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/Isprime/src/LazyPrimeFactorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/Isprime/src/OptimizedPrimeFactorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/Isprime/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/Prioritize/src/Th1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/Prioritize/src/Th2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Thread/Prioritize/src/ptioritize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOtextfile/CreateFile/src/CreateaFIle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IOtextfile/CreateFile/src/CreateaFIle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOtextfile/PracticeAQ/out/production/PracticeAQ/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../IOtextfile/PracticeAQ/out/production/PracticeAQ/ProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOtextfile/PracticeAQ/src/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IOtextfile/PracticeAQ/src/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/Exersice_1/out/production/Exersice_1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/Exersice_1/out/production/Exersice_1/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/Exersice_1/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/Exersice_1/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/Oven_Odd/out/production/Oven_Odd/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/Oven_Odd/out/production/Oven_Odd/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thread/Oven_Odd/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thread/Oven_Odd/src/Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1rngHu3Eq1tvNWD72Gd8KBdvCUO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/map" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47a5769b-5c7c-40ed-ac78-8fc2cbbfb977" name="Default Changelist" comment="" />
+      <created>1619617183609</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619617183609</updated>
+      <workItem from="1619617184816" duration="630000" />
+      <workItem from="1619660235914" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
