@@ -5,7 +5,7 @@ public class Odd extends Thread {
             if(i%2 != 0){
                 System.out.println("số lẻ: " + i);
                 try {
-                    Thread.sleep(400);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

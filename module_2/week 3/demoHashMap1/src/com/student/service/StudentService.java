@@ -21,6 +21,13 @@ public class StudentService {
         return StudentDB.studentList.get(id);
     }
 
+    public void loadData() {
+        try {
+            sd.readFile();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public void updateFile(){
         try {
@@ -36,12 +43,12 @@ public class StudentService {
         return result;
     }
 
+
+
     public  void print(){
         for (Map.Entry<Integer, Student> entry : StudentDB.studentList.entrySet()) {
             System.out.println(entry.getKey() + " - " + entry.getValue().toString());
         }
     }
-    public void loadData() throws Exception {
-        sd.readFile();
-    }
+
 }

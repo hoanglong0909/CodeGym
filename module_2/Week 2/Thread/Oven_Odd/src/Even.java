@@ -5,7 +5,7 @@ public class Even implements Runnable{
             if(i%2 == 0){
                 System.out.println("Số chãn: " + i);
                 try {
-                    Thread.sleep(300);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

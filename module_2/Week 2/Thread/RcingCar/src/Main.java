@@ -14,6 +14,7 @@ public class Main {
         Thread threadB = new Thread(carB);
         Thread threadC = new Thread(carC);
         Thread threadD = new Thread(carD);
+
         System.out.println("DISTANCE 100 km ");
         threadA.start();
         threadB.start();

@@ -442,7 +442,6 @@ public class ManagementApp {
             map.put(student.getId(), student);
         }
         addFile();
-        done();
     }
 
 

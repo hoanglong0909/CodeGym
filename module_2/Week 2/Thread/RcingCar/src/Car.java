@@ -22,6 +22,8 @@ public class Car implements Runnable {
                 // Xây dựng đồ họa kết quả
                 String log =  "|" ;
                 int percentTravel = (runDistance * 100)/Main.DISTANCE ;
+
+
                 for (int i = 0; i < Main.DISTANCE; i += Main.STEP) {
                     if (percentTravel >= i + Main.STEP) {
                         log += "=";

@@ -34,15 +34,14 @@ public class StudentDB {
     public void readFile()throws Exception{
         File file = new File("Data.csv");
         if(!file.exists()){
-          file.createNewFile();
+            file.createNewFile();
         }
         FileReader fis = new FileReader("Data.csv");
         BufferedReader bis = new BufferedReader(fis);
         String line;
-
         while ((line = bis.readLine()) != null){
             String[] arr = line.split(",");
-            Student st = new Student(arr[0],Integer.parseInt(arr[1]) , Integer.parseInt(arr[2]),arr[3]);
+            Student st = new Student(arr[0],Integer.parseInt(arr[1]) , Integer.parseInt(arr[2]),(arr[3]));
             add(st);
         }
     }

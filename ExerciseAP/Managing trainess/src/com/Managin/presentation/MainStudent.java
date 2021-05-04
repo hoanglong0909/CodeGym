@@ -3,14 +3,11 @@ package com.Managin.presentation;
 import com.Managin.data.StudentData;
 import com.Managin.model.Student;
 import com.Managin.service.StudentService;
-
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Scanner;
-import java.util.regex.Pattern;
-
+import java.util.*;
+//import java.util.ArrayList;
+//import java.util.List;
+//import java.util.Scanner;
 public class MainStudent {
 
     public static void main(String[] args) throws IOException {
@@ -108,9 +105,105 @@ public class MainStudent {
     private void gradingStudents() {
     }
 
-
     private void insertPoint() {
+        int id = validateID("Nhập ID học viên để nhập điểm, nhập 0 để trở về menu");
+        if (id == 0) return;
+        Student.setAutoId(id);
+        int choise = -1;
+        while (choise != 0) {
+            System.out.println("1. Nhập điểm học viên lần thứ 1 (hệ số 1)");
+            System.out.println("2. Nhập điểm học viên lần thứ 2 (hệ số 1)");
+            System.out.println("3. Nhập điểm học viên lần thứ 3 (hệ số 2)");
+            System.out.println("4. Nhập điểm học viên lần thứ 4 (hệ số 3)");
+            System.out.println("0. Trở về menu");
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Mời bạn nhập");
+            choise =sc.nextInt();
+
+            switch (choise) {
+                case 1:
+                    if (checkInsert(StudentData.studentMap.get(id).getPointFactor1().get(0))) {
+                        System.err.println("Điểm đã được nhập, không thể nhập thêm!");
+                        break;
+                    } else {
+                        double point = validatePoints("Nhập điểm:");
+                        StudentData.studentMap.get(id).getPointFactor1().set(0, point);
+                        Student.setAutoId(id);
+                    }
+                    break;
+                case 2:
+                    if (checkInsert(StudentData.studentMap.get(id).getPointFactor1().get(1))) {
+                        System.err.println("Điểm đã được nhập, không thể nhập thêm!");
+                        break;
+                    } else {
+                        double point = validatePoints("Nhập điểm:");
+                        StudentData.studentMap.get(id).getPointFactor1().set(1, point);
+                        Student.setAutoId(id);
+                    }
+                    break;
+                case 3:
+                    if (checkInsert( StudentData.studentMap.get(id).getPointFactor2().get(0))) {
+                        System.err.println("Điểm đã được nhập, không thể nhập thêm!");
+                        break;
+                    } else {
+                        double point = validatePoints("Nhập điểm:");
+                        StudentData.studentMap.get(id).getPointFactor2().set(0, point);
+                        Student.setAutoId(id);
+                    }
+                    break;
+                case 4:
+                    if (checkInsert(  StudentData.studentMap.get(id).getPointFactor3().get(0))) {
+                        System.err.println("Điểm đã được nhập, không thể nhập thêm!");
+                        break;
+                    } else {
+                        double point1 = validatePoints("Nhập điểm:");
+                        StudentData.studentMap.get(id).getPointFactor3().set(0, point1);
+                        Student.setAutoId(id);
+                    }
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Nhập sai, mời nhập lại");
+                    break;
+            }
+        }
+        StudentData.studentMap.get(id).setAveragePoint();
+//        try {
+//            StudentService ss = new StudentService();
+//            ss.loadFile();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
+
+
+
+    private boolean checkInsert(Double point) {
+        return !(point < 0 | point > 10);
+    }
+
+
+
+    public double validatePoints(String mess) {
+        System.out.println(mess);
+        String input = sc.nextLine().toLowerCase();
+        if (input.equals("x"))
+            throw new IllegalArgumentException();
+        try {
+            double point = Double.parseDouble(input);
+            if (point > 10 || point < 0) {
+                throw new Exception();
+            } else {
+                return point;
+            }
+        } catch (Exception e) {
+            System.err.println("Điểm phải trong khoảng [0 - 10]");
+            return validatePoints(mess);
+        }
+    }
+
+
 
     private void showStudentList() {
         List<Student> listStudent = new ArrayList<>(StudentData.studentMap.values());
@@ -119,7 +212,6 @@ public class MainStudent {
 
 
     private void showStudent( List<Student> students, int size) {
-
         System.out.println(DASH_DECORATION);
         System.out.format("||%-3s |", "ID");
         System.out.format("%-30s |", "Tên");
@@ -176,6 +268,8 @@ public class MainStudent {
         }
         System.out.println(DASH_DECORATION);
     }
+
+
     public int findMaxNumberOfPoint() {
         int max = 0;
         for (Student item : StudentData.studentMap.values()) {
@@ -185,6 +279,7 @@ public class MainStudent {
         }
         return max;
     }
+
     private void displayPoint(double point) {
         if (!(point == -1))
             System.out.format("%-10.2f |", point);
@@ -209,6 +304,8 @@ public class MainStudent {
             Student student = new Student(name, dob, gender);
             StudentData.studentMap.put(student.getId(), student);
         }
+        StudentService ss = new StudentService();
+        ss.updateFile();
     }
 
     private void editStudentInfo() {
@@ -223,16 +320,17 @@ public class MainStudent {
         StudentData.studentMap.get(id).setName(name);
         StudentData.studentMap.get(id).setDob(dob);
         StudentData.studentMap.get(id).setGender(gender);
-            StudentService ss = new StudentService();
-            ss.updateFile();
+        StudentService ss = new StudentService();
+        ss.updateFile();
     }
+
     private void deleteStudent() {
         int id = validateID("Nhập ID để xóa, nhập 0 để trở về menu");
         if (id == 0) return;
         if (confirmMenu()) {
             StudentService.studentData.remove(id);
-                StudentService ss = new StudentService();
-                ss.updateFile();
+            StudentService ss = new StudentService();
+            ss.updateFile();
         }
     }
 

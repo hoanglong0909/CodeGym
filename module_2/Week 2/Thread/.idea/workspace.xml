@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c5ff2e-a62b-4ba8-aab3-306c631ff23a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Tesst/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/Tesst.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/out/production/Tesst/Lists.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tesst/src/Lists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/Student.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/Student.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/out/production/Managing trainess/com/Managin/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/out/production/Managing trainess/com/Managin/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/out/production/Managing trainess/com/Managin/presentation/MainStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/out/production/Managing trainess/com/Managin/presentation/MainStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/src/com/Managin/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/src/com/Managin/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/src/com/Managin/presentation/MainStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ExerciseAP/Managing trainess/src/com/Managin/presentation/MainStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 3/practiveAS/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 3/practiveAS/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../week 3/practiveAS/Data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../week 3/practiveAS/Data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/RcingCar" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619574597025</updated>
       <workItem from="1619574598134" duration="46000" />
+      <workItem from="1620097622504" duration="27000" />
     </task>
     <servers />
   </component>
@@ -56,5 +57,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

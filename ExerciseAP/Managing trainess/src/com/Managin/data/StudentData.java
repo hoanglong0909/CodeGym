@@ -1,6 +1,5 @@
 package com.Managin.data;
 
-
 import com.Managin.model.Student;
 
 import java.io.*;
