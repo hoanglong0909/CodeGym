@@ -10,11 +10,11 @@ public class ContactDB {
     public static ArrayList<Contact> contactList = new ArrayList<>();
 
     public void saveFile() throws IOException {
-        File file = new File("Contact.scv");
+        File file = new File("Contact.csv");
         if(!file.exists()){
             file.createNewFile();
         }
-        FileOutputStream fis = new FileOutputStream("Contact.scv");
+        FileOutputStream fis = new FileOutputStream("Contact.csv");
         BufferedOutputStream bos = new BufferedOutputStream(fis);
         for (int i = 0; i <contactList.size() ; i++) {
             bos.write(contactList.get(i).toStringCSV().getBytes());
@@ -26,11 +26,11 @@ public class ContactDB {
 
 
     public void readFile() throws IOException {
-        File file = new File("Contact.scv");
+        File file = new File("Contact.csv");
         if(!file.exists()){
             file.createNewFile();
         }
-        FileReader reader = new FileReader("Contact.scv");
+        FileReader reader = new FileReader("Contact.csv");
         BufferedReader brd = new BufferedReader(reader);
         String line ;
         while ((line = brd.readLine()) != null){

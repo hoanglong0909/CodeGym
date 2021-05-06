@@ -11,12 +11,14 @@ public class MainContact {
     public static void showMenu(){
         while (true){
             System.out.println("Chào bạn đến với hệ thống !");
-            System.out.println();
+            System.out.println("_____________Helo____________");
             System.out.println("1. Nhập 1 để thêm mới danh bạ.");
             System.out.println("2. Nhập 2 để in ra danh bạ.");
             System.out.println("3. Nhập 3 để sữa danh bạ");
             System.out.println("4. Nhập 4 dể tìm kiếm danh bạ.");
             System.out.println("5. Nhập 5 để xóa danh bạ");
+            System.out.println("6. Nhập 6 để đọc thông tin");
+            System.out.println("7. Nhập 7 để lưu vào máy");
             Scanner scanner = new Scanner(System.in);
             int choose = scanner.nextInt();
             switch (choose){
@@ -42,8 +44,33 @@ public class MainContact {
                 case 4: searchContact();
                 break;
                 case 5: deleteContact();
+                break;
+                case 6:
+                    try {
+                        readContact();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case 7:
+                    try {
+                        saveContact();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
             }
         }
+    }
+
+    private static void saveContact() throws IOException {
+        ContactService contactService = new ContactService();
+        contactService.updateContact();
+        System.out.println("Đã lưu !!!");
+    }
+
+    private static void readContact() throws IOException {
+        ContactService contactService = new ContactService();
+        contactService.printFile();
     }
 
 
@@ -126,6 +153,6 @@ public class MainContact {
         String email = contactService.inputEmail();
         String oder = contactService.inputOder();
         Contact contact = new Contact(name,age,dob,address,phone,email,oder);
-        contactService.addFile(contact);
+        contactService.addCt(contact);
     }
 }

@@ -23,6 +23,9 @@ public class ContactService {
         contactDB.add(contact);
         contactDB.saveFile();
     }
+    public void addCt(Contact contact){
+        contactDB.add(contact);
+    }
 
 
     public Contact searchPhone(String phone){
