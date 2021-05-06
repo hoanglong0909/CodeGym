@@ -205,6 +205,8 @@ public class MainStudent {
 
 
 
+
+
     private void showStudentList() {
         List<Student> listStudent = new ArrayList<>(StudentData.studentMap.values());
         showStudent(listStudent, listStudent.size());
@@ -234,6 +236,7 @@ public class MainStudent {
                             displayPoint(students.get(i).getPointFactor1().get(j));
                             displayPoint(students.get(i).getPointFactor2().get(j));
                             displayPoint(students.get(i).getPointFactor3().get(j));
+                            displayPoint(students.get(i).getAveragePoint());
                             displayPoint(students.get(i).getAveragePoint());
                             System.out.println("|");
                         } else {

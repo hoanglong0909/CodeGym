@@ -80,6 +80,6 @@ public class Customer {
                 '}';
     }
     public String toStringCSV() {
-        return  name +", "+ phone +", "+ email +", "+ gender +", "+ address +", "+ oder +"\n";
+        return  name +","+ phone +","+ email +","+ gender +","+ address +","+ oder +"\n";
     }
 }

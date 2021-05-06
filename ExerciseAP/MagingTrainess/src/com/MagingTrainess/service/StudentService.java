@@ -4,6 +4,8 @@ import com.MagingTrainess.data.StudenDB;
 import com.MagingTrainess.model.Student;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -11,9 +13,10 @@ public class StudentService {
     private static final Pattern NAME_PATTERN = Pattern.compile("^[\\pL ]{2,30}$");
     public StudenDB studenDB = new StudenDB();
 
+
     public void updateFIle(){
         try {
-            studenDB.readFile();
+            studenDB.saveFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -22,7 +25,7 @@ public class StudentService {
 
     public void loadFile(){
         try {
-            studenDB.saveFile();
+            studenDB.readFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -198,6 +201,25 @@ public class StudentService {
             return validatePoints(mess);
         }
     }
+// Thiết lập in điểm
+    public static void displayPoint(double point) {
+        if (!(point == -1))
+            System.out.format("%-10.2f |", point);
+        else
+            System.out.format("%-10s |", "Chưa nhập");
+    }
+
+    //thiết lập giới hạn số điểm
+    public int findMaxNumberOfPoint() {
+        int max = 0;
+        for (Student item : StudenDB.studentHashMap.values()) {
+            if (item.getPoinFactor1().size() > max) {
+                max = item.getPoinFactor1().size();
+            }
+        }
+        return max;
+    }
+
     //thiết lập giới tính
     public String validateGender() {
         System.out.println("Nhập giới tính");
@@ -220,9 +242,14 @@ public class StudentService {
     }
 
 
-    public void add(Student student){
+
+    public void add(Student student) throws IOException {
         StudenDB.studentHashMap.put(student.getId(),student);
+        StudenDB studenDB = new StudenDB();
+        studenDB.saveFile();
     }
+
+
 
 
     public void remove(int id){

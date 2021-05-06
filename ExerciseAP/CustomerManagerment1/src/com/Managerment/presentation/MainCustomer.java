@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class MainCustomer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         CustomerService  customerService = new CustomerService();
         Scanner scanner = new Scanner(System.in);
         customerService.loadFile();
@@ -33,6 +33,8 @@ public class MainCustomer {
                     break;
                 case 6: editCustomer();
                 break;
+                case  7: deleteCustomer();
+                break;
                 case 0:
                     System.out.println("cảm ơn đã sử dụng dich vụ");
                     return;
@@ -40,20 +42,37 @@ public class MainCustomer {
                     System.out.println("bạn nhập sai mời nhập lại");
                     break;
             }
-        }while (choose != 7);
+        }while (choose != 8);
     }
 
-    private static void editCustomer() {
+
+    public static void deleteCustomer() throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập số điện thoại khách hàng muốn xóa: ");
+        int phone = scanner.nextInt();
+        CustomerService customerService = new CustomerService();
+        customerService.searchInfor(phone);
+        if(customerService == null){
+            System.out.println("Không tìm thấy khách hàng ");
+        }else {
+            try {
+                customerService.removeFile(phone);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void editCustomer() {
             Scanner sc =new Scanner(System.in);
-            System.out.println("Nhap Id can edit");
+            System.out.println("Nhập số điện thoại cần Edit");
             int phone = sc.nextInt();
             sc.nextLine();
             CustomerService customerService = new CustomerService();
-            Customer customer = customerService.searchInfor(phone);
-            if (customer == null){
+            if ( customerService.searchInfor(phone) == null){
                 System.out.println("Not found");
             } else {
-                System.out.println(customer.toString());
+                System.out.println(customerService.toString());
                 System.out.println("Nhap ten:");
                 String name = sc.nextLine();
                 System.out.println("Nhập số điện thoại: ");
@@ -68,6 +87,7 @@ public class MainCustomer {
                 System.out.println("Nhập lại đơn hàng: ");
                 int oder = sc.nextInt();
                 sc.nextLine();
+                Customer customer = new Customer();
                 customer.setName(name);
                 customer.setPhone(phonenumber);
                 customer.setGender(gender);
@@ -78,7 +98,7 @@ public class MainCustomer {
             }
     }
 
-    private static void moreOder() {
+    public static void moreOder() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập số điện thoại của khách hàng cần thêm : ");
         int phone = scanner.nextInt();
@@ -89,12 +109,12 @@ public class MainCustomer {
         customerService.moreOder(phone,n);
     }
 
-    private static void allprintCustomer(){
+    public static void allprintCustomer(){
         CustomerService customerService = new CustomerService();
         customerService.printFile();
 
     }
-    private static void printCustomer() {
+    public static void printCustomer() {
         Scanner scanner = new Scanner(System.in);
         CustomerService customerService = new CustomerService();
         System.out.println("Nhập số điện thoại của khách hàng: ");
@@ -104,7 +124,7 @@ public class MainCustomer {
         System.out.println("=======================================");
     }
 
-    private static void findCustomer() {
+    public static void findCustomer() {
         Scanner scanner = new Scanner(System.in);
         CustomerService customerService = new CustomerService();
         int phone = scanner.nextInt();
@@ -113,7 +133,7 @@ public class MainCustomer {
         System.out.println("=======================================");
     }
 
-    private static void addCustomer() throws IOException {
+    public static void addCustomer() throws IOException {
         CustomerService customerService = new CustomerService();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Mời bạn nhập tên: ");
@@ -135,13 +155,14 @@ public class MainCustomer {
         System.out.println("Bạn đã thêm thành công " + name +" vào danh sách");
     }
     public static void createMenu(){
-        System.out.println("Chào mừng bạn đã đến với dịc vụ của chúng tôi !");
-        System.out.println("1.Bấm 1 để nhập khách hàng");
+        System.out.println("Chào mừng bạn đã đến với dịch vụ của chúng tôi !");
+        System.out.println("1. Bấm 1 để nhập khách hàng");
         System.out.println("2. Bấm 2 để tìm kiếm khách hàng ");
         System.out.println("3. Bấm 3 để in thông tin khách hàng ");
         System.out.println("4. Bấm 4 để in toàn bộ danh sách khách hàng ");
         System.out.println("5. Bấm 5 để tăng số đơn hàng cho khách ");
         System.out.println("6. Bấm 6 để sữa lại khách");
+        System.out.println("7. Bấm 7 để xóa khách hàng");
         System.out.println("Bấm 0 để thoát dịch vụ");
         System.out.println("====================================================");
     }
