@@ -7,19 +7,20 @@ public class Contact {
     private String gender;
     private String address;
     private String email;
+    private String facebook;
 
     public Contact() {
     }
 
-    public Contact(String name, String phone, String group, String gender, String address,String email) {
+    public Contact(String name, String phone, String group, String gender, String address, String email, String facebook) {
         this.name = name;
         this.phone = phone;
         this.group = group;
         this.gender = gender;
         this.address = address;
         this.email = email;
+        this.facebook = facebook;
     }
-
 
     public String getName() {
         return name;
@@ -69,18 +70,28 @@ public class Contact {
         this.email = email;
     }
 
+    public String getFacebook() {
+        return facebook;
+    }
+
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
+    }
+
     @Override
     public String toString() {
-        return " Contact{" +
-                " name= '" + name + '\'' +
-                ", phone= " + phone +
-                ", group= '" + group + '\'' +
-                ", gender= '" + gender + '\'' +
-                ", address= '" + address + '\'' +
-                ", email= '" + email + '\'' +
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", group='" + group + '\'' +
+                ", gender='" + gender + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                ", facebook='" + facebook + '\'' +
                 '}';
     }
+
     public String toStringCSV(){
-        return name +","+phone +","+group +","+gender  +","+ address  + "," + email + "\n";
+        return name +","+phone +","+group +","+gender  +","+ address  + "," + email + ","+facebook+ "\n";
     }
 }

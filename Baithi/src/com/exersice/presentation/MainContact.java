@@ -61,10 +61,16 @@ public class MainContact {
 
 
 
-    private static void saveContact() {
+    private static void saveContact() throws IOException {
+        ContactService contactService = new ContactService();
+        contactService.saveCT();
+        System.out.println("Đã lưu file Thành công ! ");
     }
 
-    private static void readContact() {
+    private static void readContact() throws IOException {
+        ContactService contactService = new ContactService();
+        contactService.readCT();
+        contactService.printFile();
     }
 
     private static void searchContact() {
@@ -118,12 +124,15 @@ public class MainContact {
             String address = scanner.nextLine();
             System.out.println("Nhập email: ");
             String email = scanner.nextLine();
+            System.out.println("Nhập tên facebook: ");
+            String facebook = scanner.nextLine();
             contact.setName(name);
             contact.setPhone(phone1);
             contact.setGroup(group);
             contact.setGender(gender);
             contact.setAddress(address);
             contact.setEmail(email);
+            contact.setFacebook(facebook);
             contactService.updateFile();
         }
     }
@@ -140,7 +149,8 @@ public class MainContact {
         System.out.println("Nhập địa chỉ: ");
         String address = scanner.nextLine();
         String email = contactService.inputEmail();
-        Contact contact = new Contact(name,phone,group,gender,address,email);
+        String facebook = contactService.inputFacebook();
+        Contact contact = new Contact(name,phone,group,gender,address,email,facebook);
         contactService.addFile(contact);
     }
 

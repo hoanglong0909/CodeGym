@@ -35,7 +35,7 @@ public class ContactDB {
         String line ;
         while ((line = brd.readLine()) != null){
             String[] arr = line.split(",");
-            Contact contact = new Contact(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5]);
+            Contact contact = new Contact(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6]);
             add(contact);
         }
         brd.close();
