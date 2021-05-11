@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db95049a-4cc3-4e51-8fc0-8e3216a380df" name="Default Changelist" comment="" />
+    <list default="true" id="db95049a-4cc3-4e51-8fc0-8e3216a380df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../baithii/src/com/contact/data/ContactDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baithii/src/com/contact/model/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baithii/src/com/contact/presentation/MainContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../baithii/src/com/contact/service/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/Contact.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/data/ContactDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/data/ContactDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/model/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/model/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/presentation/MainContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/presentation/MainContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/service/ContactService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/out/production/Baithi/com/exersice/service/ContactService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/data/ContactDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/data/ContactDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/model/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/presentation/MainContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/presentation/MainContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Baithi/src/com/exersice/service/ContactService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Arraylist" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,6 +50,7 @@
       <workItem from="1618108362401" duration="17000" />
       <workItem from="1618802056394" duration="26000" />
       <workItem from="1619188334164" duration="110000" />
+      <workItem from="1620574499374" duration="24000" />
     </task>
     <servers />
   </component>

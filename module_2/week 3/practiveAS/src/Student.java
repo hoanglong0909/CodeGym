@@ -5,7 +5,6 @@ class Student implements Comparable<Student> {
     private final int id;
     private String name;
     private String gender;
-
     public String getGender() {
         return gender;
     }

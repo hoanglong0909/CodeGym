@@ -30,12 +30,12 @@ public class MainContact {
             System.out.println("5. Tìm kiếm người dùng ");
             System.out.println("6. Đọc File ");
             System.out.println("7. Ghi File");
-            System.out.println("0. Thoát chương trình");
+            System.out.println("8. Thoát chương trình");
             System.out.println("Chọn chức năng: ");
             Scanner scanner = new Scanner(System.in);
             int choose = scanner.nextInt();
             switch (choose){
-                case 0:
+                case 8:
                     System.out.println("Cảm ơn đã sử dụng dịch vụ");
                     return;
                 default:
@@ -63,14 +63,14 @@ public class MainContact {
 
     private static void saveContact() throws IOException {
         ContactService contactService = new ContactService();
-        contactService.saveCT();
+        contactService.updateFile();
         System.out.println("Đã lưu file Thành công ! ");
     }
 
     private static void readContact() throws IOException {
         ContactService contactService = new ContactService();
-        contactService.readCT();
         contactService.printFile();
+        contactService.loadFile();
     }
 
     private static void searchContact() {
@@ -79,12 +79,30 @@ public class MainContact {
         ContactService contactService = new ContactService();
         String phone = scanner.nextLine();
         if(contactService.findPhone(phone)==null){
-            System.out.println("Không tìm thấy");
+            System.out.println("Không tìm thấy khách hàng");
         }else {
             System.out.println(contactService.findPhone(phone));
         }
         System.out.println("Bấm menu để tiếp tục thực hiện");
         System.out.println("=======================================");
+    }
+
+
+
+    private static boolean confirmMenu() {
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Bạn chắc chắn muốn xóa học viên này?\n1. Có\n2. Không");
+            int choise = scanner.nextInt();
+            switch (choise) {
+                case 1:
+                    return true;
+                case 2:
+                    return false;
+                default:
+                    System.err.println("Chỉ 'Có' hoặc 'Không'!");
+            }
+        }
     }
 
     private static void deleteContact() throws IOException {
@@ -93,14 +111,16 @@ public class MainContact {
         System.out.println("Nhập số điện thoại của khách hàng muốn xóa: ");
         String phone = scanner.nextLine();
         contactService.findPhone(phone);
-        if(contactService == null){
-            System.out.println("Không tồn tại khách hàng này ");
-        }else {
+        if(contactService.findPhone(phone)==null){
+            System.out.println("Không tìm thấy khách hàng");
+        }else if (confirmMenu()){
+            System.out.println( contactService.findPhone(phone));
             contactService.removeFile(phone);
             System.out.println("đã xóa thành công");
         }
-
     }
+
+
 
     private static void editContact() throws IOException {
         System.out.println("Nhập số điện thoại");
@@ -112,21 +132,20 @@ public class MainContact {
         }else {
             Contact contact = contactService.findPhone(phone);
             System.out.println(contact.toString());
-            System.out.println("Nhập tên: ");
-            String name = scanner.nextLine();
-            System.out.println("Nhập số điện thoại: ");
-            String phone1 = scanner.nextLine();
+            String name = contactService.validateName("nhập tên");
+            String dob = contactService.validateDoB("Nhập ngày tháng năm sinh");
+            String phone1 = contactService.inputPhoneNumber();
             System.out.println("Nhập group: ");
             String group = scanner.nextLine();
             System.out.println("Nhập giới tính: ");
             String gender = scanner.nextLine();
             System.out.println("Nhập địa chỉ: ");
             String address = scanner.nextLine();
-            System.out.println("Nhập email: ");
-            String email = scanner.nextLine();
+            String email = contactService.inputEmail();
             System.out.println("Nhập tên facebook: ");
             String facebook = scanner.nextLine();
             contact.setName(name);
+            contact.setDob(dob);
             contact.setPhone(phone1);
             contact.setGroup(group);
             contact.setGender(gender);
@@ -134,6 +153,7 @@ public class MainContact {
             contact.setEmail(email);
             contact.setFacebook(facebook);
             contactService.updateFile();
+            System.out.println("Đã thay đổi thành công ! ");
         }
     }
 
@@ -142,6 +162,7 @@ public class MainContact {
         ContactService contactService = new ContactService();
         String name = contactService.validateName("nhập tên");
         String phone = contactService.inputPhoneNumber();
+        String dob = contactService.validateDoB("Nhập ngày tháng năm sinh");
         System.out.println("Nhập nhóm: ");
         String group = scanner.nextLine();
         System.out.println("Nhập Giới tính: ");
@@ -150,9 +171,10 @@ public class MainContact {
         String address = scanner.nextLine();
         String email = contactService.inputEmail();
         String facebook = contactService.inputFacebook();
-        Contact contact = new Contact(name,phone,group,gender,address,email,facebook);
+        Contact contact = new Contact(name,dob,phone,group,gender,address,email,facebook);
         contactService.addFile(contact);
     }
+
 
     private static void printContact() {
         ContactService contactService = new ContactService();

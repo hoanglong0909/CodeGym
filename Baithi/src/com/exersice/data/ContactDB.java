@@ -9,8 +9,6 @@ public class ContactDB {
 
     public static ArrayList<Contact> contactArrayList = new ArrayList<>();
 
-
-
     public void saveFile() throws IOException {
         File file = new File("Contact.csv");
             if(!file.exists()){
@@ -35,7 +33,7 @@ public class ContactDB {
         String line ;
         while ((line = brd.readLine()) != null){
             String[] arr = line.split(",");
-            Contact contact = new Contact(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6]);
+            Contact contact = new Contact(arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7]);
             add(contact);
         }
         brd.close();

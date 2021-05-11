@@ -37,7 +37,7 @@ public class ManagementApp {
             System.out.println("7. Xếp loại học viên");
             System.out.println("0. Thoát chương trình");
             System.out.println("____________________________________________");
-            System.out.println(map);
+//            System.out.println(map);
             int choose = validateNumberGreaterThan0("Mời nhập:");
             switch (choose) {
                 case 1:

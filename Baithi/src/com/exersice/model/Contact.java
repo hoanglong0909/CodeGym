@@ -2,6 +2,7 @@ package com.exersice.model;
 
 public class Contact {
     private String name;
+    private String dob;
     private String phone;
     private String group;
     private String gender;
@@ -12,8 +13,9 @@ public class Contact {
     public Contact() {
     }
 
-    public Contact(String name, String phone, String group, String gender, String address, String email, String facebook) {
+    public Contact(String name, String dob, String phone, String group, String gender, String address, String email, String facebook) {
         this.name = name;
+        this.dob = dob;
         this.phone = phone;
         this.group = group;
         this.gender = gender;
@@ -28,6 +30,14 @@ public class Contact {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
     }
 
     public String getPhone() {
@@ -82,6 +92,7 @@ public class Contact {
     public String toString() {
         return "Contact{" +
                 "name='" + name + '\'' +
+                ", dob='" + dob + '\'' +
                 ", phone='" + phone + '\'' +
                 ", group='" + group + '\'' +
                 ", gender='" + gender + '\'' +
@@ -92,6 +103,6 @@ public class Contact {
     }
 
     public String toStringCSV(){
-        return name +","+phone +","+group +","+gender  +","+ address  + "," + email + ","+facebook+ "\n";
+        return name +","+dob +","+phone +","+group +","+gender  +","+ address  + "," + email + ","+facebook+ "\n";
     }
 }

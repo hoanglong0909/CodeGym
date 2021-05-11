@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5dcf55e-1055-44d6-ba0e-aa4f2d377b8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../baithii/src/com/contact/data/ContactDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baithii/src/com/contact/model/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baithii/src/com/contact/presentation/MainContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../baithii/src/com/contact/service/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/Contact.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/data/ContactDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/data/ContactDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/model/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/model/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/presentation/MainContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/presentation/MainContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/service/ContactService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/out/production/Baithi/com/exersice/service/ContactService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/src/com/exersice/data/ContactDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/src/com/exersice/data/ContactDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/src/com/exersice/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/src/com/exersice/model/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/src/com/exersice/presentation/MainContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/src/com/exersice/presentation/MainContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Baithi/src/com/exersice/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Baithi/src/com/exersice/service/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Baithi_2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Baithi_2/com/contact/data/ContactDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Baithi_2/com/contact/model/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Baithi_2/com/contact/presentation/MainContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Baithi_2/com/contact/service/ContactService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/contact/data/ContactDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/contact/model/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/contact/presentation/MainContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/contact/service/ContactService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/data/GamingDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/data/GamingDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/model/Gaming.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/model/Gaming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/presentation/MainGaming.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/presentation/MainGaming.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/service/GamingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CaseStudyModule2/src/com/Managerment/service/GamingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Arraylist/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Arraylist/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Arraylist/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Arraylist/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Arraylist/Arraylist.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/ClassShape/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/ClassShape/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/InterFace/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/InterFace/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/Practice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/out/production/Practice/practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/Practice/src/practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/classAnimal-InterFace.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/out/production/classAnimal-InterFace/ClassAnimalnterfaceEdible.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/ABtrack class Interface/classAnimal-InterFace/src/ClassAnimalnterfaceEdible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/Access-modifier-static-method-static property/Access-modifier/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/Access-modifier-static-method-static property/Access-modifier/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/Sort Algorithm/src/com/Long/BubbleSortOptimized/BubbleSortOptimized.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/Sort Algorithm/src/com/Long/BubbleSortOptimized/BubbleSortOptimized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/out/production/Algorithm/com/Long/BubbleSortOptimized/BubbleSortOptimized.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/out/production/Algorithm/com/Long/BubbleSortOptimized/BubbleSortOptimized.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/out/production/Algorithm/com/Long/InsertSort/InsertSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/out/production/Algorithm/com/Long/InsertSort/InsertSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/out/production/Algorithm/com/Long/SelectionSort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/Algorithm/out/production/Algorithm/com/Long/SelectionSort/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/JavaCollectionTameWork/HashMap/src/com/Long/HashMap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/JavaCollectionTameWork/HashMap/src/com/Long/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/Week 2/JavaCollectionTameWork/HashMap/src/com/Long/HashMap/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/Week 2/JavaCollectionTameWork/HashMap/src/com/Long/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/week 3/demoHashMap1/out/production/demoHashMap1/com/student/presentation/MainStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/week 3/demoHashMap1/out/production/demoHashMap1/com/student/presentation/MainStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/week 3/demoHashMap1/out/production/demoHashMap1/com/student/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/week 3/demoHashMap1/out/production/demoHashMap1/com/student/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/week 3/practiveAS/out/production/practiveAS/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/week 3/practiveAS/out/production/practiveAS/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module_2/week 3/practiveAS/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module_2/week 3/practiveAS/src/Student.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1s9TNOlL47wj6qzGho6ahiwpAPZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../baithii" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.contact.presentation.MainStudent" />
+      <module name="Baithi_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.contact.presentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainStudent" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5dcf55e-1055-44d6-ba0e-aa4f2d377b8c" name="Default Changelist" comment="" />
+      <created>1620283766841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620283766841</updated>
+      <workItem from="1620283768091" duration="6803000" />
+      <workItem from="1620290609706" duration="74000" />
+      <workItem from="1620290701916" duration="10000" />
+      <workItem from="1620295386709" duration="1103000" />
+      <workItem from="1620318383702" duration="1967000" />
+      <workItem from="1620350315067" duration="124000" />
+      <workItem from="1620352239156" duration="621000" />
+      <workItem from="1620622920430" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

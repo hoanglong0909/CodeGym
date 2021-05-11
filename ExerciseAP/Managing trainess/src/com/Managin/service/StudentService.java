@@ -1,14 +1,11 @@
 package com.Managin.service;
 
-import com.Managin.data.StudentData;
-import com.Managin.model.Student;
-
 import java.io.IOException;
 import java.util.Map;
 
 public class StudentService {
 
-   public static StudentData studentData = new StudentData();
+   public static Stu studentData = new StudentData();
 
     public void add(Student student) throws IOException {
         Student.setAutoId(student.getId());
