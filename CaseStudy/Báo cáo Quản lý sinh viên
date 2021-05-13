@@ -1,0 +1,9 @@
+Tên học viên: Hoang Long
+Lớp c0221H1
+Chủ đề: Quản lý điểm sinh viên
+Lý do chọn đề tài: Muốn quản lý và biết về các cột điểm của sinh viên
+Mô tả chủ đề:
+phần mềm cho phép thêm sửa xóa sinh viên cũng như các cột điểm.
+Có sử dụng các yếu tố regex name, dob, gender...
+vấn đề gặp phải: do em muốn sử dụng araylist và hashmap nên lúc dọc lưu file bị lỗi.
+Cảm ơn anh đã đánh giá !
