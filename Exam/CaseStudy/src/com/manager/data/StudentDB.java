@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StudentDB{
-    Student student = new Student();
     public HashMap<Integer, Student> map = new HashMap<>();
 
     public void saveFile() throws IOException {
