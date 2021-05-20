@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.logo {
+    flex: 1;
+}
+/* ------------------------------------------Phần Menu */
+.menu {
+    flex: 3;
+    display: flex;
+}
+.menu > li {
+    padding: 0px 12px;
+    position: relative;
+}
+.menu > li:hover .sub-menu {
+    display: block;
+    visibility: visible;
+    top: 30px;
+}
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #000;
+    padding: 10px 0px 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.5s;
+}
+.sub-menu li a {
+    font-weight: normal;
+    font-size: 12px !important;
+}
+.sub-menu ul {
+    padding-left: 20px;
+}
+.menu li a {
+    font-size: 15px;
+    font-weight: bold !important;
+    color: black;
+    display: block;
+    line-height: 25px;
+}
+/* --------------------------------------------Phần Other */
+.other {
+    flex: 1;
+    display: flex;
+}
+.other > li {
+    padding: 0px 12px;
+}
+.other > li:first-child {
+    position: relative;
+}
+.other > li:first-child input {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid#333;
+}
+.other > li:first-child i {
+    position: absolute;
+    right: 10px;
+}
+/* ---------------------------------Phần body */
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+}
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 10%;
+}
