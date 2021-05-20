@@ -4,6 +4,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .all {
     max-width: 1200px;
@@ -235,7 +236,7 @@ i {
     text-align: left;
     display: flex;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: #6d6b6b;
 }
 .footer ul li {
     display: grid;
@@ -472,6 +473,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    float: left;
 }
 
 li {
