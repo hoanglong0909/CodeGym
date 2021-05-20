@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Long STORE</title>
-        <link rel="shortcut icon" href="inmage/2118811.jpg"/>
+        <link rel="shortcut icon" href="img/2118811.jpg"/>
         <link rel="stylesheet" href="stylesVest.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,16 +25,16 @@
             </div>
                 <div class="w3-display-topright" style="color: black;">
                     <div class="img" >
-                        <img class="zoom" src="inmage/F_icon_reversed.svg - Copy.png" width="45px" height="45px">
+                        <img class="zoom" src="img/F_icon_reversed.svg - Copy.png" width="45px" height="45px">
                     </div>
                     <div class="img">
-                        <img class="zoom" src="inmage/tải xuống - Copy.png"  width="45px" height="45px">
+                        <img class="zoom" src="img/tải xuống - Copy.png"  width="45px" height="45px">
                     </div>
                     <div class="img">
-                        <img class="zoom" src="inmage/logo-zalo.jpg"  width="45px" height="45px">
+                        <img class="zoom" src="img/logo-zalo.jpg"  width="45px" height="45px">
                     </div>
                     <div class="img">
-                        <img class="zoom" src="inmage/tải xuống.png"  width="45px" height="45px">
+                        <img class="zoom" src="img/tải xuống.png"  width="45px" height="45px">
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">JAKETS</a></li>
                 <li><a href="#">BLAZERS</a></li>
-                <a href="#"><img src="inmage/2118811.jpg" /></a>
+                <a href="#"><img src="img/2118811.jpg" /></a>
                 <li><a href="#">STORE</a></li>
                 <li><a href="#">PAGE</a></li>
                 <li><a href="#">DRESSES</a></li>
@@ -133,14 +133,14 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <div class="header-slider-img"style="background-image: url(../CASTUDY/inmage/v);"></div>
+                <div class="header-slider-img"style="background-image: url(img/Vest.jpg);"></div>
                 <!-- <img src="images2/image.jpg" style="width:100%"> -->
                 <!-- <div class="text">Caption Text</div> -->
                 </div>
                 
                 <div class="mySlides fade">
                 <!-- <img src="images2/bia1.jpg" style="width:100%"> -->
-                    <div class="header-slider-img" style="background-image: url(../CASTUDY/inmage/vest1.jpg);"></div>
+                    <div class="header-slider-img" style="background-image: url(img/vest1.jpg);"></div>
 
                 <!-- <div class="text">Caption Two</div> -->
                 </div>
@@ -181,10 +181,10 @@
             <div class="content">
                 <p id="title"><strong>Best-selling suits:</strong></p>
                 <div class="player">
-                    <a class="sp" href="#">  <img src="inmage/vestsky.png" /> </a>
-                    <a class="sp" href="#"><img src="inmage/ao3.jpg" /> </a>
-                    <a class="sp" href="#"><img src="inmage/ao4.jpg" /> </a>
-                    <a class="sp" href="#"><img src="inmage/ao2.jpg" /> </a>
+                    <a class="sp" href="#">  <img src="img/vestsky.png" /> </a>
+                    <a class="sp" href="#"><img src="img/ao3.jpg" /> </a>
+                    <a class="sp" href="#"><img src="img/ao4.jpg" /> </a>
+                    <a class="sp" href="#"><img src="img/ao2.jpg" /> </a>
                 </div>
             </div>
 
@@ -254,7 +254,7 @@
                     <h2>About Us</h2>
 
                     <a id="trai" href="#"
-                        ><img src="inmage/2118811.jpg" width="70px  " />
+                        ><img src="img/2118811.jpg" width="70px  " />
                     </a>
                     <p id="phai">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -272,5 +272,37 @@
                 </div>
             </div>
     </div>
-  
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+</script>
 </html>

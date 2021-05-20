@@ -91,7 +91,7 @@ p {
     height: 900px;
     margin-right: 20px;
     float: left;
-    background-image: url(../inmage/images.jpg);
+    background-image: url(img/images.jpg);
     background-size: cover;
     position: relative;
     cursor: pointer;
@@ -100,7 +100,7 @@ p {
     float: left;
     width: 580px;
     height: 1000px;
-    background-image: url(../inmage/imagesup.jpg);
+    background-image: url(img/imagesup.jpg);
     position: relative;
     cursor: pointer;
 }
@@ -180,13 +180,13 @@ p {
     margin-right: 20px;
     float: left;
     position: relative;
-    background-image: url(../inmage/imagesright.jpg);
+    background-image: url(img/imagesright.jpg);
     background-repeat: no-repeat;
     margin-top: 20px;
     cursor: pointer;
 }
 #baner2 {
-    background-image: url(../inmage/imagesdown.jpg);
+    background-image: url(img/imagesdown.jpg);
     background-repeat: no-repeat;
     float: left;
     width: 580px;
