@@ -1,0 +1,11 @@
+.text-container li a {
+    justify-content: center;
+}
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -52px;
+    /* text-align: left; */
+    right: 80px;
+    text-align: center;
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Exersice_3:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bafefa3-bd34-4dcd-82cd-65b37d1b75c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Exam/CaseStudy/.idea/CaseStudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/Module3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DictionaryJSTL/ListCustomer/src/main/java/com/example/ListCustomer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DictionaryJSTL/User/src/main/java/com/example/User/ServletUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DictionaryJSTL/User/src/main/java/com/example/User/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DictionaryJSTL/User/src/main/java/com/example/User/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DictionaryJSTL/User/src/main/webapp/view/display-user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC/Practice/src/main/java/com/practice/dao/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC/Practice/src/main/java/com/practice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC/Practice/src/main/webapp/WEB-INF/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/caculato/src/main/java/com/example/caculato/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/caculato/src/main/java/com/example/caculato/ServletCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/ManagerProduct/src/main/java/com/product/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/ManagerProduct/src/main/java/com/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/ManagerProduct/src/main/java/com/product/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/ManagerProduct/src/main/java/com/product/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/ManagerProduct/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/ManagerProduct/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/java/com/practice/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/java/com/practice/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/java/com/practice/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/java/com/practice/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/webapp/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Practice_1/src/main/webapp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/java/com/practice/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/java/com/practice/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/java/com/practice/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/java/com/practice/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/webapp/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/webapp/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/webapp/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/webapp/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/webapp/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC/Pratice_2/src/main/webapp/error-404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/src/main/java/com/example/demo/longhoang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../demo/src/main/java/severletExersice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../exersice_1/exersice_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../exersice_1/src/main/java/com/example/exersice_1/ServletExersice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../exersice_1/src/main/java/com/example/exersice_2/ServletCdtt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/.idea/CaseStudy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CaseStudy/Báo cáo Quản lý sinh viên" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html-css/testcss/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html-css/testcss/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/cv.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/cv.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/80031090.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/EER SQL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/Manager Student.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/casestudyModule1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/cau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/hinhnenlamviec.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/long.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/long1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/long2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/longcun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/longgggg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../portfolio-bootstrap/portfolio/image/vest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module-1/index.html/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module-1/index.html/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module-1/index.html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module-1/index.html/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1t1PrvRN6dulg1vZ1qSLgR1Ktef" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JDBC/Practice" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.66" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.66" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Exersice_3:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Exersice_3_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="e6ceb120-3f25-428e-94c1-43c860cf8639" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Exersice_3:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bafefa3-bd34-4dcd-82cd-65b37d1b75c8" name="Default Changelist" comment="" />
+      <created>1621933826198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621933826198</updated>
+      <workItem from="1621933827402" duration="4277000" />
+      <workItem from="1621945454220" duration="392000" />
+      <workItem from="1622103139468" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
