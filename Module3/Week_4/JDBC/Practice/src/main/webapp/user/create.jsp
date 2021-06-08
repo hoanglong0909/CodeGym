@@ -8,6 +8,11 @@
 <body>
 <center>
     <h1>User Management</h1>
+    <p>
+        <c:if test='${requestScope["message"] != null}'>
+            <span class="message">${requestScope["message"]}</span>
+        </c:if>
+    </p>
     <h2>
         <a href="users?action=users">List All Users</a>
     </h2>

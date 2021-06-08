@@ -20,14 +20,14 @@
                     Edit User
                 </h2>
             </caption>
-            <c:if test="${user != null}">
-                <input type="hidden" name="id" value="<c:out value='${user.id}' />"/>
+            <c:if test="${users != null}">
+                <input type="hidden" name="id" value="<c:out value='${users.id}' />"/>
             </c:if>
             <tr>
                 <th>User Name:</th>
                 <td>
                     <input type="text" name="name" size="45"
-                           value="<c:out value='${user.name}' />"
+                           value="<c:out value='${users.name}' />"
                     />
                 </td>
             </tr>
@@ -35,7 +35,7 @@
                 <th>User Email:</th>
                 <td>
                     <input type="text" name="email" size="45"
-                           value="<c:out value='${user.email}' />"
+                           value="<c:out value='${users.email}' />"
                     />
                 </td>
             </tr>
@@ -43,7 +43,7 @@
                 <th>Country:</th>
                 <td>
                     <input type="text" name="country" size="15"
-                           value="<c:out value='${user.country}' />"
+                           value="<c:out value='${users.country}' />"
                     />
                 </td>
             </tr>

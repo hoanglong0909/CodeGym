@@ -1,16 +1,11 @@
 package com.manager.controller;
 
-import com.manager.model.Student;
-import com.manager.service.StudentDAO;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "StudentServlet", urlPatterns = "/student")
@@ -87,6 +82,7 @@ public class StudentServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
 
 
     private void listStudent(HttpServletRequest request, HttpServletResponse response)

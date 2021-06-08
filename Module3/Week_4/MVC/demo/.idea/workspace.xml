@@ -5,66 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="083fe5f6-37e8-40bc-a9dd-555d83581e99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../Exam/CaseStudy/.idea/CaseStudy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../.idea/Module3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DictionaryJSTL/ListCustomer/src/main/java/com/example/ListCustomer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DictionaryJSTL/User/src/main/java/com/example/User/ServletUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DictionaryJSTL/User/src/main/java/com/example/User/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DictionaryJSTL/User/src/main/java/com/example/User/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DictionaryJSTL/User/src/main/webapp/view/display-user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JSP/caculato/src/main/java/com/example/caculato/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JSP/caculato/src/main/java/com/example/caculato/ServletCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ManagerProduct/src/main/java/com/product/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ManagerProduct/src/main/java/com/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ManagerProduct/src/main/java/com/product/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ManagerProduct/src/main/java/com/product/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ManagerProduct/src/main/webapp/product/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ManagerProduct/src/main/webapp/product/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/java/com/practice/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/java/com/practice/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/java/com/practice/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/java/com/practice/service/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/webapp/customer/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/webapp/customer/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/webapp/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice_1/src/main/webapp/customer/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/java/com/practice/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/java/com/practice/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/java/com/practice/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/java/com/practice/service/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/webapp/customer/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/webapp/customer/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/webapp/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/webapp/customer/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pratice_2/src/main/webapp/error-404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../demo/demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../demo/src/main/java/com/example/demo/longhoang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../demo/src/main/java/severletExersice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../exersice_1/exersice_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../exersice_1/src/main/java/com/example/exersice_1/ServletExersice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../exersice_1/src/main/java/com/example/exersice_2/ServletCdtt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../CaseStudy/.idea/CaseStudy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../CaseStudy/Báo cáo Quản lý sinh viên" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../html-css/testcss/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../html-css/testcss/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/cv.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/cv.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/80031090.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/EER SQL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/Manager Student.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/casestudyModule1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/cau.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/hinhnenlamviec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/long.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/long1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/long2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/longcun.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/longgggg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../portfolio-bootstrap/portfolio/image/vest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module-1/index.html/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module-1/index.html/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module-1/index.html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module-1/index.html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/java/com/product/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/java/com/product/dao/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/java/com/product/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/java/com/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/java/com/product/service/iProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/webapp/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BaiThi/src/main/webapp/product/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/java/com/DAO/StaffDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/java/com/DAO/iStaff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/java/com/controller/StaffServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/webapp/staff/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/webapp/staff/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/webapp/staff/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Baithi2/src/main/webapp/staff/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/service/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/service/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/webapp/user/srach.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/java/com/practice/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/java/com/practice/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exersice_3/.idea/Exersice_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exersice_3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exersice_3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exersice_3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/service/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/service/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/service/UserITF.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/java/com/manager/service/UserITF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/ManagerStudent/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/src/main/webapp/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/classes/com/practice/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/classes/com/practice/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice/target/classes/com/practice/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice/target/classes/com/practice/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/controller/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/controller/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/controller/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/service/IStudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/controller/IStudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/service/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/src/main/java/com/manager/controller/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/service/IStudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/service/StudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/classes/com/manager/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/Practice_2/target/classes/com/manager/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/classes/com/manager/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/classes/com/manager/service/IStudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/Practice_2/target/classes/com/manager/service/StudentDAO.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ManagerProduct" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../CaseStudyModule_3" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,6 +100,7 @@
       <workItem from="1622035375610" duration="28000" />
       <workItem from="1622035421369" duration="47000" />
       <workItem from="1622082780595" duration="11000" />
+      <workItem from="1622794960277" duration="96000" />
     </task>
     <servers />
   </component>

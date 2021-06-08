@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>User Management Application</title>
+
 </head>
 <body>
 <center>
@@ -30,6 +31,31 @@
             </tr>
         </c:forEach>
     </table>
+<%--    <table class="table">--%>
+<%--        <thead class="table-dark">--%>
+<%--        <tr>--%>
+<%--            <th>ID</th>--%>
+<%--            <th>Name</th>--%>
+<%--            <th>Email</th>--%>
+<%--            <th>Country</th>--%>
+<%--        </tr>--%>
+<%--        </thead>--%>
+<%--        <tbody>--%>
+<%--        <c:forEach var="user" items="${listUser}">--%>
+<%--            <tr>--%>
+<%--                <td><c:out value="${user.id}"/></td>--%>
+<%--                <td><c:out value="${user.name}"/></td>--%>
+<%--                <td><c:out value="${user.email}"/></td>--%>
+<%--                <td><c:out value="${user.country}"/></td>--%>
+<%--                <td>--%>
+<%--                    <a href="/users?action=edit&id=${user.id}">Edit</a>--%>
+<%--                    <a href="/users?action=delete&id=${user.id}">Delete</a>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--        </c:forEach>--%>
+<%--        </tbody>--%>
+<%--    </table>--%>
 </div>
 </body>
+
 </html>

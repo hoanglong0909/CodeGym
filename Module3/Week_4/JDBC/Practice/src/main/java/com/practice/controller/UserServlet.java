@@ -1,6 +1,7 @@
 package com.practice.controller;
 
 import com.practice.dao.UserDAO;
+import com.practice.model.Account;
 import com.practice.model.User;
 
 import java.io.IOException;
@@ -57,9 +58,12 @@ public class UserServlet extends HttpServlet {
                 case "search":
                     showSearch(request,response);
                     break;
-                case "sort":
-                    sortUser(request,response);
+                case "users":
+                    listUser(request, response);
                     break;
+//                case "sort":
+//                    sortUser(request,response);
+//                    break;
                 case "edit":
                     showEditForm(request, response);
                     break;
@@ -74,6 +78,8 @@ public class UserServlet extends HttpServlet {
             throw new ServletException(ex);
         }
     }
+
+
     private void listUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         List<User> listUser = userDAO.selectAllUsers();
@@ -82,18 +88,21 @@ public class UserServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
+
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
         dispatcher.forward(request, response);
     }
-    private void sortUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List <User> sortUser = userDAO.sortByName();
-        request.setAttribute("sortUser",sortUser);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/sort.jsp");
-        requestDispatcher.forward(request,response);
-    }
-    
+
+
+//    private void sortUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        List <User> sortUser = userDAO.sortByName();
+//        request.setAttribute("sortUser",sortUser);
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/sort.jsp");
+//        requestDispatcher.forward(request,response);
+//    }
+//
 
     private void showSearch(HttpServletRequest request, HttpServletResponse response) throws SQLException, ServletException, IOException {
         String keyword = request.getParameter("search");
@@ -101,20 +110,6 @@ public class UserServlet extends HttpServlet {
         request.setAttribute("userList",userList);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/search.jsp");
         requestDispatcher.forward(request,response);
-    }
-
-
-
-
-
-    private void showEditForm(HttpServletRequest request, HttpServletResponse response)
-            throws SQLException, ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        User existingUser = userDAO.selectUser(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
-        request.setAttribute("user", existingUser);
-        dispatcher.forward(request, response);
-
     }
 
     private void insertUser(HttpServletRequest request, HttpServletResponse response)
@@ -125,6 +120,17 @@ public class UserServlet extends HttpServlet {
         User newUser = new User(name, email, country);
         userDAO.insertUser(newUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
+        request.setAttribute("message", "you have successfully added new !");
+        dispatcher.forward(request, response);
+    }
+
+    private void showEditForm(HttpServletRequest request, HttpServletResponse response)
+            throws SQLException, ServletException, IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        User existingUser = userDAO.selectUser(id);
+        request.setAttribute("users", existingUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
+
         dispatcher.forward(request, response);
     }
 

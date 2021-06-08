@@ -1,7 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="07369b1a-3744-4d9a-89ad-36802fbe4724" name="Default Changelist" comment="" />
+    <list default="true" id="0704f0f6-c43f-4809-a30f-f2ee27eb5c23" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Casestudy1/src/main/java/com/controller/AccountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Casestudy1/src/main/java/com/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Casestudy1/src/main/webapp/WEB-INF/web.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudyModule_3/src/main/java/com/DAO/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudyModule_3/src/main/java/com/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudyModule_3/src/main/java/com/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudyModule_3/src/main/webapp/login/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CaseStudyModule_3/src/main/webapp/login/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/java/com/product/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/java/com/product/dao/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/java/com/product/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/java/com/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/java/com/product/service/iProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/webapp/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/BaiThi/src/main/webapp/product/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/java/com/DAO/StaffDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/java/com/DAO/iStaff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/java/com/controller/StaffServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/webapp/staff/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/webapp/staff/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/webapp/staff/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/Baithi2/src/main/webapp/staff/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/srach.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/Exersice_3/.idea/Exersice_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/Exersice_3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/Exersice_3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/Exersice_3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserITF.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserITF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/src/main/webapp/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/classes/com/practice/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/classes/com/practice/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/classes/com/practice/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice/target/classes/com/practice/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/service/IStudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/IStudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/service/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/service/IStudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/service/StudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/controller/StudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/service/IStudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/service/StudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/Week_4/MVC/demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/Week_4/MVC/demo/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +87,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1scnLmJBksKylXLU618takCTrOx" />
+  <component name="ProjectId" id="1tUEiAijx4HwHqbDIdpEuVQROSG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,17 +98,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Exam/baithii" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Casestudy1" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07369b1a-3744-4d9a-89ad-36802fbe4724" name="Default Changelist" comment="" />
-      <created>1621180698902</created>
+      <changelist id="0704f0f6-c43f-4809-a30f-f2ee27eb5c23" name="Default Changelist" comment="" />
+      <created>1622815391755</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621180698902</updated>
-      <workItem from="1621180700206" duration="91000" />
+      <updated>1622815391755</updated>
+      <workItem from="1622815392908" duration="42000" />
+      <workItem from="1622817290951" duration="56000" />
     </task>
     <servers />
   </component>
@@ -48,5 +127,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
