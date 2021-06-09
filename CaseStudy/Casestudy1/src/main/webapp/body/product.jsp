@@ -59,10 +59,10 @@
                 <c:if test="${sessionScope.account == null}">
                     <li><a href="account/login.jsp"><i class="fa fa-user-o"></i>Đăng nhập</a></li>
                 </c:if>
-                <%--                <c:if test="${sessionScope.account != null}">--%>
-                <%--                    <li><a href="account/login.jsp"><i class="fa fa-user-o"></i>Helloo ${sessionScope.account.userName}--%>
-                <%--                    </a></li>--%>
-                <%--                </c:if>--%>
+<%--                <c:if test="${sessionScope.account != null}">--%>
+<%--                    <li><a href="account/login.jsp"><i class="fa fa-user-o"></i>Helloo ${sessionScope.account.userName}--%>
+<%--                    </a></li>--%>
+<%--                </c:if>--%>
             </ul>
         </div>
     </div>
@@ -268,7 +268,7 @@
                     </div>
 
                     <div class="product-preview">
-                        <img src="img/product08.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
                 </div>
             </div>
@@ -604,7 +604,8 @@
                                             <c:forEach items="${electronicList}" var="electronic">
                                                 <div class="product">
                                                     <div class="product-img">
-                                                        <a class="product-img" href="detail?id=${electronic.id}">
+                                                            <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
+                                                        <a  class="product-img" href="detail?pid=${electronic.id}">
                                                             <img style="width: 200px; height: 200px" src="${electronic.image}">
                                                         </a>
                                                         <div class="product-label">
@@ -615,10 +616,9 @@
                                                     <div class="product-body">
                                                         <p class="product-category">thể loại</p>
                                                         <h3 class="product-name"><a
-                                                                href="detail?id=${electronic.id}">${electronic.name}</a>
-                                                        </h3>
-                                                        <h4 class="product-price">${electronic.price}
-                                                            <del class="product-old-price">${electronic.price}</del>
+                                                                href="detail?pid=${electronic.id}">${electronic.name}</a></h3>
+                                                        <h4 class="product-price">${electronic.price} vnd
+                                                            <del class="product-old-price">${electronic.price} vnd</del>
                                                         </h4>
                                                         <div class="product-rating">
                                                             <i class="fa fa-star"></i>
@@ -628,12 +628,9 @@
                                                             <i class="fa fa-star"></i>
                                                         </div>
                                                         <div class="product-btns">
-                                                            <button class="add-to-wishlist"><i
-                                                                    class="fa fa-heart-o"></i><span
-                                                                    class="tooltipp">Thêm vào danh sách mong muốn</span>
-                                                            </button>
-                                                            <button class="add-to-compare"><i
-                                                                    class="fa fa-exchange"></i><span
+                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                                    class="tooltipp">Thêm vào danh sách mong muốn</span></button>
+                                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                                     class="tooltipp">thêm vào để so sánh</span></button>
                                                             <button class="quick-view"><i class="fa fa-eye"></i><span
                                                                     class="tooltipp">xem lướt qua</span>
@@ -641,8 +638,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn"><i
-                                                                class="fa fa-shopping-cart"></i> thêm vào
+                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
                                                             giỏ hàng
                                                         </button>
                                                     </div>

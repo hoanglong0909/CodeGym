@@ -19,17 +19,29 @@ public class DetailServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("pid"));
+
         try {
+            Electronic electronic = dao.getProductById(id);
+
             List<Electronic> elist = dao.getProductBySellId(id);
+
             List<Category> categoryList = dao.selectCategoriesAll();
-             List<Electronic> electronicList = dao.selectAll();
-             Electronic electronic = dao.getProductById(id);
+
+            List<Electronic> electronicList = dao.selectAll();
+
+
+
             request.setAttribute("elist",electronicList);
+
             request.setAttribute("categoryList",categoryList);
              request.setAttribute("electronicList",elist);
+
+
             request.setAttribute("detail",electronic);
-            RequestDispatcher requestDispatcher =request.getRequestDispatcher("body/product.jsp");
+
+
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("body/product.jsp");
             requestDispatcher.forward(request,response);
         } catch (SQLException throwables) {
             throwables.printStackTrace();

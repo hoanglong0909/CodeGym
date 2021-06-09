@@ -12,6 +12,10 @@ public class Category {
         this.name = name;
     }
 
+    public Category(int id, String name, String image, Float price) {
+
+    }
+
     public int getId() {
         return id;
     }

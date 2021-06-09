@@ -35,15 +35,14 @@ public class LoginServlet extends HttpServlet {
             requestDispatcher = request.getRequestDispatcher("account/login.jsp");
             requestDispatcher.forward(request,response);
         }else {
-            HttpSession session = request.getSession();
             try {
+                HttpSession session = request.getSession();
+                session.setAttribute("account",login);
+                session.setMaxInactiveInterval(100);
                 List<Electronic> electronicList = dao.selectAll();
                 List<Category> categoryList = dao.selectCategoriesAll();
                 request.setAttribute("electronicList",electronicList);
                 request.setAttribute("categoryList",categoryList);
-
-                session.setAttribute("account",login);
-                session.setMaxInactiveInterval(100);
                 requestDispatcher = request.getRequestDispatcher("body/home.jsp");
                 requestDispatcher.forward(request,response);
             } catch (SQLException throwables) {

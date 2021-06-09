@@ -189,7 +189,7 @@
         <div id="responsive-nav">
             <!-- NAV -->
             <ul class="main-nav nav navbar-nav">
-                <li class="active"><a href="#">Trang Chủ</a></li>
+                <li class="active"><a href="electronics">Trang Chủ</a></li>
                 <li><a href="#">Ưu đãi lớn</a></li>
                 <c:forEach items="${categoryList}" var="category">
                     <li class="section-tab-nav tab-nav ${tag == category.id ? "active":""}"><a
@@ -203,7 +203,6 @@
     <!-- /container -->
 </nav>
 <!-- /NAVIGATION -->
-
 <!-- SECTION -->
 <div class="section">
     <!-- container -->
@@ -236,48 +235,49 @@
                         <div id="tab1" class="tab-pane active">
                             <div class="products-slick" data-nav="#slick-nav-1">
                                 <!-- product -->
-                                <c:forEach items="${electronicList}" var="electronic">
-                                    <div class="product">
-                                        <div class="product-img">
-                                            <a  class="product-img" href="detail?id=${electronic.id}">
-                                                <img style="width: 200px; height: 200px" src="${electronic.image}">
-                                            </a>
-                                            <div class="product-label">
-                                                <span class="sale">-30%</span>
-                                                <span class="new">MỚI</span>
+                                    <c:forEach items="${electronicList}" var="electronic">
+                                        <div class="product">
+                                            <div class="product-img">
+    <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
+                                                <a  class="product-img" href="detail?pid=${electronic.id}">
+                                                    <img style="width: 200px; height: 200px" src="${electronic.image}">
+                                                </a>
+                                                <div class="product-label">
+                                                    <span class="sale">-30%</span>
+                                                    <span class="new">MỚI</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="product-body">
-                                            <p class="product-category">thể loại</p>
-                                            <h3 class="product-name"><a
-                                                    href="detail?pid=${electronic.id}">${electronic.name}</a></h3>
-                                            <h4 class="product-price">${electronic.price} vnd
-                                                <del class="product-old-price">${electronic.price} vnd</del>
-                                            </h4>
-                                            <div class="product-rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
+                                            <div class="product-body">
+                                                <p class="product-category">thể loại</p>
+                                                <h3 class="product-name"><a
+                                                        href="detail?pid=${electronic.id}">${electronic.name}</a></h3>
+                                                <h4 class="product-price">${electronic.price} vnd
+                                                    <del class="product-old-price">${electronic.price} vnd</del>
+                                                </h4>
+                                                <div class="product-rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="product-btns">
+                                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                            class="tooltipp">Thêm vào danh sách mong muốn</span></button>
+                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                            class="tooltipp">thêm vào để so sánh</span></button>
+                                                    <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                            class="tooltipp">xem lướt qua</span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="product-btns">
-                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                        class="tooltipp">Thêm vào danh sách mong muốn</span></button>
-                                                <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                        class="tooltipp">thêm vào để so sánh</span></button>
-                                                <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">xem lướt qua</span>
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+                                                    giỏ hàng
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                giỏ hàng
-                                            </button>
-                                        </div>
-                                    </div>
-                                </c:forEach>
+                                    </c:forEach>
                             </div>
                             <div id="slick-nav-1" class="products-slick-nav"></div>
                         </div>
@@ -431,7 +431,8 @@
                                     <c:forEach items="${electronicList}" var="electronic">
                                         <div class="product">
                                             <div class="product-img">
-                                                <a  class="product-img" href="detail?id=${electronic.id}">
+                                                    <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
+                                                <a  class="product-img" href="detail?pid=${electronic.id}">
                                                     <img style="width: 200px; height: 200px" src="${electronic.image}">
                                                 </a>
                                                 <div class="product-label">

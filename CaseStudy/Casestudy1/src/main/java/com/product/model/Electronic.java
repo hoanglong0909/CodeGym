@@ -64,6 +64,12 @@ public class Electronic {
         this.category_id = category;
     }
 
+    public Electronic(String name, String image, Float price) {
+        this.name = name;
+        this.image = image;
+        this.price = price;
+    }
+
     public int getSell_id() {
         return sell_id;
     }

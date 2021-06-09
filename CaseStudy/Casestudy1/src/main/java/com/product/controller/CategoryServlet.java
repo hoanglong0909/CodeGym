@@ -21,6 +21,9 @@ public class CategoryServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String categoryId = request.getParameter("id");
         try {
+            List<Electronic> listp = dao.selectAll();
+            request.setAttribute("listp",listp);
+            //phần chia category
             List<Electronic> list = dao.getProductCid(Integer.parseInt(categoryId));
             List<Category> categoryList = dao.selectCategoriesAll();
             request.setAttribute("electronicList",list);

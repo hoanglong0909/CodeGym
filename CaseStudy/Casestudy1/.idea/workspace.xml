@@ -10,89 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f9085b-d7b9-4cb0-a0cc-64a43b3984f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/DAO/CSDL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/DAO/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/CategoryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/DetailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/ElectronicServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/SearchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/model/Electronic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/model/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/service/iElectronic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Account/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CaseStudyModule_3/src/main/java/com/DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CaseStudyModule_3/src/main/java/com/controller/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CaseStudyModule_3/src/main/java/com/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CaseStudyModule_3/src/main/webapp/login/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CaseStudyModule_3/src/main/webapp/login/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/java/com/product/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/java/com/product/dao/CategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/java/com/product/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/java/com/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/java/com/product/service/iProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/webapp/product/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/webapp/product/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/webapp/product/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/BaiThi/src/main/webapp/product/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/java/com/DAO/StaffDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/java/com/DAO/iStaff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/java/com/controller/StaffServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/webapp/staff/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/webapp/staff/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/webapp/staff/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/Baithi2/src/main/webapp/staff/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/user/srach.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/controller/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/Exersice_3/.idea/Exersice_3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/Exersice_3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/Exersice_3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/Exersice_3/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserITF.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/java/com/manager/service/UserITF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/ManagerStudent/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/controller/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/java/com/practice/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/src/main/webapp/user/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/controller/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/WEB-INF/classes/com/practice/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/Practice-1.0-SNAPSHOT/user/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/classes/com/practice/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/classes/com/practice/controller/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/classes/com/practice/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice/target/classes/com/practice/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/service/IStudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/IStudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/service/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/src/main/java/com/manager/controller/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/controller/StudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/service/IStudentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/WEB-INF/classes/com/manager/service/StudentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/Practice_2-1.0-SNAPSHOT/student/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/controller/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/controller/StudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/service/IStudentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/JDBC/Practice_2/target/classes/com/manager/service/StudentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module3/Week_4/MVC/demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module3/Week_4/MVC/demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/DAO/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/DAO/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/body/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/body/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/manager/listall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manager/listall.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/DAO/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/DAO/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/DAO/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/DAO/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/manager/listall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/manager/listall.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +74,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -165,96 +94,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.46">
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="1c8af354-0653-4b5d-ab33-fcaec2ed4f69" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51287" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -333,6 +172,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.product.DAO.DAO" />
+      <module name="de" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.product.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -348,9 +224,6 @@
       <method v="2" />
     </configuration>
     <configuration name="list_2.jsp (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/de_war_exploded/manager/list_2.jsp">
-      <method v="2" />
-    </configuration>
-    <configuration name="list_2.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/manager/list_2.jsp">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -579,13 +452,79 @@
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="1c8af354-0653-4b5d-ab33-fcaec2ed4f69" />
+      </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51287" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -684,11 +623,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DAO" />
         <item itemvalue="JavaScript Debug.list_2.jsp (2)" />
         <item itemvalue="Tomcat Server.list_2.jsp (1)" />
         <item itemvalue="JavaScript Debug.list_2.jsp (1)" />
         <item itemvalue="Tomcat Server.list_2.jsp" />
-        <item itemvalue="JavaScript Debug.list_2.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -749,7 +688,9 @@
       <workItem from="1623081351235" duration="471000" />
       <workItem from="1623081853153" duration="5446000" />
       <workItem from="1623108092698" duration="1097000" />
-      <workItem from="1623115365487" duration="10070000" />
+      <workItem from="1623115365487" duration="17105000" />
+      <workItem from="1623165750104" duration="838000" />
+      <workItem from="1623202498506" duration="11549000" />
     </task>
     <servers />
   </component>
