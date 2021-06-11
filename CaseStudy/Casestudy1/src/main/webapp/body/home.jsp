@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="body/css/bootstrap.min.css"/>
 
+    <link type="text/css" rel="stylesheet" href="body/css/bootstrap.min.css"/>
     <!-- Slick -->
     <link type="text/css" rel="stylesheet" href="body/css/slick.css"/>
     <link type="text/css" rel="stylesheet" href="body/css/slick-theme.css"/>
-
     <!-- nouislider -->
     <link type="text/css" rel="stylesheet" href="body/css/nouislider.min.css"/>
 
@@ -30,8 +28,8 @@
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="body/css/style.css"/>
 
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <![endif]-->
 </head>
 <body>
@@ -77,7 +75,7 @@
                 <div class="col-md-3">
                     <div class="header-logo">
                         <a href="electronics" class="logo">
-                            <img src="img/logo.png" alt="">
+                            <img src="img/logo.png" alt="k co gi">
                         </a>
                     </div>
                 </div>
@@ -153,7 +151,7 @@
                                     <h5>SUBTOTAL: $2940.00</h5>
                                 </div>
                                 <div class="cart-btns">
-                                    <a href="#">Xem giỏ hàng</a>
+                                    <a href="body/cart.jsp">Xem giỏ hàng</a>
                                     <a href="#">Thủ tục thanh toán
                                         <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
@@ -191,6 +189,7 @@
             <ul class="main-nav nav navbar-nav">
                 <li class="active"><a href="electronics">Trang Chủ</a></li>
                 <li><a href="#">Ưu đãi lớn</a></li>
+                <li><a href="electronics">Tất cả</a></li>
                 <c:forEach items="${categoryList}" var="category">
                     <li class="section-tab-nav tab-nav ${tag == category.id ? "active":""}"><a
                             href="category?id=${category.id}">${category.name}</a></li>
@@ -234,50 +233,50 @@
                         <!-- tab -->
                         <div id="tab1" class="tab-pane active">
                             <div class="products-slick" data-nav="#slick-nav-1">
-                                <!-- product -->
-                                    <c:forEach items="${electronicList}" var="electronic">
-                                        <div class="product">
-                                            <div class="product-img">
-    <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
-                                                <a  class="product-img" href="detail?pid=${electronic.id}">
-                                                    <img style="width: 200px; height: 200px" src="${electronic.image}">
-                                                </a>
-                                                <div class="product-label">
-                                                    <span class="sale">-30%</span>
-                                                    <span class="new">MỚI</span>
-                                                </div>
+                                <!-- com -->
+                                <c:forEach items="${electronicList}" var="electronic">
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <a class="product-img" href="detail?pid=${electronic.id}">
+                                                <img style="height:250px ; width:100%" src="${electronic.image}">
+                                            </a>
+                                            <div class="product-label">
+                                                <span class="sale">-30%</span>
+                                                <span class="new">MỚI</span>
                                             </div>
-                                            <div class="product-body">
-                                                <p class="product-category">thể loại</p>
-                                                <h3 class="product-name"><a
-                                                        href="detail?pid=${electronic.id}">${electronic.name}</a></h3>
-                                                <h4 class="product-price">${electronic.price} vnd
-                                                    <del class="product-old-price">${electronic.price} vnd</del>
-                                                </h4>
-                                                <div class="product-rating">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                                <div class="product-btns">
-                                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                            class="tooltipp">Thêm vào danh sách mong muốn</span></button>
-                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span
-                                                            class="tooltipp">thêm vào để so sánh</span></button>
-                                                    <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                            class="tooltipp">xem lướt qua</span>
-                                                    </button>
-                                                </div>
+                                        </div>
+                                        <div class="product-body">
+                                            <p class="product-category">thể loại</p>
+                                            <h3 class="product-name"><a
+                                                    href="detail?pid=${electronic.id}">${electronic.name}</a></h3>
+                                            <h4 class="product-price" >
+                                                ${electronic.price}<small>vnd</small>
+                                                <del class="product-old-price">${electronic.price} vnd</del>
+                                            </h4>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
-                                            <div class="add-to-cart">
-                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                    giỏ hàng
+                                            <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
+                                                        class="tooltipp">Thêm vào danh sách mong muốn</span></button>
+                                                <button class="add-to-compare"><i class="fa fa-exchange"></i><span
+                                                        class="tooltipp">thêm vào để so sánh</span></button>
+                                                <button class="quick-view"><i class="fa fa-eye"></i><span
+                                                        class="tooltipp">xem lướt qua</span>
                                                 </button>
                                             </div>
                                         </div>
-                                    </c:forEach>
+                                        <div class="add-to-cart">
+                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>
+                                                <a href="addToCart?pId=${electronic.id}">thêm vào giỏ hàng</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </c:forEach>
                             </div>
                             <div id="slick-nav-1" class="products-slick-nav"></div>
                         </div>
@@ -307,10 +306,10 @@
                     </div>
                     <div class="shop-body">
                         <h3>Laptop<br>Collection</h3>
-<%--                        <c:forEach items="${categoryList}" var="category">--%>
-<%--                            <li class="section-tab-nav tab-nav ${tag == category.id ? "active":""}"><a--%>
-<%--                                    href="category?id=${category.id}">${category.name}</a></li>--%>
-<%--                        </c:forEach>--%>
+                        <%--                        <c:forEach items="${categoryList}" var="category">--%>
+                        <%--                            <li class="section-tab-nav tab-nav ${tag == category.id ? "active":""}"><a--%>
+                        <%--                                    href="category?id=${category.id}">${category.name}</a></li>--%>
+                        <%--                        </c:forEach>--%>
                         <a href="#" class="cta-btn">Mua ngay bây giờ<i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
@@ -427,12 +426,11 @@
                             <!-- tab -->
                             <div id="tab2" class="tab-pane fade in active">
                                 <div class="products-slick" data-nav="#slick-nav-2">
-                                    <!-- product -->
+                                    <!-- com -->
                                     <c:forEach items="${electronicList}" var="electronic">
                                         <div class="product">
                                             <div class="product-img">
-                                                    <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
-                                                <a  class="product-img" href="detail?pid=${electronic.id}">
+                                                <a class="product-img" href="detail?pid=${electronic.id}">
                                                     <img style="width: 200px; height: 200px" src="${electronic.image}">
                                                 </a>
                                                 <div class="product-label">
@@ -456,7 +454,8 @@
                                                 </div>
                                                 <div class="product-btns">
                                                     <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
-                                                            class="tooltipp">Thêm vào danh sách mong muốn</span></button>
+                                                            class="tooltipp">Thêm vào danh sách mong muốn</span>
+                                                    </button>
                                                     <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                             class="tooltipp">thêm vào để so sánh</span></button>
                                                     <button class="quick-view"><i class="fa fa-eye"></i><span
@@ -465,7 +464,8 @@
                                                 </div>
                                             </div>
                                             <div class="add-to-cart">
-                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm
+                                                    vào
                                                     giỏ hàng
                                                 </button>
                                             </div>
@@ -503,97 +503,97 @@
 
                 <div class="products-widget-slick" data-nav="#slick-nav-3">
                     <div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product07.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product08.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product09.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                     </div>
 
                     <div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product01.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product02.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product03.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                     </div>
                 </div>
             </div>
@@ -608,97 +608,97 @@
 
                 <div class="products-widget-slick" data-nav="#slick-nav-4">
                     <div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product04.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product05.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product06.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                     </div>
 
                     <div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product07.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product08.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product09.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                     </div>
                 </div>
             </div>
@@ -715,97 +715,97 @@
 
                 <div class="products-widget-slick" data-nav="#slick-nav-5">
                     <div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product01.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product02.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product03.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                     </div>
 
                     <div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product04.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product05.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- /product widget -->
+                        <!-- /com widget -->
 
-                        <!-- product widget -->
+                        <!-- com widget -->
                         <div class="product-widget">
                             <div class="product-img">
                                 <img src="img/product06.png" alt="">
                             </div>
                             <div class="product-body">
                                 <p class="product-category">Category</p>
-                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                <h3 class="product-name"><a href="#">com name goes here</a></h3>
                                 <h4 class="product-price">$980.00
                                     <del class="product-old-price">$990.00</del>
                                 </h4>
                             </div>
                         </div>
-                        <!-- product widget -->
+                        <!-- com widget -->
                     </div>
                 </div>
             </div>
@@ -953,12 +953,16 @@
 <!-- /FOOTER -->
 
 <!-- jQuery Plugins -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/nouislider.min.js"></script>
-<script src="js/jquery.zoom.min.js"></script>
-<script src="js/main.js"></script>
+<%--// chỗ này này--%>
+<script src="sweetalert2.min.js"></script>
+<script src="body/js/jquery.min.js"></script>
+<script src="body/js/bootstrap.min.js"></script>
+<script src="body/js/slick.min.js"></script>
+<script src="body/js/nouislider.min.js"></script>
+<script src="body/js/jquery.zoom.min.js"></script>
+<script src="body/js/main.js"></script>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
 </body>
 </html>

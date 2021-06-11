@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -16,7 +16,6 @@
 
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="body/css/bootstrap.min.css"/>
-
     <!-- Slick -->
     <link type="text/css" rel="stylesheet" href="body/css/slick.css"/>
     <link type="text/css" rel="stylesheet" href="body/css/slick-theme.css"/>
@@ -30,8 +29,7 @@
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="body/css/style.css"/>
 
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
 </head>
@@ -234,19 +232,19 @@
             <div class="col-md-5 col-md-push-2">
                 <div id="product-main-img">
                     <div class="product-preview">
-                        <img src="img/product01.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="img/product03.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="img/product06.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="img/product08.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
                 </div>
             </div>
@@ -256,15 +254,15 @@
             <div class="col-md-2  col-md-pull-5">
                 <div id="product-imgs">
                     <div class="product-preview">
-                        <img src="img/product01.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="img/product03.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
 
                     <div class="product-preview">
-                        <img src="img/product06.png" alt="">
+                        <img src="${detail.image}" alt="">
                     </div>
 
                     <div class="product-preview">
@@ -322,9 +320,8 @@
                                 <span class="qty-down">-</span>
                             </div>
                         </div>
-                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                        <button  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                     </div>
-
                     <ul class="product-btns">
                         <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
                         <li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
@@ -351,15 +348,15 @@
             <!-- Product tab -->
             <div class="col-md-12">
                 <div id="product-tab">
-                    <!-- product tab nav -->
+                    <!-- com tab nav -->
                     <ul class="tab-nav">
                         <li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
                         <li><a data-toggle="tab" href="#tab2">Details</a></li>
                         <li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
                     </ul>
-                    <!-- /product tab nav -->
+                    <!-- /com tab nav -->
 
-                    <!-- product tab content -->
+                    <!-- com tab content -->
                     <div class="tab-content">
                         <!-- tab1  -->
                         <div id="tab1" class="tab-pane fade in active">
@@ -566,10 +563,10 @@
                         </div>
                         <!-- /tab3  -->
                     </div>
-                    <!-- /product tab content  -->
+                    <!-- /com tab content  -->
                 </div>
             </div>
-            <!-- /product tab -->
+            <!-- /com tab -->
         </div>
         <!-- /row -->
     </div>
@@ -589,7 +586,7 @@
                     <h3 class="title">Related Products</h3>
                 </div>
             </div>
-            <!-- product -->
+            <!-- com -->
             <div class="section">
                 <!-- container -->
                 <div class="container">
@@ -601,12 +598,12 @@
                                     <!-- tab -->
                                     <div id="tab" class="tab-pane active">
                                         <div class="products-slick" data-nav="#slick-nav-1">
-                                            <c:forEach items="${electronicList}" var="electronic">
+                                            <c:forEach items="${elist}" var="electronic">
                                                 <div class="product">
                                                     <div class="product-img">
                                                             <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
-                                                        <a  class="product-img" href="detail?pid=${electronic.id}">
-                                                            <img style="width: 200px; height: 200px" src="${electronic.image}">
+                                                        <a class="product-img" href="detail?pid=${electronic.id}">
+                                                            <img style="height:250px ; width:100%" src="${electronic.image}">
                                                         </a>
                                                         <div class="product-label">
                                                             <span class="sale">-30%</span>
@@ -638,8 +635,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> thêm vào
-                                                            giỏ hàng
+                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>
+                                                            <a href="addToCart?pId=${electronic.id}">thêm vào giỏ hàng</a>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -657,7 +654,7 @@
                 </div>
                 <!-- /container -->
             </div>
-            <!-- /product -->
+            <!-- /com -->
         </div>
     </div>
 </div>
@@ -804,12 +801,23 @@
 <!-- /FOOTER -->
 
 <!-- jQuery Plugins -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/nouislider.min.js"></script>
-<script src="js/jquery.zoom.min.js"></script>
-<script src="js/main.js"></script>
+<%--<script src="js/jquery.min.js"></script>--%>
+<%--<script src="js/bootstrap.min.js"></script>--%>
+<%--<script src="js/slick.min.js"></script>--%>
+<%--<script src="js/nouislider.min.js"></script>--%>
+<%--<script src="js/jquery.zoom.min.js"></script>--%>
+<%--<script src="js/main.js"></script>--%>
 
+<script src="body/js/jquery.min.js"></script>
+<script src="body/js/bootstrap.min.js"></script>
+<script src="body/js/slick.min.js"></script>
+<script src="body/js/nouislider.min.js"></script>
+<script src="body/js/jquery.zoom.min.js"></script>
+<script src="body/js/main.js"></script>
+<%--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>--%>
+<%--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>--%>
+
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </body>
 </html>

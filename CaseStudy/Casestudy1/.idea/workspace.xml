@@ -10,16 +10,235 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f9085b-d7b9-4cb0-a0cc-64a43b3984f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DAO/CSDL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/DAO/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/AddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/DeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/DetailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ElectronicServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ManagerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ManagerStaffServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/SearchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/SigupServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/model/Electronic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/iElectronic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/DAO/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/DAO/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.sql" beforeDir="false" afterPath="$PROJECT_DIR$/file.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/DAO/CSDL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/DAO/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/AddServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/CategoryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/DeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/DetailServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/ElectronicServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/LogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/ManagerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/ManagerStaffServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/SearchServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/SigupServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/model/Electronic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/model/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/service/iElectronic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/body/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/body/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/body/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/body/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/body/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/body/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/body/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/body/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/body/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/body/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/dashboar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/dashboar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/apps/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/c3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/c3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/chartist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/chartist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/chartjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/flot-chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/flot-chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/google-charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/google-charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/justGage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/justGage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/morris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/sparkline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/charts/sparkline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/documentation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/advanced_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/advanced_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/basic_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/basic_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/code_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/code_editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/dropify.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/dropify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/text_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/text_editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/forms/wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/flag-icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/flag-icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/font-awesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/font-awesome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/simple-line-icon.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/simple-line-icon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/themify.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/icons/themify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/boxed-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/boxed-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/compact-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/compact-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/horizontal-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/horizontal-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/rtl-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/rtl-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-collapsed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-collapsed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-fixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-fixed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-hidden-overlay.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-hidden-overlay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-hidden.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/layout/sidebar-hidden.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/maps/google-maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/maps/google-maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/maps/mapeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/maps/mapeal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/maps/vector-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/maps/vector-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/blank-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/faq-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/faq-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/news-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/news-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/pricing-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/pricing-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/search-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/search-results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/samples/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/basic-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/basic-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/data-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/data-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/js-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/js-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/sortable-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/tables/sortable-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/accordions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/accordions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/badges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/breadcrumbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/breadcrumbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/clipboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/clipboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/colcade.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/colcade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/context-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/context-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/dragula.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/dragula.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/dropdowns.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/dropdowns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/loaders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/loaders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/modals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/popups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/popups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/tooltips.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/tooltips.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/ui-features/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/dash/pages/widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dash/pages/widgets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/manager/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manager/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/manager/listall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manager/listall.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/product/DAO/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/DAO/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/product/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/DAO/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/DAO/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/DAO/CSDL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/DAO/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/AddServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/CategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/DetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/ElectronicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/ManagerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/ManagerStaffServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/controller/SigupServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/model/Electronic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/model/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/product/service/iElectronic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/DAO/CSDL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/DAO/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/AddServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/CategoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/DetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/ElectronicServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/ManagerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/ManagerStaffServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/controller/SigupServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/model/Electronic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/model/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/WEB-INF/classes/com/product/service/iElectronic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/body/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/dashboar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/dashboar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/apps/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/c3.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/c3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/chartist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/chartist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/chartjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/flot-chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/flot-chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/google-charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/google-charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/justGage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/justGage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/morris.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/morris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/sparkline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/charts/sparkline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/documentation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/advanced_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/advanced_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/basic_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/basic_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/code_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/code_editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/dropify.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/dropify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/text_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/text_editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/validation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/validation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/forms/wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/flag-icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/flag-icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/font-awesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/font-awesome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/simple-line-icon.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/simple-line-icon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/themify.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/icons/themify.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/boxed-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/boxed-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/compact-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/compact-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/horizontal-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/horizontal-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/rtl-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/rtl-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-collapsed.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-collapsed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-fixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-fixed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-hidden-overlay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-hidden-overlay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-hidden.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/layout/sidebar-hidden.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/maps/google-maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/maps/google-maps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/maps/mapeal.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/maps/mapeal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/maps/vector-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/maps/vector-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/blank-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/blank-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/faq-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/faq-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/news-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/news-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/pricing-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/pricing-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/search-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/search-results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/samples/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/basic-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/basic-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/data-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/data-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/js-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/js-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/sortable-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/tables/sortable-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/accordions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/accordions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/badges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/breadcrumbs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/breadcrumbs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/clipboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/clipboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/colcade.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/colcade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/context-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/context-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/dragula.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/dragula.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/dropdowns.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/dropdowns.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/loaders.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/loaders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/modals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/popups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/popups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/progress.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/progress.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/tooltips.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/tooltips.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/ui-features/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/dash/pages/widgets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/manager/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/manager/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/manager/listall.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/de-1.0-SNAPSHOT/manager/listall.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +250,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,14 +305,92 @@
       <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\dashboar2\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\body" />
       <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\manager" />
+      <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\cart" />
       <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\product" />
       <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp" />
-      <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\manager1" />
-      <recent name="D:\CodeGym\CASESTUDY\Casestudy1\src\main\webapp\account" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.46">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="1c8af354-0653-4b5d-ab33-fcaec2ed4f69" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51287" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -184,46 +481,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.product.DAO.DAO" />
-      <module name="de" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.product.DAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="list_2.jsp (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/de_war_exploded/product/list_2.jsp">
+    <configuration name="blank.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Casestudy1/de/src/main/webapp/body/blank.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="list_2.jsp (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/de_war_exploded/manager/list_2.jsp">
+    <configuration name="cart.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/body/cart.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="checkout.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Casestudy1/de/src/main/webapp/body/checkout.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="home.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/body/home.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="store.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Casestudy1/de/src/main/webapp/body/store.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -452,79 +722,13 @@
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="1c8af354-0653-4b5d-ab33-fcaec2ed4f69" />
-      </server-settings>
+      <server-settings />
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51287" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -543,91 +747,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="list_2.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/manager/list_2.jsp" />
-      <deployment>
-        <artifact name="de:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/de_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="8f7c33cb-2bf5-4b9c-bd42-d3eb1e546ab8" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="de:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="list_2.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/manager/list_2.jsp" />
-      <deployment>
-        <artifact name="de:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/de_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="6ca8228c-5d1f-4b21-b8aa-43bbcbd2e590" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="de:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DAO" />
-        <item itemvalue="JavaScript Debug.list_2.jsp (2)" />
-        <item itemvalue="Tomcat Server.list_2.jsp (1)" />
-        <item itemvalue="JavaScript Debug.list_2.jsp (1)" />
-        <item itemvalue="Tomcat Server.list_2.jsp" />
+        <item itemvalue="JavaScript Debug.cart.jsp" />
+        <item itemvalue="JavaScript Debug.home.jsp" />
+        <item itemvalue="JavaScript Debug.checkout.html" />
+        <item itemvalue="JavaScript Debug.store.html" />
+        <item itemvalue="JavaScript Debug.blank.html" />
       </list>
     </recent_temporary>
   </component>
@@ -690,7 +816,18 @@
       <workItem from="1623108092698" duration="1097000" />
       <workItem from="1623115365487" duration="17105000" />
       <workItem from="1623165750104" duration="838000" />
-      <workItem from="1623202498506" duration="11549000" />
+      <workItem from="1623202498506" duration="12232000" />
+      <workItem from="1623220015540" duration="3088000" />
+      <workItem from="1623234473523" duration="117000" />
+      <workItem from="1623244651509" duration="4025000" />
+      <workItem from="1623248728424" duration="800000" />
+      <workItem from="1623249605718" duration="242000" />
+      <workItem from="1623287971525" duration="13202000" />
+      <workItem from="1623306023376" duration="14289000" />
+      <workItem from="1623320950285" duration="209000" />
+      <workItem from="1623328550329" duration="10066000" />
+      <workItem from="1623374495183" duration="26084000" />
+      <workItem from="1623415014448" duration="3188000" />
     </task>
     <servers />
   </component>
@@ -712,5 +849,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/DAO/DAO.java</url>
+          <line>349</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
