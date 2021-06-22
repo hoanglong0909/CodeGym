@@ -1,4 +1,5 @@
 <%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -75,8 +76,8 @@
                 <!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <a href="electronics" class="logo">
-                            <img src="img/logo.png" alt="">
+                        <a href="/electronics" class="logo">
+                            <img src="img/logo.png" alt="ảnh đâu rùi nhỉ">
                         </a>
                     </div>
                 </div>
@@ -116,44 +117,51 @@
 
                         <!-- Cart -->
                         <div class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>Your Cart</span>
-                                <div class="qty">3</div>
-                            </a>
                             <div class="cart-dropdown">
                                 <div class="cart-list">
+                                    <c:set var="count" value="${count = 0}"></c:set>
+                                    <c:set var="total" value="${total = 0}"></c:set>
+                                    <c:forEach items="${order.items}" var="item">
                                     <div class="product-widget">
-                                        <div class="product-img">
-                                            <img src="img/product01.png" alt="">
-                                        </div>
-                                        <div class="product-body">
-                                            <h3 class="product-name"><a href="#">${detail.name}</a></h3>
-                                            <h4 class="product-price"><span class="qty">1x</span>${detail.price}</h4>
-                                        </div>
-                                        <button class="delete"><i class="fa fa-close"></i></button>
+                                            <c:set var="count" value="${count = count + 1}"></c:set>
+                                            <c:set var="total" value="${total = total + (item.electronic.price)*(item.quantity)}"></c:set>
+                                            <div class="product-widget">
+                                                <div class="product-img">
+                                                    <img src="${item.electronic.image}" alt="">
+                                                </div>
+                                                <div class="product-body">
+                                                    <h3 class="product-name"><a href="#">${item.electronic.name}</a></h3>
+                                                    <h4 class="product-price"><span class="qty">${item.quantity}</span>
+                                                        <fmt:setLocale value="vi_VN"/>
+                                                        <fmt:formatNumber value="${item.electronic.price}" type="currency"/>
+                                                    </h4>
+                                                </div>
+                                                <button class="delete">
+                                                    <i class="fa fa-close">
+                                                    </i></button>
+                                            </div>
                                     </div>
-
-                                    <div class="product-widget">
-                                        <div class="product-img">
-                                            <img src="img/product02.png" alt="">
-                                        </div>
-                                        <div class="product-body">
-                                            <h3 class="product-name"><a href="#">${detail.name}</a></h3>
-                                            <h4 class="product-price"><span class="qty">3x</span>${detail.price}</h4>
-                                        </div>
-                                        <button class="delete"><i class="fa fa-close"></i></button>
-                                    </div>
+                                    </c:forEach>
                                 </div>
                                 <div class="cart-summary">
-                                    <small>3 Item(s) selected</small>
-                                    <h5>SUBTOTAL: $2940.00</h5>
+                                    <small><strong>${count}</strong> mục được chọn</small>
+                                    <h5>Tổng thanh toán:
+                                        <fmt:setLocale value="vi_VN"/>
+                                        <fmt:formatNumber value="${total}" type="currency"/>
+                                    </h5>
                                 </div>
+
                                 <div class="cart-btns">
-                                    <a href="#">View Cart</a>
-                                    <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="body/cart.jsp">Xem giỏ hàng</a>
+                                    <a href="#">Thanh toán<i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span>Giỏ hàng của bạn</span>
+                                <div class="qty">${count}</div>
+                            </a>
                         </div>
                         <!-- /Cart -->
 
@@ -284,13 +292,19 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
                         </div>
-                        <a class="review-link" href="#">10 Review(s) | Add your review</a>
+                        <a class="review-link" href="#">10 Review(s) | Thêm đánh giá của bạn</a>
                     </div>
                     <div>
-                        <h3 class="product-price">${detail.price}
-                            <del class="product-old-price">$990.00</del>
+
+                        <h3 class="product-price">
+                            <fmt:setLocale value="vi_VN"/>
+                            <fmt:formatNumber value=" ${detail.price - (detail.price* 5/100)}" type="currency"/>
+                            <del class="product-old-price">
+                                <fmt:setLocale value="vi_VN"/>
+                                <fmt:formatNumber value="${detail.price}" type="currency"/>
+                            </del>
                         </h3>
-                        <span class="product-available">In Stock</span>
+                        <span class="product-available">Trong kho</span>
                     </div>
                     <p>HP Notebook 11 là dòng máy giá rẻ, gọn nhẹ, hướng đến phân khúc bình dân của HP. Máy có thiết kế
                         nguyên khối, không thể tháo rời pin, không trang bị quạt cũng như ổ đĩa giúp máy mỏng và nhẹ tối
@@ -320,11 +334,13 @@
                                 <span class="qty-down">-</span>
                             </div>
                         </div>
-                        <button  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                        <button  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>
+                            <a href="addToCart?pId=${detail.id}">Thêm vào giỏ hàng</a>
+                        </button>
                     </div>
                     <ul class="product-btns">
-                        <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-                        <li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+                        <li><a href="#"><i class="fa fa-heart-o"></i>Thêm vào danh sách mong muốn</a></li>
+                        <li><a href="#"><i class="fa fa-exchange"></i> thêm vào để so sánh</a></li>
                     </ul>
 
                     <ul class="product-links">
@@ -601,7 +617,6 @@
                                             <c:forEach items="${elist}" var="electronic">
                                                 <div class="product">
                                                     <div class="product-img">
-                                                            <%--                                    href="${sessionScope.account.isAdmin == 1 ? "electronics?action=listProduct" :"managers"--%>
                                                         <a class="product-img" href="detail?pid=${electronic.id}">
                                                             <img style="height:250px ; width:100%" src="${electronic.image}">
                                                         </a>
@@ -614,8 +629,13 @@
                                                         <p class="product-category">thể loại</p>
                                                         <h3 class="product-name"><a
                                                                 href="detail?pid=${electronic.id}">${electronic.name}</a></h3>
-                                                        <h4 class="product-price">${electronic.price} vnd
-                                                            <del class="product-old-price">${electronic.price} vnd</del>
+                                                        <h4 class="product-price" >
+                                                            <fmt:setLocale value="vi_VN"/>
+                                                            <fmt:formatNumber value=" ${electronic.price - (electronic.price* 5/100)}" type="currency"/>
+                                                            <del class="product-old-price">
+                                                                <fmt:setLocale value="vi_VN"/>
+                                                                <fmt:formatNumber value=" ${electronic.price}" type="currency"/>
+                                                            </del>
                                                         </h4>
                                                         <div class="product-rating">
                                                             <i class="fa fa-star"></i>

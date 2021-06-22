@@ -129,7 +129,7 @@
 </head>
 <body>
 <div id="logreg-forms">
-    <form class="form-signin" action="/login" method="post">
+    <form class="form-signin"  action="/login" method="post">
         <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
         <div class="social-login">
             <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
@@ -153,7 +153,7 @@
         <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
     </form>
 
-    <form method="post" action="/signup"  class="form-signup">
+    <form method="post" action="/signup" id="registration"  class="form-signup">
         <div class="social-login">
             <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
         </div>
@@ -163,10 +163,10 @@
 
         <p style="text-align:center">OR</p>
         <p class="text-danger">${mess}</p>
-        <input type="text" name="userName" id="user-name" class="form-control" placeholder="Tên đăng nhập" required="" autofocus="">
+        <input type="text" name="username" id="user-name" class="form-control" placeholder="Tên đăng nhập" required="" autofocus="">
         <input type="email" name="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
-        <input type="password" name="passWord" id="user-pass" class="form-control" placeholder="Mật khẩu" required autofocus="">
-        <input type="password" name="passWord_2" id="user-repeatpass" class="form-control" placeholder="Repeat Mật khẩu" required autofocus="">
+        <input type="password" name="password" id="user-pass" class="form-control" placeholder="Mật khẩu" required autofocus="">
+        <input type="password" name="confirm_password" id="user-repeatpass" class="form-control" placeholder="Repeat Mật khẩu" required autofocus="">
         <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
         <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
     </form>
@@ -216,5 +216,48 @@ $(()=>{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<script>
+    $("#registration").validate({
+        errorElement: 'div',
+        rules: {
+            username: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                validatePassword: true,
+                minlength: 5
+            },
+            confirm_password: {
+                equalTo: "#password",
+                required: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            username: "Please enter your username",
+            password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long"
+            },
+            confirm_password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long",
+                equalTo: "Please enter the correct password above"
+            },
+            email: "Please enter a valid email address"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+    $.validator.addMethod("validatePassword", function (value, element) {
+        return this.optional(element) || /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$/i.test(value);
+    }, "Please enter a password from 8 to 16 characters including uppercase, lowercase and at least one number");
+</script>
 </body>
 </html>

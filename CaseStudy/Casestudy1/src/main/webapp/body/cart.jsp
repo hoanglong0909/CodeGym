@@ -85,8 +85,8 @@
         <tr>
             <td data-th="Product">
                 <div class="row">
-                    <div class="col-sm-2 hidden-xs"><img src="${item.electronic.image}" alt="Sản phẩm 1"
-                                                         class="img-responsive" width="100">
+                    <div class="col-sm-2 hidden-xs">
+                        <img src="${item.electronic.image}" alt="Sản phẩm 1" class="img-responsive" width="100">
                     </div>
                     <div class="col-sm-10">
                         <h4 class="nomargin">${item.electronic.name}</h4>
@@ -107,26 +107,35 @@
             </td>
             <td class="actions" data-th="">
                 <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i></button>
-                <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+                <button class="btn btn-danger btn-sm">
+                    <a href="/delete?action=deleteCart&id=${item.electronic.id}">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </button>
             </td>
         </tr>
         </tbody>
         </c:forEach>
-        <tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong>Tổng 200.000 đ</strong>
-            </td>
-        </tr>
         <tr>
-            <td><a href="/electronics" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
-            </td>
+            <td><strong>Tổng tiền</strong></td>
             <td colspan="2" class="hidden-xs"></td>
             <td class="hidden-xs text-center"><strong>
                 <fmt:setLocale value="vi_VN"/>
                 <fmt:formatNumber value="${total}" type="currency"/>
             </strong>
             </td>
-            <td><a href="" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+            <td>
+            </td>
+        </tr>
+        </tfoot>
+        <tfoot>
+        <tr>
+            <td><a href="/electronics" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+            </td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center">
+            </td>
+            <td><a href="bill.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
             </td>
         </tr>
         </tfoot>

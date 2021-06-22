@@ -4,6 +4,7 @@ public class Electronic {
     private int id;
     private String name;
     private String image;
+    private String description;
     private Float price;
     private int sell_id;
     private int category_id;
@@ -18,7 +19,6 @@ public class Electronic {
         this.price = price;
         this.amount = amount;
     }
-
 
     public Electronic(int id, String name, String image, Float price, int category) {
         this.id = id;
@@ -78,6 +78,17 @@ public class Electronic {
         this.name = name;
         this.image = image;
         this.price = price;
+    }
+
+    public Electronic(int id, String name, String image, String description, Float price) {
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public int getAmount() {

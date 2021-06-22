@@ -10,9 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DAO extends CSDL implements iElectronic {
-    private static final String SEARCH_PRODUCT ="SELECT * FROM product where name like ?";
+    private static final String SEARCH_PRODUCT = "SELECT * FROM product where name like ?";
+
     public List<Electronic> searchElectronic(String keyword) throws SQLException {
-        String keyWord = "%"+keyword+"%";
+        String keyWord = "%" + keyword + "%";
         List<Electronic> electronicList = new ArrayList<>();
         Connection connection = getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_PRODUCT);
@@ -24,24 +25,45 @@ public class DAO extends CSDL implements iElectronic {
             String name = rs.getString("name");
             String image = rs.getString("image");
             Float price = rs.getFloat("price");
-            electronicList.add(new Electronic(id, name,image,price));
+            electronicList.add(new Electronic(id, name, image, price));
         }
-        return electronicList ;
+        return electronicList;
     }
+    private static final String LIMIT_PRODUCT = "SELECT * FROM casestudy.product\n" +
+            "order by id\n" +
+            "limit ?,5;  " ;
     private static final String CHECK_LOGIN_PRODUCT = "SELECT * FROM login WHERE userName = ?;";
     private static final String LOGIN_PRODUCT = "SELECT * FROM login WHERE userName = ? AND passWord = ?;";
+    private static final String TOTAL_ACCOUNT_PRODUCT = "SELECT COUNT(*) FROM product";
     private static final String GET_PRODUCT_BY_ID_CATEGORY = "SELECT * FROM product WHERE categoryId = ?";
     private static final String GET_PRODUCT_BY_ID = "SELECT * FROM product WHERE id = ?";
     private static final String SELECT_PRODUCT_BY_ID = "SELECT id,name,image,price FROM product WHERE id = ? ;";
     private static final String SELECT_ALL_PRODUCT = "SELECT * FROM product ORDER BY id desc";
     private static final String DELETE_PRODUCT_SQL = "DELETE FROM product WHERE id = ?;";
     private static final String SELECT_CATEGORY_BY_ID = "SELECT id,name from category where id = ? ;";
-    private static final String INSERT_ACCOUNT= "INSERT INTO login(userName,passWord,email,isSell,isAdmin) VALUES (?,?,?,0,0);";
+    private static final String INSERT_ACCOUNT = "INSERT INTO login(userName,passWord,email,isSell,isAdmin) VALUES (?,?,?,0,0);";
     public static final String SELECT_CATEGORY_ALL = "SELECT * FROM category";
 
 
+    public int getTotalAccount() throws SQLException {
+        Connection connection = getConnection();
+        // Step 2:Create a statement using connection object
+        PreparedStatement preparedStatement = connection.prepareStatement(TOTAL_ACCOUNT_PRODUCT);
+        System.out.println(preparedStatement);
+        ResultSet rs = preparedStatement.executeQuery();
+        while (rs.next()) {
+            return rs.getInt(1);
+        }
+        return 0;
+    }
+//        public static void main(String[] args) throws SQLException {
+//        DAO dao = new DAO();
+//        int count = dao.getTotalAccount();
+//            System.out.println(count);
+//        }
 
-    public void signup(String userName,String passWord,String email) throws SQLException {
+
+    public void signup(String userName, String passWord, String email) throws SQLException {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_ACCOUNT)) {
             preparedStatement.setString(1, userName);
@@ -86,14 +108,13 @@ public class DAO extends CSDL implements iElectronic {
                 String email = rs.getString(4);
                 int isSell = rs.getInt(5);
                 int isAdmin = rs.getInt(6);
-                return new Login(id, userName, passWord,email,isSell,isAdmin);
+                return new Login(id, userName, passWord, email, isSell, isAdmin);
             }
         } catch (SQLException e) {
             printSQLException(e);
         }
         return null;
     }
-
 
 
     public Login acountCheckExist(String username) {
@@ -112,9 +133,6 @@ public class DAO extends CSDL implements iElectronic {
         }
         return null;
     }
-
-
-
 
 
     @Override
@@ -139,16 +157,6 @@ public class DAO extends CSDL implements iElectronic {
         }
         return electronicList;
     }
-
-//    public static void main(String[] args) throws SQLException {
-//        DAO dao = new DAO();
-//        List<Electronic> electronicList = dao.selectAll();
-//        for (Electronic e: electronicList
-//             ) {
-//            System.out.println(e);
-//        }
-//    }
-
 
 
     @Override
@@ -197,25 +205,6 @@ public class DAO extends CSDL implements iElectronic {
         }
         return electronic;
     }
-//    @Override
-//    public Electronic getProductById(int id) throws SQLException {
-//        Electronic electronic = null;
-//        try (Connection connection = getConnection();
-//             PreparedStatement preparedStatement = connection.prepareStatement(GET_PRODUCT_BY_ID)) {
-//            System.out.println(preparedStatement);
-//            preparedStatement.setInt(1,id);
-//            ResultSet rs = preparedStatement.executeQuery();
-//            while (rs.next()) {
-//                String name = rs.getString("name");
-//                String image = rs.getString("image");
-//                Float price = rs.getFloat("price");
-//                electronic = new Electronic (name, image, price);
-//            }
-//        }
-//        return electronic;
-//    }
-
-
 
     @Override
     public boolean delete(int id) throws SQLException {
@@ -230,16 +219,17 @@ public class DAO extends CSDL implements iElectronic {
 
 
     private static final String UPDATE_PRODUCT_SQL = "UPDATE product SET name = ?,image = ?, price = ?, categoryId =? WHERE id = ?;";
+
     @Override
-    public boolean update(String name,String image,Float price,int categoryId,int id) throws SQLException {
+    public boolean update(String name, String image, Float price, int categoryId, int id) throws SQLException {
         boolean rowUpdated;
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_PRODUCT_SQL);) {
-            statement.setString(1,name);
-            statement.setString(2,image);
-            statement.setFloat(3,price);
-            statement.setInt(4,categoryId);
-            statement.setInt(5,id);
+            statement.setString(1, name);
+            statement.setString(2, image);
+            statement.setFloat(3, price);
+            statement.setInt(4, categoryId);
+            statement.setInt(5, id);
             rowUpdated = statement.executeUpdate() > 0;
         }
         return rowUpdated;
@@ -249,19 +239,6 @@ public class DAO extends CSDL implements iElectronic {
     public Category selectCategory(int id) throws SQLException {
         return null;
     }
-
-//    public void editProduct(S) throws SQLException {
-//      Connection connection = getConnection();
-//      PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PRODUCT_SQL);
-//      ResultSet rs = preparedStatement.executeQuery();
-//      while (rs.next()){
-//          String name = rs.getString(1,"name");
-//      }
-//    }
-//
-//
-//
-
     @Override
     public Electronic getProductById(int id) throws SQLException {
         // Step 1: Establishing a Connection
@@ -276,15 +253,13 @@ public class DAO extends CSDL implements iElectronic {
                 String name = rs.getString("name");
                 String image = rs.getString("image");
                 Float price = rs.getFloat("price");
-                electronic = new Electronic(id, name,image,price);
+                electronic = new Electronic(id, name, image, price);
             }
         } catch (SQLException e) {
             printSQLException(e);
         }
         return electronic;
     }
-
-
 
 
     @Override
@@ -304,21 +279,23 @@ public class DAO extends CSDL implements iElectronic {
         }
         return categoryList;
     }
+
     private static final String GET_PRODUCT_BY_SELLID = "SELECT * from product where (sell_id = ?) order by id desc ;";
+
     @Override
     public List<Electronic> getProductBySellId(int sell_id) throws SQLException {
         List<Electronic> list = new ArrayList<>();
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(GET_PRODUCT_BY_SELLID)) {
             System.out.println(preparedStatement);
-            preparedStatement.setInt(1,sell_id);
+            preparedStatement.setInt(1, sell_id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
                 String image = rs.getString("image");
                 Float price = rs.getFloat("price");
-                list.add(new Electronic(id,name, image, price,sell_id));
+                list.add(new Electronic(id, name, image, price, sell_id));
             }
         } catch (SQLException e) {
             printSQLException(e);
@@ -331,14 +308,15 @@ public class DAO extends CSDL implements iElectronic {
     public void insert(Electronic electronic) throws SQLException {
     }
 
-    private static final String INSERT_PRODUCT= "INSERT INTO product(name, image,price,categoryId,sell_id) VALUES (?,?,?,?,?);";
+    private static final String INSERT_PRODUCT = "INSERT INTO product(name, image,price,categoryId,sell_id) VALUES (?,?,?,?,?);";
+
     public void insertProduct(Electronic electronic) {
         System.out.println(INSERT_PRODUCT);
         // try-with-resource statement will auto close the connection.
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_PRODUCT)) {
-            preparedStatement.setString(1,electronic.getName());
-            preparedStatement.setString(2,electronic.getImage());
+            preparedStatement.setString(1, electronic.getName());
+            preparedStatement.setString(2, electronic.getImage());
             preparedStatement.setFloat(3, electronic.getPrice());
             preparedStatement.setInt(4, electronic.getCategory_id());
             preparedStatement.setInt(5, electronic.getSell_id());

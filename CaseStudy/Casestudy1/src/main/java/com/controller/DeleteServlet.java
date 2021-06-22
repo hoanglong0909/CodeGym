@@ -8,7 +8,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "DeleteServlet", value = "/delete")
+@WebServlet(name = "DeleteServlet", urlPatterns = "/delete")
 public class DeleteServlet extends HttpServlet {
     DAO dao = new DAO();
     @Override
@@ -23,6 +23,26 @@ public class DeleteServlet extends HttpServlet {
             case "deletelist":
                 deleteListAll(request,response);
                 break;
+            case "deleteCart":
+                deleteCart(request,response);
+                break;
+        }
+    }
+
+    private void deleteCart(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        try {
+            dao.delete(id);
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("body/cart.jsp");
+            try {
+                requestDispatcher.forward(request,response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
     }
 
