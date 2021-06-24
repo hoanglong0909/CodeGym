@@ -1,7 +1,6 @@
 package com.codegym.cms.formatter;
 
-
-import com.codegym.cms.model.Province;
+import com.codegym.cms.model.Country;
 import com.codegym.cms.service.province.IProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
@@ -12,7 +11,7 @@ import java.util.Locale;
 import java.util.Optional;
 
 @Component
-public class ProvinceFormatter implements Formatter<Province> {
+public class ProvinceFormatter implements Formatter<Country> {
 
     private IProvinceService provinceService;
 
@@ -22,13 +21,13 @@ public class ProvinceFormatter implements Formatter<Province> {
     }
 
     @Override
-    public Province parse(String text, Locale locale) throws ParseException {
-        Optional<Province> provinceOptional = provinceService.findById(Long.parseLong(text));
+    public Country parse(String text, Locale locale) throws ParseException {
+        Optional<Country> provinceOptional = provinceService.findById(Long.parseLong(text));
         return provinceOptional.orElse(null);
     }
 
     @Override
-    public String print(Province object, Locale locale) {
+    public String print(Country object, Locale locale) {
         return "[" + object.getId() + ", " +object.getName() + "]";
     }
 }

@@ -1,6 +1,5 @@
 package com.codegym.cms.service;
 
-
 import java.util.Optional;
 
 public interface IGeneralService<T> {
@@ -8,9 +7,7 @@ public interface IGeneralService<T> {
 
     Optional<T> findById(Long id);
 
-
     void save(T t);
-
 
     void remove(Long id);
 }
