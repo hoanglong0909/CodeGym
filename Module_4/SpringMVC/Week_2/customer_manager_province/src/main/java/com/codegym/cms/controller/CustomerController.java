@@ -6,6 +6,7 @@ import com.codegym.cms.repository.ICustomerRepository;
 import com.codegym.cms.service.customer.ICustomerService;
 import com.codegym.cms.service.province.IProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -32,8 +33,8 @@ public class CustomerController {
     }
 
     @GetMapping("/customers")
-    public ModelAndView listCustomers() {
-        Iterable<Customer> customers = customerService.findAll();
+    public ModelAndView listCustomers(Pageable pageable) {
+        Iterable<Customer> customers = customerService.findAll(pageable);
         ModelAndView modelAndView = new ModelAndView("/customer/list");
         modelAndView.addObject("customer",new Customer());
         modelAndView.addObject("customers", customers);
@@ -65,7 +66,7 @@ public class CustomerController {
         Optional<Customer> customer = customerService.findById(id);
 
         if (customer.isPresent()) {
-            ModelAndView modelAndView = new ModelAndView("/customer/list");
+            ModelAndView modelAndView = new ModelAndView("/customer/edit");
             modelAndView.addObject("customer", customer.get());
             return modelAndView;
         } else {
@@ -77,7 +78,7 @@ public class CustomerController {
     @PostMapping("/edit-customer")
     public ModelAndView updateCustomer(@ModelAttribute("customer") Customer customer) {
         customerService.save(customer);
-        ModelAndView modelAndView = new ModelAndView("/customer/list");
+        ModelAndView modelAndView = new ModelAndView("/customer/edit");
         modelAndView.addObject("customer", customer);
         modelAndView.addObject("message", "Customer updated successfully");
         return modelAndView;

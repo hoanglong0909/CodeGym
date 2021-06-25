@@ -64,6 +64,9 @@
         text-align: center;
         color: #1799e4;
     }
+    .form-control:not(select) {
+        padding: 0.5rem 0.5rem !important;
+    }
 </style>
 <body>
 
@@ -96,7 +99,7 @@
                 </div>
 
                 <!-- Email Address -->
-                <div class="input-group col-lg-12 mb-4">
+                <div class="input-group col-lg-6 mb-4">
                     <div class="input-group-prepend">
                                 <span class="input-group-text bg-white px-4 border-md border-right-0">
                                     <i class="fa fa-envelope text-muted"></i>
@@ -106,7 +109,7 @@
                            class="form-control bg-white border-left-0 border-md">
                 </div>
                 <!-- Phone Number -->
-                <div class="input-group col-lg-12 mb-4">
+                <div class="input-group col-lg-6 mb-4">
                     <div class="input-group-prepend">
                                 <span class="input-group-text bg-white px-4 border-md border-right-0">
                                     <i class="fa fa-phone-square text-muted"></i>
@@ -123,7 +126,7 @@
                            class="form-control bg-white border-md border-left-0 pl-3">
                 </div>
                 <!-- Job -->
-                <div class="input-group col-lg-12 mb-4">
+                <div class="input-group col-lg-3 mb-4">
                     <div class="input-group-prepend">
                                 <span class="input-group-text bg-white px-4 border-md border-right-0">
                                     <i class="fa fa-black-tie text-muted"></i>
@@ -168,12 +171,12 @@
             <td th:text="${customer.address}"></td>
             <td th:if="${customer.country}" th:text="${customer.country.name}"></td>
             <td th:unless="${customer.country}"></td>
-<!--            <td>-->
-<!--                <a th:href="@{/edit-customer/__${customer.id}__ }">Edit customer</a>-->
-<!--            </td>-->
             <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fas fa-edit"></i></button>
+                <a th:href="@{/edit-customer/__${customer.id}__ }">Edit customer</a>
             </td>
+<!--            <td>-->
+<!--                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fas fa-edit"></i></button>-->
+<!--            </td>-->
             <td><a th:href="@{/delete-customer/__${customer.id}__ }"><i class="fas fa-user-minus"></i></a></td>
         </tr>
 
@@ -216,7 +219,8 @@
                                 <option th:each="p : ${country}"
                                         th:value="${p.id}"
                                         th:text="${p.name}"
-                                        th:selected="(${customer.country}) and (${p.id} == *{customer.country.id})"></option>
+                                        th:selected="(${customer.country}) and (${p.id} == *{customer.country.id})">
+                                </option>
                             </select>
                         </div>
                     </form>
@@ -229,10 +233,12 @@
         </div>
     </div>
 </table>
-
+<div>
+    <a th:href="@{'/customers'(page=${customers.number - 1})}" th:if="${customers.hasPrevious()}">Previous</a>
+    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+    <a th:href="@{'/customers'(page=${customers.number + 1})}" th:if="${customers.hasNext()}">Next</a>
+</div>
 <!--Edit-->
-
-
 
 </body>
 <script>
