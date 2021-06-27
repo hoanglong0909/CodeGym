@@ -66,7 +66,7 @@ public class CustomerController {
         Optional<Customer> customer = customerService.findById(id);
 
         if (customer.isPresent()) {
-            ModelAndView modelAndView = new ModelAndView("/customer/edit");
+            ModelAndView modelAndView = new ModelAndView("/customer/list");
             modelAndView.addObject("customer", customer.get());
             return modelAndView;
         } else {
@@ -78,7 +78,7 @@ public class CustomerController {
     @PostMapping("/edit-customer")
     public ModelAndView updateCustomer(@ModelAttribute("customer") Customer customer) {
         customerService.save(customer);
-        ModelAndView modelAndView = new ModelAndView("/customer/edit");
+        ModelAndView modelAndView = new ModelAndView("/customer/list");
         modelAndView.addObject("customer", customer);
         modelAndView.addObject("message", "Customer updated successfully");
         return modelAndView;

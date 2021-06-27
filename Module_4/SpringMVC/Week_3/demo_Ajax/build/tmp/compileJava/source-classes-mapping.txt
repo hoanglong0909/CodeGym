@@ -1,0 +1,8 @@
+com/demo/model/Smartphone.java
+ com.demo.model.Smartphone
+com/demo/controller/Home.java
+ com.demo.controller.Home
+com/demo/configuration/AppInit.java
+ com.demo.configuration.AppInit
+com/demo/configuration/Appconfig.java
+ com.demo.configuration.Appconfig
