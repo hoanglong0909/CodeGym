@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<style>
+
+    .border-md {
+        border-width: 2px;
+    }
+
+    .btn-facebook {
+        background: #405D9D;
+        border: none;
+    }
+
+    .btn-facebook:hover, .btn-facebook:focus {
+        background: #314879;
+    }
+
+    .btn-twitter {
+        background: #42AEEC;
+        border: none;
+    }
+
+    .btn-twitter:hover, .btn-twitter:focus {
+        background: #1799e4;
+    }
+
+
+    body {
+        min-height: 100vh;
+    }
+
+    .form-control:not(select) {
+        padding: 1.5rem 0.5rem;
+    }
+
+    select.form-control {
+        height: 52px;
+        padding-left: 0.5rem;
+    }
+
+    .form-control::placeholder {
+        color: #ccc;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 20px;
+        text-align: center;
+        color: #1799e4;
+    }
+    .form-control:not(select) {
+        padding: 0.5rem 0.5rem !important;
+    }
+</style>
+<body>
+
+
+<h1>CreateCustomer</h1>
+
+<div class="container">
+    <!-- Registeration Form -->
+    <div class="col-md-12">
+        <form th:action="@{/create-customer}" th:object="${customer}" method="post">
+            <div class="row">
+                <div class="input-group col-lg-6 mb-4">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-user text-muted"></i>
+                                </span>
+                    </div>
+                    <input th:field="*{name}"  type="text" placeholder="First Name"
+                           class="form-control bg-white border-left-0 border-md">
+                </div>
+                <!-- Last Name -->
+                <div class="input-group col-lg-6 mb-4">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-user text-muted"></i>
+                                </span>
+                    </div>
+                    <input th:field="*{address}"  type="text" placeholder="Address"
+                           class="form-control bg-white border-left-0 border-md">
+                </div>
+
+                <!-- Email Address -->
+                <div class="input-group col-lg-6 mb-4">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-envelope text-muted"></i>
+                                </span>
+                    </div>
+                    <input th:field="*{email}"  type="email" placeholder="Email Address"
+                           class="form-control bg-white border-left-0 border-md">
+                </div>
+                <!-- Phone Number -->
+                <div class="input-group col-lg-6 mb-4">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-phone-square text-muted"></i>
+                                </span>
+                    </div>
+                    <select id="countryCode" name="countryCode" style="max-width: 80px"
+                            class="custom-select form-control bg-white border-left-0 border-md h-100 font-weight-bold text-muted">
+                        <option value="">+12</option>
+                        <option value="">+10</option>
+                        <option value="">+15</option>
+                        <option value="">+18</option>
+                    </select>
+                    <input th:field="*{phone}" type="tel" placeholder="Phone Number"
+                           class="form-control bg-white border-md border-left-0 pl-3">
+                </div>
+                <!-- Job -->
+                <div class="input-group col-lg-3 mb-4">
+                    <div class="input-group-prepend">
+                                <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                    <i class="fa fa-black-tie text-muted"></i>
+                                </span>
+                    </div>
+                    <select th:field="*{country}" id="job"
+                            class="form-control custom-select bg-white border-left-0 border-md">
+                        <option th:each="p : ${country}" th:value="${p.id}" th:text="${p.name}"></option>
+                    </select>
+                </div>
+                <!-- Submit Button -->
+                <div class="form-group col-lg-12 mx-auto mb-5">
+                        <button type="submit" class="btn btn-primary btn-sm">Create customer</button>
+                </div>
+                <!-- Divider Text -->
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<!--Hiển thị bảng customer-->
+<h1>Listcustomer</h1>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col"> Address</th>
+        <th scope="col">country</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="customer : ${customers}">
+        <tr>
+            <td th:text="${customer.id}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.email}"></td>
+            <td th:text="${customer.phone}"></td>
+            <td th:text="${customer.address}"></td>
+            <td th:if="${customer.country}" th:text="${customer.country.name}"></td>
+            <td th:unless="${customer.country}"></td>
+<!--            <td>-->
+<!--                <a th:href="@{/edit-customer/__${customer.id}__ }">Edit customer</a>-->
+<!--            </td>-->
+            <td>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fas fa-edit"></i></button>
+            </td>
+            <td><a th:href="@{/delete-customer/__${customer.id}__ }"><i class="fas fa-user-minus"></i></a></td>
+        </tr>
+
+    </th:block>
+
+    </tbody>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form th:action="@{/edit-customer}" th:object="${customer}" method="post">
+                        <div class="mb-1">
+                            <label  class="col-form-label">Id:</label>
+                            <input th:type="hidden" name="id"  th:text="${customer.id}" >
+                        </div>
+                        <div class="mb-1">
+                            <label  class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" th:text="${customer.name}"  >
+                        </div>
+                        <div class="mb-1">
+                            <label  class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" th:field="*{email}"  >
+                        </div>
+                        <div class="mb-1">
+                            <label  class="col-form-label">Phone:</label>
+                            <input type="text" class="form-control" th:field="*{phone}" >
+                        </div>
+                        <div class="mb-1">
+                            <label  class="col-form-label">Address:</label>
+                            <input type="text" class="form-control" th:field="*{address}" >
+                        </div>
+                        <div class="mb-1">
+                            <label  class="col-form-label">Country:</label>
+                            <select name="country">
+                                <option th:each="p : ${country}"
+                                        th:value="${p.id}"
+                                        th:text="${p.name}"
+                                        th:selected="(${customer.country}) and (${p.id} == *{customer.country.id})">
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"><a th:href="@{/edit-customer/__${customer.id}__ }">Edit customer</a></td</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</table>
+<div>
+    <a th:href="@{'/customers'(page=${customers.number - 1})}" th:if="${customers.hasPrevious()}">Previous</a>
+    <span th:text="${customers.number + 1}"></span>/<span th:text="${customers.totalPages}"></span>
+    <a th:href="@{'/customers'(page=${customers.number + 1})}" th:if="${customers.hasNext()}">Next</a>
+</div>
+<!--Edit-->
+
+</body>
+<script>
+    var exampleModal = document.getElementById('exampleModal')
+    exampleModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        var recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = exampleModal.querySelector('.modal-title')
+        var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+        modalTitle.textContent = 'New message to ' + recipient
+        modalBodyInput.value = recipient
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+function addNewCustomer(){
+    let
+}
+</script>
+</html>

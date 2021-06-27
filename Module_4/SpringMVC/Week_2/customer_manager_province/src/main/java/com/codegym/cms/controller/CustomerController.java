@@ -2,7 +2,6 @@ package com.codegym.cms.controller;
 
 import com.codegym.cms.model.Country;
 import com.codegym.cms.model.Customer;
-import com.codegym.cms.repository.ICustomerRepository;
 import com.codegym.cms.service.customer.ICustomerService;
 import com.codegym.cms.service.province.IProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;

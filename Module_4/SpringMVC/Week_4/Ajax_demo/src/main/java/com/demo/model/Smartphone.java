@@ -13,6 +13,10 @@ public class Smartphone {
     private String model;
     private Double price;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
     public Smartphone() {
     }
 
@@ -52,6 +56,18 @@ public class Smartphone {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Smartphone(Category category) {
+        this.category = category;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     @Override
