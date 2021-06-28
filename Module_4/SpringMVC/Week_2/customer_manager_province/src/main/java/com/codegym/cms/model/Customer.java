@@ -30,6 +30,14 @@ public class Customer {
         this.country = country;
     }
 
+    public Customer(String name, String email, String phone, String address, Country country) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        this.country = country;
+    }
+
     public Long getId() {
         return id;
     }

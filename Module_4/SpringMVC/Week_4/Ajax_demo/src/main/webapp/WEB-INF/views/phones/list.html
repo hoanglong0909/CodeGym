@@ -27,8 +27,14 @@
         //tên API
         url: "/smartphones",
         //xử lý khi thành công
-        success: successHandler
-
+        success: function (smartphone) {
+          $('#smartphoneList tbody').prepend(' <tr>\n' +
+                  '      <td>'+ smartphone.producer+'</td>\n' +
+                  '      <td>'+ smartphone.model+'</td>\n' +
+                  '      <td>'+ smartphone.price+'</td>\n' +
+                  '      <td><a class="deleteSmartphone" href="'+smartphone.id+'">Delete</a></td>\n' +
+                  '    </tr>')
+        }
       });
       //chặn sự kiện mặc định của thẻ
       event.preventDefault();
@@ -107,12 +113,15 @@
 </form>
 <h1>Smartphone List</h1>
 <table id="smartphoneList">
+  <thead>
   <tr>
     <td>Producer</td>
     <td>Model</td>
     <td>Price</td>
     <td>Delete</td>
   </tr>
+  </thead>
+  <tbody>
   <th:block th:each="smartphone: ${smartphones}">
     <tr>
       <td th:text="${smartphone.producer}"></td>
@@ -121,6 +130,7 @@
       <td><a class="deleteSmartphone" th:href="${smartphone.getId()}">Delete</a></td>
     </tr>
   </th:block>
+  </tbody>
 </table>
 </body>
 </html>
