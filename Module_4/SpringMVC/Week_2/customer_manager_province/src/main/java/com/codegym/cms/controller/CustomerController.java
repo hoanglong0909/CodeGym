@@ -21,15 +21,15 @@ public class CustomerController {
     @Autowired
     private IProvinceService provinceService;
 
-    @ModelAttribute("country")
+    @ModelAttribute("countrys")
     public Iterable<Country> provinces() {
         return provinceService.findAll();
     }
 
-    @ModelAttribute("customers")
-    public Customer customer(){
-        return new Customer();
-    }
+//    @ModelAttribute("customers")
+//    public Customer customer(){
+//        return new Customer();
+//    }
 
     @GetMapping
     public ResponseEntity<Iterable<Customer>> allPhones() {
@@ -38,32 +38,30 @@ public class CustomerController {
 
     @PostMapping
     public ResponseEntity<Customer> createSmartphone(@RequestBody Customer customer ) {
+        customer.getCountry().setName(provinceService.findById(customer.getCountry().getId()).get().getName());
         return new ResponseEntity<>(customerService.save(customer), HttpStatus.CREATED);
     }
 
 
-
-
     @GetMapping("/list")
-    public ModelAndView listCustomers(Pageable pageable) {
-        Iterable<Customer> customers = customerService.findAll(pageable);
+    public ModelAndView listCustomers() {
         ModelAndView modelAndView = new ModelAndView("/customer/list");
-        modelAndView.addObject("customer",new Customer());
-        modelAndView.addObject("customers", customers);
+        modelAndView.addObject("customers",customerService.findAllByOrderByIdDesc());
         return modelAndView;
     }
 
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Customer> deleteSmartphone(@PathVariable Long id) {
+    public ResponseEntity<Customer> deleteSmartphone(@PathVariable long id) {
         Optional<Customer> customerOptional = customerService.findById(id);
-        if (!customerOptional.isPresent()) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
         customerService.remove(id);
         return new ResponseEntity<>(customerOptional.get(), HttpStatus.NO_CONTENT);
     }
 
-
+    @GetMapping("/edit-customer/{id}")
+    public ResponseEntity<Customer> customerResponseEntity(@PathVariable Long id){
+        Customer customerOptional = customerService.findById(id).get();
+        return new ResponseEntity<>(customerOptional,HttpStatus.OK);
+    }
 
 }

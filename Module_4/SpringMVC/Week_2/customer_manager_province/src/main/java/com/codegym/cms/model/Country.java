@@ -1,6 +1,8 @@
 package com.codegym.cms.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -12,7 +14,8 @@ public class Country {
     private Long id;
     private String name;
 
-    @OneToMany(targetEntity = Customer.class)
+    @JsonIgnore
+    @OneToMany(targetEntity = Customer.class, fetch = FetchType.EAGER)
     private List<Customer> customers;
 
     public Country() {

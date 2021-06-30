@@ -77,7 +77,7 @@ public class CustomerController {
     }
 
 
-    @PostMapping("/delete-customer")
+    @DeleteMapping("/delete-customer")
     public String deleteCustomer(@ModelAttribute("customer") Customer customer) {
         customerService.remove(customer.getId());
         return "redirect:customers";

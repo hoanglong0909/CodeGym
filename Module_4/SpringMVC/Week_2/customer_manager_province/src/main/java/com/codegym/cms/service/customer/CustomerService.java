@@ -38,7 +38,7 @@ public class CustomerService implements ICustomerService {
 
 
     @Override
-    public Page<Customer> findAll(Pageable pageable) {
-        return customerRepository.findAll(pageable);
+    public Iterable<Customer> findAllByOrderByIdDesc() {
+        return customerRepository.findAllByOrderByIdDesc();
     }
 }
