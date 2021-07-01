@@ -1,13 +1,20 @@
 package com.codegym.cms.model;
 
+import lombok.Data;
+import org.springframework.stereotype.Component;
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+
 
 @Entity
 @Table(name = "customers")
-public class Customer {
+@Component
+@Data
+public class Customer{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @NotEmpty
     private Long id;
     private String name;
     private String email;
@@ -21,7 +28,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(Long id, String name, String email, String phone, String address, Country country) {
+    public Customer( Long id,String name, String email, String phone, String address, Country country) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -94,7 +101,9 @@ public class Customer {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
-                ", country=" + country +
+                ", country=" + country.getName() +
                 '}';
     }
+
+
 }

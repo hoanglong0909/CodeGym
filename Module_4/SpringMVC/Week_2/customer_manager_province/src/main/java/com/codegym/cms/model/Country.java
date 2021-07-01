@@ -15,10 +15,19 @@ public class Country {
     private String name;
 
     @JsonIgnore
-    @OneToMany(targetEntity = Customer.class, fetch = FetchType.EAGER)
+    @OneToMany(targetEntity = Customer.class)
     private List<Customer> customers;
 
     public Country() {
+    }
+
+    public Country(Long id) {
+        this.id = id;
+    }
+
+    public Country(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public Country(String name) {

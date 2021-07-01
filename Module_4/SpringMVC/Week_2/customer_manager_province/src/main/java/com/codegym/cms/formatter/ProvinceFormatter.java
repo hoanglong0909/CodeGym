@@ -1,7 +1,7 @@
 package com.codegym.cms.formatter;
 
 import com.codegym.cms.model.Country;
-import com.codegym.cms.service.province.IProvinceService;
+import com.codegym.cms.service.country.IProvinceCountry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 import org.springframework.stereotype.Component;
@@ -13,10 +13,10 @@ import java.util.Optional;
 @Component
 public class ProvinceFormatter implements Formatter<Country> {
 
-    private IProvinceService provinceService;
+    private IProvinceCountry provinceService;
 
     @Autowired
-    public ProvinceFormatter(IProvinceService provinceService) {
+    public ProvinceFormatter(IProvinceCountry provinceService) {
         this.provinceService = provinceService;
     }
 

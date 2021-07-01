@@ -5,6 +5,10 @@
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../../../resourt/customer.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 </head>
 <style>
     h1 {
@@ -13,11 +17,12 @@
         font-weight: bold;
     }
 
-    #btnCreateCustomer{
-        margin-top: 80px ;
+    #btnCreateCustomer {
+        margin-top: 80px;
     }
-    .modal-header{
-       marker-offset: auto;
+
+    .modal-header {
+        marker-offset: auto;
     }
 </style>
 <body>
@@ -26,44 +31,24 @@
 <h1>Create Customer</h1>
 <div class="container">
     <div class="box-header">
-        <form method="post" id="frmCreateCustomer">
-            <fieldset class="row g-3">
-                <legend></legend>
-                <div class="col-md-6">
-                    <label for="name" class="form-label">Full name</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                </div>
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" name="email">
-                </div>
-                <div class="col-md-6">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" name="phone">
-                </div>
-                <div class="col-md-6">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" name="address">
-                </div>
-                <div class="col-md-6">
-                    <label for="phone" class="form-label">Country</label>
-                    <select class="form-control" id="country">
-                        <option th:each="co : ${countrys}" th:value="${co.getId()}"
-                                th:text="${co.getName()}"></option>
-                    </select>
-                </div>
-                <div class="col-md-12">
-                    <input onclick="addNewCustomer()" type="button"
-                           id="btnCreateCustomer"
-                           class="btn btn-outline-primary"
-                           value="customer">
-                </div>
-            </fieldset>
-        </form>
+
     </div>
 </div>
 <!--new table List-->
+<div class="container">
+    <div class="row">
+        <div class="col12">
 
+            <button type="button" class="btn btn-outline-primary updateCustomer"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                    onclick="loadAddnew()">
+                <i class="far fa-create"></i>
+                Create
+            </button>
+        </div>
+    </div>
+
+</div>
 <h1>Smartphone List</h1>
 <table id="smartphoneList" class="table table-hover">
     <thead>
@@ -75,11 +60,13 @@
         <td><strong>Address</strong></td>
         <td><strong>Country</strong></td>
         <td><strong>Option</strong></td>
+        <td><strong>Option</strong></td>
+<!--        <td><strong>Option</strong></td>-->
     </tr>
     </thead>
     <tbody>
     <th:block th:each="customer: ${customers}">
-        <tr>
+        <tr th:id="'row'+${customer.id}">
             <td th:text="${customer.id}"></td>
             <td th:text="${customer.name}"></td>
             <td th:text="${customer.email}"></td>
@@ -87,329 +74,74 @@
             <td th:text="${customer.address}"></td>
             <td th:text="${customer.country.name}"></td>
             <td>
-                <button th:value="${customer.id}" type="button" class="btn btn-primary updateCustomer"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-                    <i class="fas fa-edit"></i></button>
+                <button type="button" class="btn btn-outline-primary updateCustomer"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
+                        th:attr="onclick=|loadEditData('${customer.id}')|">
+                    <i class="far fa-edit"></i>
+                    Edit
+                </button>
+                <input type="hidden" id="id" th:value="${customer.id}">
             </td>
-            <td><a class="deleteCustomer" th:href="${customer.getId()}"><i class="fas fa-trash-alt"></i></a></td>
+<!--            <td><a class="btn btn-outline-danger deleteCustomer" th:href="${customer.getId()}"><i-->
+<!--                    class="fas fa-trash-alt"></i>Delete</a></td>-->
+
+            <td><button class="btn btn-outline-danger"  th:attr="onclick=|deleteCustomer('${customer.id}',this)|" ><i
+                    class="fas fa-trash-alt"></i>Delete</button></td>
         </tr>
     </th:block>
     </tbody>
 </table>
 
 
-<!--table list-->
-<!--table list-->
-<!--Edit-->
-
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <h5 class="modal-title" id="exampleModalLabel"><span id="exampleModalLabelSpan"></span> </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form >
+                <form>
                     <div class="md-6">
-                        <input type="text" hidden class="form-control" id="upID" value="">
-
+                        <label class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="upName">
                     </div>
                     <div class="md-6">
-                        <label  class="form-label">Name:</label>
-                        <input type="text" class="form-control" id="upName" value="">
+                        <label class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="upEmail">
                     </div>
                     <div class="md-6">
-                        <label  class="col-form-label">Email:</label>
-                        <input type="text" class="form-control" id="upEmail" value="">
-                    </div>
-                    <div class="md-6">
-                        <label  class="col-form-label">phone:</label>
-                        <input type="text" class="form-control" id="upPhone" value="">
+                        <label class="col-form-label">phone:</label>
+                        <input type="text" class="form-control" id="upPhone">
                     </div>
                     <div class="md-6">
                         <label class="col-form-label">address:</label>
-                        <input type="text" class="form-control" id="upAddress" value="">
+                        <input type="text" class="form-control" id="upAddress">
                     </div>
                     <div class="md-6">
                         <label>Country</label>
-                        <select class="form-control" name="upCountry" id="upCountry" value="">
+                        <select class="form-control" name="upCountry" id="upCountry">
                             <option value="">Choose country</option>
-                            <option th:each="p : ${countrys}" th:value="${p.country.id}" th:text="${p.country.name}"></option>
+                            <option th:each="p : ${countrys}"
+                                    th:value="${p.getId()}"
+                                    th:text="${p.getName()}">
+                            </option>
                         </select>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary updateCustomer" >Send message</button>
+                <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="editCustomer()">Save</button>
+                <input type="hidden" id="upId" name="upId">
             </div>
         </div>
     </div>
 </div>
-
-<!------------------------------------------------footer---------------------------------------------------------------->
-</body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript">
-    function addNewCustomer() {
-        let id = $('#id').val();
-        let name = $('#name').val();
-        let email = $('#email').val();
-        let phone = $('#phone').val();
-        let address = $('#address').val();
-        let country_id = $('#country').val();
-
-        let newCountry = {
-            id: country_id
-        }
-
-        let newCustomer = {
-            id: id,
-            name: name,
-            email: email,
-            phone: phone,
-            address: address,
-            country: newCountry
-        };
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Your work has been saved',
-            showConfirmButton: false,
-            timer: 1500
-        })
-        $.ajax({
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            type: "POST",
-            data: JSON.stringify(newCustomer),
-            url: "/customers",
-            success: function (customer) {
-                $('#smartphoneList tbody').prepend(' <tr>\n' +
-                    '      <td>' + customer.id + '</td>\n' +
-                    '      <td>' + customer.name + '</td>\n' +
-                    '      <td>' + customer.email + '</td>\n' +
-                    '      <td>' + customer.phone + '</td>\n' +
-                    '      <td>' + customer.address + '</td>\n' +
-                    '      <td>' + customer.country.name + '</td>\n' +
-                    '      <td><a class="deleteCustomer" href="' + customer.id + '"><i class="fas fa-edit"></i></a></td>\n' +
-                    '      <td><a class="deleteCustomer" href="' + customer.id + '"><i class="fas fa-trash-alt"></i></a></td>\n' +
-                    '    </tr>');
-                $(document).ready(function () {
-                    //sư kiện nào thực hiện Ajax
-                    $('.deleteCustomer').on('click',function (event) {
-                        //lay du lieu
-                        let a = $(this);
-                        let customerId = a.attr("href");
-                        const swalWithBootstrapButtons = Swal.mixin({
-                            customClass: {
-                                confirmButton: 'btn btn-success',
-                                cancelButton: 'btn btn-danger'
-                            },
-                            buttonsStyling: false
-                        })
-                        swalWithBootstrapButtons.fire({
-                            title: 'Are you sure?',
-                            text: "You won't be able to revert this!",
-                            icon: 'warning',
-                            showCancelButton: true,
-                            confirmButtonText: 'Yes, delete it!',
-                            cancelButtonText: 'No, cancel!',
-                            reverseButtons: true
-                        }).then((result) => {
-                            if (result.isConfirmed) {
-                                swalWithBootstrapButtons.fire(
-                                    'Deleted!',
-                                    'Your file has been deleted.',
-                                    'success'
-                                );
-                                $.ajax({
-                                    type: "DELETE",
-                                    //tên API
-                                    url: `/customers/${customerId}`,
-                                    //xử lý khi thành công
-                                    success: function (data) {
-                                        a.parent().parent().remove();
-                                    }
-                                });
-                                //chặn sự kiện mặc định của thẻ
-                            } else if (
-                                /* Read more about handling dismissals below */
-                                result.dismiss === Swal.DismissReason.cancel
-                            ) {
-                                swalWithBootstrapButtons.fire(
-                                    'Cancelled',
-                                    'Your imaginary file is safe :)',
-                                    'error'
-                                )
-                            }
-                        })
-                        event.preventDefault();
-                    });
-                })
-            }
-        });
-    }
-
-    $(document).ready(function () {
-        //sư kiện nào thực hiện Ajax
-        $('.deleteCustomer').on('click',function (event) {
-            //lay du lieu
-            let a = $(this);
-            let customerId = a.attr("href");
-            const swalWithBootstrapButtons = Swal.mixin({
-                customClass: {
-                    confirmButton: 'btn btn-success',
-                    cancelButton: 'btn btn-danger'
-                },
-                buttonsStyling: false
-            })
-            swalWithBootstrapButtons.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonText: 'Yes, delete it!',
-                cancelButtonText: 'No, cancel!',
-                reverseButtons: true
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    swalWithBootstrapButtons.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                        'success'
-                    );
-                    $.ajax({
-                        type: "DELETE",
-                        //tên API
-                        url: `/customers/${customerId}`,
-                        //xử lý khi thành công
-                        success: function (data) {
-                            a.parent().parent().remove();
-                        }
-                    });
-                    //chặn sự kiện mặc định của thẻ
-                } else if (
-                    /* Read more about handling dismissals below */
-                    result.dismiss === Swal.DismissReason.cancel
-                ) {
-                    swalWithBootstrapButtons.fire(
-                        'Cancelled',
-                        'Your imaginary file is safe :)',
-                        'error'
-                    )
-                }
-            })
-            event.preventDefault();
-        });
-    })
-
-
-
-    $('.updateCustomer').on('click', function () {
-        let a = $(this);
-        let customerId = a.attr("value");
-        console.log(customerId);
-        $.ajax({
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            type: "GET",
-            url: `/edit-customer/${customerId}`,
-            success: function (customer) {
-                $('#upID').val(customer.id);
-                $('#upName').val(customer.name);
-                $('#upEmail').val(customer.email);
-                $('#upPhone').val(customer.phone);
-                $('#upAddress').val(customer.address);
-                $('#upCountry').val(customer.country.id);
-            }
-        })
-    })
-
-</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        ></script>
+></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-       ></script>
+></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    var exampleModal = document.getElementById('exampleModal')
-    exampleModal.addEventListener('show.bs.modal', function (event) {
-        // Button that triggered the modal
-        var button = event.relatedTarget
-        // Extract info from data-bs-* attributes
-        var recipient = button.getAttribute('data-bs-whatever')
-        // If necessary, you could initiate an AJAX request here
-        // and then do the updating in a callback.
-        //
-        // Update the modal's content.
-        var modalTitle = exampleModal.querySelector('.modal-title')
-        var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-        modalTitle.textContent = 'New message to ' + recipient
-        modalBodyInput.value = recipient
-    })
-
-    $('.save-customer').on('click',function (){
-        let id = $('#upID').val();
-        let fullName = $('#upName').val();
-        let email = $('#upEmail').val();
-        let phone = $('#upPhone').val();
-        let address = $('#upAddress').val();
-        let country = $('#upCountry').val();
-
-        let newCountry = {
-            country_id: country
-        }
-
-        let newCustomer = {
-            fullName: fullName,
-            email: email,
-            phone: phone,
-            address: address,
-            country: newCountry
-        }
-        $.ajax({
-
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            type: "PUT",
-            data: JSON.stringify(newCustomer),
-            url: `/edit/${id}`,
-            success: function (customer) {
-                console.log('#row'+id+ ' td');
-                $('#row'+id+ ' td').remove();
-                $('#row'+id+ ' td').html(`<tr id="row${id}">
-                        <td>${id}</td>
-                        <td>${fullName}</td>
-                        <td>${email}</td>
-                        <td>${phone}</td>
-                        <td>${address}</td>
-                        <td>${country.country_name}</td>
-                        <td>
-                            <button th:value="${id}" class="btn btn-outline-primary updateCustomer" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="far fa-edit"></i>Edit</button>
-                             <a value="${id}" type="button" class="btn btn-outline-danger deleteCustomer" ><i  class="fas fa-trash-alt"></i>Delete</a>
-                        </td>
-                    </tr>`);
-
-                $('.dismiss-modal').click();
-
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'You have changed successfull',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            }
-        });
-    })
-</script>
+</body>
 </html>

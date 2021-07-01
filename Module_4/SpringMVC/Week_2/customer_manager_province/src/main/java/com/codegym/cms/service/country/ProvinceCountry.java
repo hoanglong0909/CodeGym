@@ -1,17 +1,17 @@
-package com.codegym.cms.service.province;
+package com.codegym.cms.service.country;
 
 
 import com.codegym.cms.model.Country;
-import com.codegym.cms.repository.IProvinceRepository;
+import com.codegym.cms.repository.ICountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-public class ProvinceService implements IProvinceService {
+public class ProvinceCountry implements IProvinceCountry {
     @Autowired
-    private IProvinceRepository provinceRepository;
+    private ICountryRepository provinceRepository;
 
     @Override
     public Iterable<Country> findAll() {

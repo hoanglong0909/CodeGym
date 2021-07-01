@@ -6,5 +6,5 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface IProvinceRepository extends CrudRepository<Country, Long> {
+public interface ICountryRepository extends CrudRepository<Country, Long> {
 }

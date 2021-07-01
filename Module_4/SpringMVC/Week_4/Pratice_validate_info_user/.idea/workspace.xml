@@ -10,41 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="233519e7-8595-4acf-a8c2-650182604f22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/resourt/customer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_1/hibernate/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_1/hibernate/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_1/hibernate/customer-management-hibernate/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_1/hibernate/customer-management-hibernate/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/configuration/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/controller/ProvinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/controller/ProvinceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/controller/ProvinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/controller/CountryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/formatter/ProvinceFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/formatter/ProvinceFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/repository/IProvinceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/repository/IProvinceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/IGeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/IGeneralService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/model/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/model/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/repository/IProvinceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/repository/ICountryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/province/IProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/country/ICountryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/province/ProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/java/com/codegym/cms/service/country/CountryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/customer/customer.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/customer/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/province/erorr.404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/src/main/webapp/WEB-INF/views/erorr.404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/configuration/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/configuration/AppConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/controller/ProvinceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/controller/ProvinceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/formatter/ProvinceFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/formatter/ProvinceFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/model/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/classes/com/codegym/cms/model/Customer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/configuration/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/configuration/AppConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/controller/CustomerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/controller/ProvinceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/controller/ProvinceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/formatter/ProvinceFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/formatter/ProvinceFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/views/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/views/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/model/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/model/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/classes/com/codegym/cms/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/views/customer/customer.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/views/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/views/customer/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Week_2/customer_manager_province/target/customer_manager_province/WEB-INF/views/province/erorr.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../upload_File/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../maven-product-upload_AM" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../maven-product-upload_AM" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../jsp-customer-management-AIO-db" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../jsp-customer-management-AIO-db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -98,17 +96,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.46" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -207,6 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624418140634</updated>
       <workItem from="1624418143613" duration="2568000" />
+      <workItem from="1625066167323" duration="2407000" />
     </task>
     <servers />
   </component>
@@ -223,5 +211,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -3,7 +3,7 @@ package com.codegym.cms.controller;
 
 import com.codegym.cms.model.Country;
 import com.codegym.cms.service.customer.CustomerService;
-import com.codegym.cms.service.province.ProvinceService;
+import com.codegym.cms.service.country.ProvinceCountry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,12 +17,12 @@ import java.util.Optional;
 @Controller
 public class ProvinceController {
     @Autowired
-    private ProvinceService provinceService;
+    private ProvinceCountry provinceService;
 
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping("/provinces")
+    @GetMapping("/countrys")
     public ModelAndView listProvinces() {
         Iterable<Country> provinces = provinceService.findAll();
         ModelAndView modelAndView = new ModelAndView("/country/list");

@@ -2,7 +2,7 @@ package com.codegym.cms.configuration;
 
 
 import com.codegym.cms.formatter.ProvinceFormatter;
-import com.codegym.cms.service.province.ProvinceService;
+import com.codegym.cms.service.country.ProvinceCountry;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -50,7 +50,7 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
-        registry.addFormatter(new ProvinceFormatter(applicationContext.getBean(ProvinceService.class)));
+        registry.addFormatter(new ProvinceFormatter(applicationContext.getBean(ProvinceCountry.class)));
     }
 
     //Cấu hình Thymleaf
@@ -125,11 +125,8 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
     }
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/css/**")
-                .addResourceLocations("/css/")
-                .resourceChain(false);
-        registry.addResourceHandler("/js/**")
-                .addResourceLocations("/js/")
+        registry.addResourceHandler("/resourt/**")
+                .addResourceLocations("/resourt/")
                 .resourceChain(false);
     }
 }

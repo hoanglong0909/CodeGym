@@ -3,15 +3,14 @@ package com.codegym.cms.controller;
 import com.codegym.cms.model.Country;
 import com.codegym.cms.model.Customer;
 import com.codegym.cms.service.customer.ICustomerService;
-import com.codegym.cms.service.province.IProvinceService;
+import com.codegym.cms.service.country.IProvinceCountry;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import java.util.Optional;
+
 @RestController
 @RequestMapping("/customers")
 public class CustomerController {
@@ -19,29 +18,23 @@ public class CustomerController {
     private ICustomerService customerService;
 
     @Autowired
-    private IProvinceService provinceService;
+    private IProvinceCountry countryService;
 
     @ModelAttribute("countrys")
-    public Iterable<Country> provinces() {
-        return provinceService.findAll();
+    public Iterable<Country> country() {
+        return countryService.findAll();
     }
 
-//    @ModelAttribute("customers")
-//    public Customer customer(){
-//        return new Customer();
-//    }
-
     @GetMapping
-    public ResponseEntity<Iterable<Customer>> allPhones() {
+    public ResponseEntity<Iterable<Customer>> AllCustomer() {
         return new ResponseEntity<>(customerService.findAll(), HttpStatus.OK);
     }
 
     @PostMapping
-    public ResponseEntity<Customer> createSmartphone(@RequestBody Customer customer ) {
-        customer.getCountry().setName(provinceService.findById(customer.getCountry().getId()).get().getName());
+    public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer ) {
+        customer.getCountry().setName(countryService.findById(customer.getCountry().getId()).get().getName());
         return new ResponseEntity<>(customerService.save(customer), HttpStatus.CREATED);
     }
-
 
     @GetMapping("/list")
     public ModelAndView listCustomers() {
@@ -58,10 +51,20 @@ public class CustomerController {
         return new ResponseEntity<>(customerOptional.get(), HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping("/edit-customer/{id}")
-    public ResponseEntity<Customer> customerResponseEntity(@PathVariable Long id){
-        Customer customerOptional = customerService.findById(id).get();
-        return new ResponseEntity<>(customerOptional,HttpStatus.OK);
+
+    @PostMapping("/edit/{id}")
+    public ResponseEntity<Customer> customerResponseEntity(@RequestBody Customer customer,@PathVariable Long id){
+        customer.setId(id);
+        customer.getCountry().setName(countryService.findById(customer.getCountry().getId()).get().getName());
+        return new ResponseEntity<>(customerService.save(customer),HttpStatus.OK);
     }
+
+
+    @GetMapping("/api/{id}")
+    public ResponseEntity<Customer> showApi(@PathVariable long id){
+        Optional<Customer> optional = customerService.findById(id);
+        return new ResponseEntity<>(optional.get(),HttpStatus.OK);
+    }
+
 
 }
