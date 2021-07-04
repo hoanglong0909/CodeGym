@@ -1,3 +1,4 @@
+
 function addNewCustomer() {
     let name = $('#name').val();
     let email = $('#email').val();
@@ -117,13 +118,9 @@ function addNewCustomer() {
         }
     });
 }
-
-$(document).ready(function () {
-    //sư kiện nào thực hiện Ajax
-})
 function deleteCustomer(customerId,button){
     let a = button;
-   // let customerId = a.attr("href");
+    // let customerId = a.attr("href");
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
             confirmButton: 'btn btn-success',
@@ -147,7 +144,7 @@ function deleteCustomer(customerId,button){
                 //xử lý khi thành công
                 success: function (data) {
                     //a.parent("tr").first().remove();
-                   a.closest ('tr').remove ();
+                    a.closest ('tr').remove ();
                     swalWithBootstrapButtons.fire(
                         'Deleted!',
                         'Your file has been deleted.',
@@ -169,8 +166,6 @@ function deleteCustomer(customerId,button){
     })
     event.preventDefault();
 }
-
-
 function loadEditData(id){
 
     $.ajax({
@@ -275,16 +270,13 @@ function editCustomer() {
     }
 
 }
-
 function loadAddnew(){
 
     $('#exampleModalLabelSpan').text("Add new");
-            $('#upId').val(0);
-            $('#upName').val("");
-            $('#upEmail').val("");
-            $('#upPhone').val("");
-            $('#upAddress').val("");
-            $('#upCountry').val("");
-
-    //event.preventDefault();
+    $('#upId').val(0);
+    $('#upName').val("");
+    $('#upEmail').val("");
+    $('#upPhone').val("");
+    $('#upAddress').val("");
+    $('#upCountry').val("");
 }

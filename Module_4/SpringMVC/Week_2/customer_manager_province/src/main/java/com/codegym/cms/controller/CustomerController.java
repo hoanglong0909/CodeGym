@@ -36,6 +36,7 @@ public class CustomerController {
         return new ResponseEntity<>(customerService.save(customer), HttpStatus.CREATED);
     }
 
+
     @GetMapping("/list")
     public ModelAndView listCustomers() {
         ModelAndView modelAndView = new ModelAndView("/customer/list");

@@ -61,7 +61,7 @@
         <td><strong>Country</strong></td>
         <td><strong>Option</strong></td>
         <td><strong>Option</strong></td>
-<!--        <td><strong>Option</strong></td>-->
+        <!--        <td><strong>Option</strong></td>-->
     </tr>
     </thead>
     <tbody>
@@ -74,7 +74,7 @@
             <td th:text="${customer.address}"></td>
             <td th:text="${customer.country.name}"></td>
             <td>
-                <button type="button" class="btn btn-outline-primary updateCustomer"
+                <button type="button" class="btn btn-outline-primary"
                         data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"
                         th:attr="onclick=|loadEditData('${customer.id}')|">
                     <i class="far fa-edit"></i>
@@ -82,11 +82,11 @@
                 </button>
                 <input type="hidden" id="id" th:value="${customer.id}">
             </td>
-<!--            <td><a class="btn btn-outline-danger deleteCustomer" th:href="${customer.getId()}"><i-->
-<!--                    class="fas fa-trash-alt"></i>Delete</a></td>-->
-
-            <td><button class="btn btn-outline-danger"  th:attr="onclick=|deleteCustomer('${customer.id}',this)|" ><i
-                    class="fas fa-trash-alt"></i>Delete</button></td>
+            <td>
+                <button class="btn btn-outline-danger" th:attr="onclick=|deleteCustomer('${customer.id}',this)|"><i
+                        class="fas fa-trash-alt"></i>Delete
+                </button>
+            </td>
         </tr>
     </th:block>
     </tbody>
@@ -97,26 +97,26 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><span id="exampleModalLabelSpan"></span> </h5>
+                <h5 class="modal-title" id="exampleModalLabel"><span id="exampleModalLabelSpan"></span></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form role="form" id="registration">
                     <div class="md-6">
                         <label class="form-label">Name:</label>
-                        <input type="text" class="form-control" id="upName">
+                        <input type="text" class="form-control" id="upName" name="upName">
                     </div>
                     <div class="md-6">
                         <label class="col-form-label">Email:</label>
-                        <input type="text" class="form-control" id="upEmail">
+                        <input type="text" class="form-control" id="upEmail" name="upEmail">
                     </div>
                     <div class="md-6">
                         <label class="col-form-label">phone:</label>
-                        <input type="text" class="form-control" id="upPhone">
+                        <input type="text" class="form-control" id="upPhone" name="upPhone">
                     </div>
                     <div class="md-6">
                         <label class="col-form-label">address:</label>
-                        <input type="text" class="form-control" id="upAddress">
+                        <input type="text" class="form-control" id="upAddress" name="upAddress">
                     </div>
                     <div class="md-6">
                         <label>Country</label>
@@ -132,7 +132,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary close-modal" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="editCustomer()">Save</button>
+                <button type="submit" class="btn btn-primary" onclick="editCustomer()">Save</button>
                 <input type="hidden" id="upId" name="upId">
             </div>
         </div>
@@ -143,5 +143,54 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
 ></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $("#registration").validate({
+        rules: {
+            upName: "required",
+            upEmail: {
+                required: true,
+                validateEmail: "#upEmail",
+                email: true
+            },
+            upPhone: {
+                required: true,
+                validatePhone: true,
+                minlength: 5
+            },
+            upAddress: {
+                required: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            upName: "Please enter your name",
+            upEmail: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long"
+            },
+            upAddress: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long"
+            },
+            upPhone: "Please enter a valid email address"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+
+    $.validator.addMethod("validateEmail", function (value, element) {
+        return this.optional(element) || /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(value);
+    }, "Hãy nhập email từ 8 đến 16 ký tự bao kí tự @, chữ thường và ít nhất một chữ số");
+
+    // validatePhone
+    $.validator.addMethod("validatePhone", function (value, element) {
+        return this.optional(element) || /(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})/.test(value);
+    }, "Hãy nhập email từ 8 đến 16  chữ số");
+
+
+</script>
 </body>
 </html>
